@@ -1,0 +1,129 @@
+[DEBUG] 20171201T144825.596+0000 [main] JiraCukeHooks - Initialising before first scenario.
+[DEBUG] 20171201T144825.660+0000 [main] JiraCukeHooks - Jira issue keys found in scenario tags: SCBSBXA-93
+[DEBUG] 20171201T144825.755+0000 [main] JiraCukeHooks - Jira issue keys found in scenario tags: SCBSBXA-93
+[TRACE] 20171201T144825.758+0000 [main] JiraCukeHooks - Executing afterScenario
+[TRACE] 20171201T144825.758+0000 [main] JiraCukeHooks - Scenario name: Find first valid jira issuey key in tags
+[TRACE] 20171201T144825.758+0000 [main] JiraCukeHooks - Scenario id   : filler-text-from-automation.;find-first-valid-jira-issuey-key-in-tags
+[DEBUG] 20171201T144825.759+0000 [main] JiraCukeHooks - Aferscenario, scenario tags   : [@SCBSBXA-93, @cdaf-bad-23, @autorun, @cdaf-21-3]
+[TRACE] 20171201T144825.763+0000 [main] JiraCukeHooks - Scenario status   : passed
+[TRACE] 20171201T144825.771+0000 [Thread-1] JiraCukeHooks - Executing shutdownHook.
+[TRACE] 20171201T144825.772+0000 [Thread-1] JiraCukeHooks - Executing afterAll
+[DEBUG] 20171201T144825.772+0000 [Thread-1] JiraCukeHooks - Executing afterScenarioChange
+[DEBUG] 20171201T144825.909+0000 [Thread-1] IssueInstance - Adding comment to SCBSBXA-93
+[DEBUG] 20171201T144826.567+0000 [Thread-1] JiraApi - POSTing to https://acutesttraining.atlassian.net/rest/api/2/issue/SCBSBXA-93/comment
+[DEBUG] 20171201T144826.568+0000 [Thread-1] JiraApi - Request contents: {"body": "Test execution completed  Example row outcomes: {passed=1}"}
+[DEBUG] 20171201T144827.490+0000 [Thread-1] JiraApi - Request response code: 201
+[DEBUG] 20171201T144827.491+0000 [Thread-1] JiraApi - Request response message: Created
+[DEBUG] 20171201T144827.492+0000 [Thread-1] JiraApi - About to read connection in buffer
+[DEBUG] 20171201T144827.519+0000 [Thread-1] JiraApi - Response body initial chars: {"self":"https://acutesttraining.atlassian.net/rest/api/2/issue/12395/comment/11901","id":"11901","a
+[DEBUG] 20171201T144827.520+0000 [Thread-1] IssueInstance - Updating test execution status to Passed
+[DEBUG] 20171201T144827.520+0000 [Thread-1] JiraApi - PUTing to https://acutesttraining.atlassian.net/rest/api/2/issue/SCBSBXA-93/
+[DEBUG] 20171201T144827.520+0000 [Thread-1] JiraApi - Request contents: {"fields": {"customfield_10817":{"value":"Passed"}}}
+[DEBUG] 20171201T144828.897+0000 [Thread-1] JiraApi - Request response code: 204
+[DEBUG] 20171201T144828.897+0000 [Thread-1] JiraApi - Request response message: No Content
+[DEBUG] 20171201T144828.898+0000 [Thread-1] JiraApi - About to read connection in buffer
+[WARN ] 20171201T144828.899+0000 [Thread-1] JiraApi - String index out of range: 100
+java.lang.StringIndexOutOfBoundsException: String index out of range: 100
+	at java.lang.String.substring(String.java:1963) ~[?:1.8.0_121]
+	at com.acutest.cdaf.jiraapi.JiraApi.request(JiraApi.java:99) [test-classes/:?]
+	at com.acutest.cdaf.jiraapi.IssueInstance.updateExecutionStatus(IssueInstance.java:99) [test-classes/:?]
+	at com.acutest.cdaf.jiraapi.JiraCukeHooks.afterScenarioChange(JiraCukeHooks.java:117) [test-classes/:?]
+	at com.acutest.cdaf.jiraapi.JiraCukeHooks.afterAll(JiraCukeHooks.java:137) [test-classes/:?]
+	at com.acutest.cdaf.jiraapi.JiraCukeHooks$1.run(JiraCukeHooks.java:44) [test-classes/:?]
+[DEBUG] 20171201T145433.914+0000 [main] JiraCukeHooks - Initialising before first scenario.
+[DEBUG] 20171201T145434.00+0000 [main] JiraCukeHooks - Jira issue keys found in scenario tags: SCBSBXA-93
+[DEBUG] 20171201T145434.121+0000 [main] JiraCukeHooks - Jira issue keys found in scenario tags: SCBSBXA-93
+[TRACE] 20171201T145434.125+0000 [main] JiraCukeHooks - Executing afterScenario
+[TRACE] 20171201T145434.125+0000 [main] JiraCukeHooks - Scenario name: Find first valid jira issuey key in tags
+[TRACE] 20171201T145434.125+0000 [main] JiraCukeHooks - Scenario id   : filler-text-from-automation.;find-first-valid-jira-issuey-key-in-tags
+[DEBUG] 20171201T145434.126+0000 [main] JiraCukeHooks - Aferscenario, scenario tags   : [@SCBSBXA-93, @cdaf-bad-23, @autorun, @cdaf-21-3]
+[TRACE] 20171201T145434.126+0000 [main] JiraCukeHooks - Scenario status   : passed
+[TRACE] 20171201T145434.133+0000 [Thread-1] JiraCukeHooks - Executing shutdownHook.
+[TRACE] 20171201T145434.134+0000 [Thread-1] JiraCukeHooks - Executing afterAll
+[DEBUG] 20171201T145434.134+0000 [Thread-1] JiraCukeHooks - Executing afterScenarioChange
+[DEBUG] 20171201T145434.483+0000 [Thread-1] IssueInstance - Adding comment to SCBSBXA-93
+[DEBUG] 20171201T145435.189+0000 [Thread-1] JiraApi - POSTing to https://acutesttraining.atlassian.net/rest/api/2/issue/SCBSBXA-93/comment
+[DEBUG] 20171201T145435.189+0000 [Thread-1] JiraApi - Request contents: {"body": "Test execution completed  Example row outcomes: {passed=1}"}
+[DEBUG] 20171201T145436.161+0000 [Thread-1] JiraApi - Request response code: 201
+[DEBUG] 20171201T145436.161+0000 [Thread-1] JiraApi - Request response message: Created
+[DEBUG] 20171201T145436.162+0000 [Thread-1] JiraApi - About to read connection in buffer
+[DEBUG] 20171201T145436.206+0000 [Thread-1] JiraApi - Response body initial chars: {"self":"https://acutesttraining.atlassian.net/rest/api/2/issue/12395/comment/11902","id":"11902","a
+[DEBUG] 20171201T145436.207+0000 [Thread-1] IssueInstance - Updating test execution status to Passed
+[DEBUG] 20171201T145436.207+0000 [Thread-1] JiraApi - PUTing to https://acutesttraining.atlassian.net/rest/api/2/issue/SCBSBXA-93/
+[DEBUG] 20171201T145436.207+0000 [Thread-1] JiraApi - Request contents: {"fields": {"customfield_10817":{"value":"Passed"}}}
+[DEBUG] 20171201T145436.802+0000 [Thread-1] JiraApi - Request response code: 204
+[DEBUG] 20171201T145436.803+0000 [Thread-1] JiraApi - Request response message: No Content
+[DEBUG] 20171201T145551.807+0000 [main] JiraCukeHooks - Initialising before first scenario.
+[DEBUG] 20171201T145551.862+0000 [main] JiraCukeHooks - Jira issue keys found in scenario tags: SCBSBXA-93
+[DEBUG] 20171201T145551.956+0000 [main] JiraCukeHooks - Jira issue keys found in scenario tags: SCBSBXA-93
+[TRACE] 20171201T145551.959+0000 [main] JiraCukeHooks - Executing afterScenario
+[TRACE] 20171201T145551.959+0000 [main] JiraCukeHooks - Scenario name: Find first valid jira issuey key in tags
+[TRACE] 20171201T145551.959+0000 [main] JiraCukeHooks - Scenario id   : filler-text-from-automation.;find-first-valid-jira-issuey-key-in-tags
+[DEBUG] 20171201T145551.959+0000 [main] JiraCukeHooks - Aferscenario, scenario tags   : [@SCBSBXA-93, @cdaf-bad-23, @autorun, @cdaf-21-3]
+[TRACE] 20171201T145551.959+0000 [main] JiraCukeHooks - Scenario status   : passed
+[TRACE] 20171201T145551.964+0000 [Thread-1] JiraCukeHooks - Executing shutdownHook.
+[TRACE] 20171201T145551.964+0000 [Thread-1] JiraCukeHooks - Executing afterAll
+[DEBUG] 20171201T145551.964+0000 [Thread-1] JiraCukeHooks - Executing afterScenarioChange
+[DEBUG] 20171201T145552.93+0000 [Thread-1] IssueInstance - Adding comment to SCBSBXA-93
+[DEBUG] 20171201T145552.702+0000 [Thread-1] JiraApi - POSTing to https://acutesttraining.atlassian.net/rest/api/2/issue/SCBSBXA-93/comment
+[DEBUG] 20171201T145552.703+0000 [Thread-1] JiraApi - Request contents: {"body": "Test execution completed  Example row outcomes: {passed=1}"}
+[DEBUG] 20171201T145553.912+0000 [Thread-1] JiraApi - Request response code: 201
+[DEBUG] 20171201T145553.913+0000 [Thread-1] JiraApi - Request response message: Created
+[DEBUG] 20171201T145553.914+0000 [Thread-1] JiraApi - About to read connection in buffer
+[DEBUG] 20171201T145553.955+0000 [Thread-1] JiraApi - Response body initial chars: {"self":"https://acutesttraining.atlassian.net/rest/api/2/issue/12395/comment/11903","id":"11903","a
+[DEBUG] 20171201T145553.956+0000 [Thread-1] IssueInstance - Updating test execution status to Passed
+[DEBUG] 20171201T145553.956+0000 [Thread-1] JiraApi - PUTing to https://acutesttraining.atlassian.net/rest/api/2/issue/SCBSBXA-93/
+[DEBUG] 20171201T145553.957+0000 [Thread-1] JiraApi - Request contents: {"fields": {"customfield_10817":{"value":"Passed"}}}
+[DEBUG] 20171201T145554.555+0000 [Thread-1] JiraApi - Request response code: 204
+[DEBUG] 20171201T145554.556+0000 [Thread-1] JiraApi - Request response message: No Content
+[DEBUG] 20171201T145650.602+0000 [main] JiraCukeHooks - Initialising before first scenario.
+[DEBUG] 20171201T145707.531+0000 [main] JiraCukeHooks - Initialising before first scenario.
+[DEBUG] 20171201T145707.600+0000 [main] JiraCukeHooks - Jira issue keys found in scenario tags: SCBSBXA-93
+[DEBUG] 20171201T145707.719+0000 [main] JiraCukeHooks - Jira issue keys found in scenario tags: SCBSBXA-93
+[TRACE] 20171201T145707.723+0000 [main] JiraCukeHooks - Executing afterScenario
+[TRACE] 20171201T145707.723+0000 [main] JiraCukeHooks - Scenario name: Find first valid jira issuey key in tags
+[TRACE] 20171201T145707.723+0000 [main] JiraCukeHooks - Scenario id   : filler-text-from-automation.;find-first-valid-jira-issuey-key-in-tags
+[DEBUG] 20171201T145707.723+0000 [main] JiraCukeHooks - Aferscenario, scenario tags   : [@SCBSBXA-93, @cdaf-bad-23, @autorun, @cdaf-21-3]
+[TRACE] 20171201T145707.724+0000 [main] JiraCukeHooks - Scenario status   : passed
+[DEBUG] 20171201T145708.03+0000 [Thread-1] IssueInstance - Adding comment to SCBSBXA-93
+[DEBUG] 20171201T145708.895+0000 [Thread-1] JiraApi - POSTing to https://acutesttraining.atlassian.net/rest/api/2/issue/SCBSBXA-93/comment
+[DEBUG] 20171201T145708.895+0000 [Thread-1] JiraApi - Request contents: {"body": "Test execution completed  Example row outcomes: {passed=1}"}
+[DEBUG] 20171201T145709.904+0000 [Thread-1] JiraApi - Request response code: 201
+[DEBUG] 20171201T145709.905+0000 [Thread-1] JiraApi - Request response message: Created
+[DEBUG] 20171201T145709.906+0000 [Thread-1] JiraApi - About to read connection in buffer
+[DEBUG] 20171201T145709.930+0000 [Thread-1] JiraApi - Response body initial chars: {"self":"https://acutesttraining.atlassian.net/rest/api/2/issue/12395/comment/11904","id":"11904","a
+[DEBUG] 20171201T145709.931+0000 [Thread-1] IssueInstance - Updating test execution status to Passed
+[DEBUG] 20171201T145709.932+0000 [Thread-1] JiraApi - PUTing to https://acutesttraining.atlassian.net/rest/api/2/issue/SCBSBXA-93/
+[DEBUG] 20171201T145709.932+0000 [Thread-1] JiraApi - Request contents: {"fields": {"customfield_10817":{"value":"Passed"}}}
+[DEBUG] 20171201T145710.485+0000 [Thread-1] JiraApi - Request response code: 204
+[DEBUG] 20171201T145710.486+0000 [Thread-1] JiraApi - Request response message: No Content
+[DEBUG] 20171201T145713.851+0000 [main] JiraCukeHooks - Jira issue keys found in scenario tags: SCBSBXA-93
+[DEBUG] 20171201T145714.33+0000 [main] JiraCukeHooks - Jira issue keys found in scenario tags: SCBSBXA-93
+[TRACE] 20171201T145714.39+0000 [main] JiraCukeHooks - Executing afterScenario
+[TRACE] 20171201T145714.39+0000 [main] JiraCukeHooks - Scenario name: Find first valid jira issuey key in tags
+[TRACE] 20171201T145714.39+0000 [main] JiraCukeHooks - Scenario id   : filler-text-from-automation.;find-first-valid-jira-issuey-key-in-tags
+[DEBUG] 20171201T145714.40+0000 [main] JiraCukeHooks - Aferscenario, scenario tags   : [@SCBSBXA-93, @cdaf-bad-23, @autorun, @cdaf-21-3]
+[TRACE] 20171201T145714.41+0000 [main] JiraCukeHooks - Scenario status   : passed
+[DEBUG] 20171201T145722.891+0000 [main] JiraCukeHooks - Initialising before first scenario.
+[DEBUG] 20171201T145724.477+0000 [main] JiraCukeHooks - Jira issue keys found in scenario tags: SCBSBXA-93
+[DEBUG] 20171201T145726.831+0000 [main] JiraCukeHooks - Jira issue keys found in scenario tags: SCBSBXA-93
+[TRACE] 20171201T145726.836+0000 [main] JiraCukeHooks - Executing afterScenario
+[TRACE] 20171201T145726.836+0000 [main] JiraCukeHooks - Scenario name: Find first valid jira issuey key in tags
+[TRACE] 20171201T145726.836+0000 [main] JiraCukeHooks - Scenario id   : filler-text-from-automation.;find-first-valid-jira-issuey-key-in-tags
+[DEBUG] 20171201T145726.836+0000 [main] JiraCukeHooks - Aferscenario, scenario tags   : [@SCBSBXA-93, @cdaf-bad-23, @autorun, @cdaf-21-3]
+[TRACE] 20171201T145726.836+0000 [main] JiraCukeHooks - Scenario status   : passed
+[TRACE] 20171201T145726.843+0000 [Thread-1] JiraCukeHooks - Executing shutdownHook.
+[TRACE] 20171201T145726.844+0000 [Thread-1] JiraCukeHooks - Executing afterAll
+[DEBUG] 20171201T145726.844+0000 [Thread-1] JiraCukeHooks - Executing afterScenarioChange
+[DEBUG] 20171201T145730.25+0000 [Thread-1] IssueInstance - Adding comment to SCBSBXA-93
+[DEBUG] 20171201T145732.613+0000 [Thread-1] JiraApi - POSTing to https://acutesttraining.atlassian.net/rest/api/2/issue/SCBSBXA-93/comment
+[DEBUG] 20171201T145732.613+0000 [Thread-1] JiraApi - Request contents: {"body": "Test execution completed  Example row outcomes: {passed=1}"}
+[DEBUG] 20171201T145733.648+0000 [Thread-1] JiraApi - Request response code: 201
+[DEBUG] 20171201T145733.649+0000 [Thread-1] JiraApi - Request response message: Created
+[DEBUG] 20171201T145747.896+0000 [Thread-1] JiraApi - About to read connection in buffer
+[DEBUG] 20171201T145747.900+0000 [Thread-1] JiraApi - Response body initial chars: {"self":"https://acutesttraining.atlassian.net/rest/api/2/issue/12395/comment/11905","id":"11905","a
+[DEBUG] 20171201T145747.900+0000 [Thread-1] IssueInstance - Updating test execution status to Passed
+[DEBUG] 20171201T145747.901+0000 [Thread-1] JiraApi - PUTing to https://acutesttraining.atlassian.net/rest/api/2/issue/SCBSBXA-93/
+[DEBUG] 20171201T145747.901+0000 [Thread-1] JiraApi - Request contents: {"fields": {"customfield_10817":{"value":"Passed"}}}
+[DEBUG] 20171201T145748.673+0000 [Thread-1] JiraApi - Request response code: 204
+[DEBUG] 20171201T145748.674+0000 [Thread-1] JiraApi - Request response message: No Content
