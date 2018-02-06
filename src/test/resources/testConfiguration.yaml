@@ -5,7 +5,7 @@
 jira:
   host: acutesttraining.atlassian.net
   defaultUser: mike.jennings@acutest.co.uk
-  makeUpdates: true # switch to indicate not to update Jira with outcome.
+  makeUpdates: false # switch to indicate not to update Jira with outcome.
   customfieldId:
     executionStatus: 10817
     impactOfFailure: 10500
