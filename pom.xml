@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.acutest</groupId>
-	<artifactId>cdaf-core/</artifactId>
+	<artifactId>cdaf-core</artifactId>
 	<version>1.0.0</version>
 	<packaging>jar</packaging>
 
@@ -81,9 +81,9 @@
                 <executions>
                     <execution>
                         <id>gen-java-bridge</id>
-                        <goals>
+                        <!--  <goals>
                             <goal>gen</goal>
-                        </goals>
+                        </goals> -->
                         <configuration>
                             <file>C:\Program Files\iTunes\iTunes.exe</file>
                         </configuration>
