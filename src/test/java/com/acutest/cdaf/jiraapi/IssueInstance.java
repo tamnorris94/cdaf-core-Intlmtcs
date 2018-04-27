@@ -42,10 +42,8 @@ public class IssueInstance {
                 + "}";
 
         logger.debug("Adding comment to {}", issueKey);
-        String result = JiraApi.request("POST", resource, json);
-
+        JiraApi.request("POST", resource, json);
         String commentId = "Return string";
-
         return commentId;
     }
 

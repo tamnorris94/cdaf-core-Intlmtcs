@@ -42,7 +42,7 @@ public class JiraApiStepDefs {
 
     @Then("^the jira issue should have a comment with the text and timestamp$")
     public void the_jira_issue_should_have_a_comment_with_the_text_and_timestampi() throws Throwable {
-        String result = issue1.loadIssue();
+        issue1.loadIssue();
         String comments = issue1.getComments();
         Assert.assertTrue(comments.contains(timestampedText));
     }
@@ -55,7 +55,7 @@ public class JiraApiStepDefs {
 
     @When("^the Jira api loads the issue$")
     public void the_Jira_api_loads_the_issue() throws Throwable {
-        String result = issue1.loadIssue();
+        issue1.loadIssue();
     }
 
     @Then("^the title should be \"([^\"]*)\"$")
@@ -139,7 +139,7 @@ public class JiraApiStepDefs {
 
         deleteFeatureFiles(targetLocation);
         for (Map.Entry<String, IssueInstance> map : issues.entrySet()) {
-          String filepath = map.getValue().createFeaturefile(targetLocation) ;
+          map.getValue().createFeaturefile(targetLocation) ;
         }
     }
 

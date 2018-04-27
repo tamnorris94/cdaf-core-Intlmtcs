@@ -80,7 +80,7 @@ public class JiraCukeHooks {
 //        logger.trace("Scenario Uri: {}",getUri.());
 //        logger.trace("Scenario Lines: {}",s.getLines());
         String status = s.getStatus();
-        results.add(s.getStatus());
+        results.add(status);
     }
     /**
      * AFTER SCENARIO CHANGE

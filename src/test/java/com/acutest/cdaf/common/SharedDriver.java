@@ -9,19 +9,8 @@ import org.openqa.selenium.support.events.EventFiringWebDriver;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import java.nio.file.Files;
 import java.util.Map;
 import java.util.concurrent.TimeUnit;
-
-import javax.security.auth.login.Configuration;
-
-import org.yaml.snakeyaml.Yaml;
-
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.InputStream;
-import java.nio.file.Paths;
 
 /**
  * Based on shared webdriver implementation in cucumber-jvm examples

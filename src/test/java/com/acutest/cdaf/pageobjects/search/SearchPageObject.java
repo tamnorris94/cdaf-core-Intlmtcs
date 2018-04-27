@@ -10,7 +10,7 @@ public class SearchPageObject {
     private static WebDriver webDriver;
 
     public SearchPageObject(WebDriver webDriver) {
-        this.webDriver = webDriver;
+        SearchPageObject.webDriver = webDriver;
     }
 
     private By searchTermField = By.id("lst-ib");

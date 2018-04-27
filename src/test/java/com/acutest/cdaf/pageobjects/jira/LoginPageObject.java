@@ -10,7 +10,7 @@ public class LoginPageObject {
     private static WebDriver webDriver;
 
     public LoginPageObject(WebDriver webDriver) {
-        this.webDriver = webDriver;
+        LoginPageObject.webDriver = webDriver;
     }
 
     private By usernameField = By.id("username");

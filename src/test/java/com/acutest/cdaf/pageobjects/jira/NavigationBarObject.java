@@ -10,7 +10,7 @@ public class NavigationBarObject {
     private static WebDriver webDriver;
 
     public NavigationBarObject(WebDriver webDriver) {
-        this.webDriver = webDriver;
+        NavigationBarObject.webDriver = webDriver;
     }
 
     private By createButton = By.id("create_link");
