@@ -1,6 +1,6 @@
 package com.acutest.cdaf.jiraapi;
 
-import com.acutest.cdaf.common.testConfiguration;
+import com.acutest.cdaf.common.TestConfiguration;
 import cucumber.api.java.Before;
 import cucumber.api.java.After;
 import cucumber.api.Scenario;
@@ -44,7 +44,7 @@ public class JiraCukeHooks {
                 }
             });
             // Add items here to run before all scenarios.
-            testConfiguration.loadAPropertiesFile( "src/test/resources/testConfiguration.yaml");
+            TestConfiguration.loadAPropertiesFile( "src/test/resources/testConfiguration.yaml");
 
             dunit = true;
         }
@@ -107,7 +107,7 @@ public class JiraCukeHooks {
 
         Integer exceptionsCount = results.size() - passedCount;
 
-        String jiraUpdateSwitch = testConfiguration.getProperty("jira.makeUpdates");
+        String jiraUpdateSwitch = TestConfiguration.getProperty("jira.makeUpdates");
         if  ( ! jiraUpdateSwitch.contains("false")) {
             String jiraComment = "Test execution completed "
                     + " Example row outcomes: " + resultCounts.toString();

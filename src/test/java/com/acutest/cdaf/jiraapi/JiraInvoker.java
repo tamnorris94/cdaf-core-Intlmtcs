@@ -1,6 +1,6 @@
 package com.acutest.cdaf.jiraapi;
 
-import com.acutest.cdaf.common.testConfiguration;
+import com.acutest.cdaf.common.TestConfiguration;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -18,7 +18,7 @@ public class JiraInvoker {
     }
 
     public static void runScenarios() {
-        String stepdefLocation = testConfiguration.getProperty("testrun.cucumberOptionGlue");
+        String stepdefLocation = TestConfiguration.getProperty("testrun.cucumberOptionGlue");
 
         String command =
                 "mvn test -Pcucumber"

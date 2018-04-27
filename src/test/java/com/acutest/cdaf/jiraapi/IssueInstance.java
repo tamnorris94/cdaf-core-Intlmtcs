@@ -67,14 +67,14 @@ public class IssueInstance {
     }
 
     public String getExecutionStatus() {
-        String customfieldId = testConfiguration.getProperty("jira.customfieldId.executionStatus");
+        String customfieldId = TestConfiguration.getProperty("jira.customfieldId.executionStatus");
         String customfieldKey = "customfield_" + customfieldId;
         return fieldsNode.path(customfieldKey).path("value").textValue();
     }
 
 
     public String updateExecutionStatus(String status) {
-        String customfieldId = testConfiguration.getProperty("jira.customfieldId.executionStatus");
+        String customfieldId = TestConfiguration.getProperty("jira.customfieldId.executionStatus");
         String customfieldKey = "customfield_" + customfieldId;
         String json = "{\"fields\": "
                     +"{"

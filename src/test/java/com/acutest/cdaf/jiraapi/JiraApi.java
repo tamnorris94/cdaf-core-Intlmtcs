@@ -15,15 +15,15 @@ import org.apache.commons.codec.binary.Base64;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import com.acutest.cdaf.common.testConfiguration;
+import com.acutest.cdaf.common.TestConfiguration;
 
 public class JiraApi {
     static String authority;
     static String authString;
     private static Logger logger = LogManager.getLogger(JiraApi.class);
     static {
-        authority = "https://" + testConfiguration.getProperty("jira.host");
-        String jiraUser = testConfiguration.getProperty("jira.defaultUser");
+        authority = "https://" + TestConfiguration.getProperty("jira.host");
+        String jiraUser = TestConfiguration.getProperty("jira.defaultUser");
         String jiraPassword = System.getenv("JIRA_PASSWORD");
         String credentials = jiraUser + ":" + jiraPassword;
         authString = "Basic " + Base64.encodeBase64String(credentials.getBytes());

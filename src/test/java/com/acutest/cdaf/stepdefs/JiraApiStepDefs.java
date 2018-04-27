@@ -1,6 +1,6 @@
 package com.acutest.cdaf.stepdefs;
 
-import com.acutest.cdaf.common.testConfiguration;
+import com.acutest.cdaf.common.TestConfiguration;
 import com.acutest.cdaf.jiraapi.*;
 import cucumber.api.PendingException;
 import cucumber.api.java.en.Given;
@@ -135,7 +135,7 @@ public class JiraApiStepDefs {
 
     @When("^create feature files$")
     public void create_feature_files() throws Throwable {
-        String targetLocation = testConfiguration.getProperty("testrun.featurefileLocation");
+        String targetLocation = TestConfiguration.getProperty("testrun.featurefileLocation");
 
         deleteFeatureFiles(targetLocation);
         for (Map.Entry<String, IssueInstance> map : issues.entrySet()) {

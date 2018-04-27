@@ -11,7 +11,7 @@ import com.esotericsoftware.yamlbeans.YamlReader;
  * This makes the TestFramework object available globally without needing any class instantiation
  *
  */
-public class testConfiguration {
+public class TestConfiguration {
 
 
     public static Properties properties = new Properties();
