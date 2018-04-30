@@ -5,6 +5,7 @@ import org.slf4j.Logger;
 import java.io.*;
 import java.util.Arrays;
 
+/* [JS 2018-04-30] No references to this class within project. Recommend for deletion. */
 public class WorkingFiles {
     private FileReader fr;
     private BufferedReader br;

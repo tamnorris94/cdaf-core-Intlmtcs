@@ -12,19 +12,20 @@ import com.esotericsoftware.yamlbeans.YamlReader;
  *
  */
 public class TestConfiguration {
-
-
     public static Properties properties = new Properties();
 
     public static String getProperty(String propertyName) {
         String propertyValue = properties.getProperty(propertyName);
+        if (propertyValue == null || propertyValue.equals("")) {
+        	propertyValue = System.getenv(propertyName);
+        }
         return propertyValue;
     }
 
     public static void loadAPropertiesFile(String sourcePropertiesFilePath) throws Exception {
         if (!(sourcePropertiesFilePath == null)) {
             File file = new File(sourcePropertiesFilePath);
-            if (!(file.exists() && !file.isDirectory())) {
+            if (!file.exists() || file.isDirectory()) {
                 throw new Exception("Cannot find the file: '" + sourcePropertiesFilePath + "'");
             }
 
@@ -33,18 +34,18 @@ public class TestConfiguration {
                 properties = new Properties();
             }
             YamlReader reader = new YamlReader(new FileReader(sourcePropertiesFilePath));
+            // TODO: identify the return type of object and replace it with an appropriately parameterised Map
             Object object = reader.read();
             iterateOverAMap((Map) object, null);
         }
     }
 
-    private static void iterateOverAMap(Map map, String baseKey)
-    {
+    private static void iterateOverAMap(Map map, String baseKey) {
         Iterator entries = map.entrySet().iterator();
         while (entries.hasNext()) {
             Map.Entry entry = (Map.Entry) entries.next();
             String key = (String) entry.getKey();
-            if (!(baseKey==null)) {
+            if (baseKey != null) {
                 key = baseKey + "." + key;
             }
             if (entry.getValue() instanceof String) {
@@ -55,7 +56,4 @@ public class TestConfiguration {
             }
         }
     }
-    /*
-
-     */
 }
