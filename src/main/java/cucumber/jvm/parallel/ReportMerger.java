@@ -88,25 +88,3 @@ public class ReportMerger {
         FileUtils.writeStringToFile(reportFile, fileAsString);
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

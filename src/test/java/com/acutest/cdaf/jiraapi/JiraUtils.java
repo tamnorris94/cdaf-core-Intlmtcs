@@ -21,17 +21,9 @@ public class JiraUtils {
     }
 
     public static boolean isValidIssueKey(String candidate){
-        boolean result;
-        Pattern pattern = Pattern.compile("([A-Z,a-z]{1,10}-\\d+$)");
-
+        Pattern pattern = Pattern.compile("([A-Za-z]{1,10}-\\d+$)");
         Matcher m = pattern.matcher(candidate);
-        if (m.find()) {
-            result = true;
-        }
-        else {
-            result = false;
-        }
-        return result;
+        return m.find();
     }
 
     /**
