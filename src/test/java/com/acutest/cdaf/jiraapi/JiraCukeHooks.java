@@ -150,17 +150,21 @@ public class JiraCukeHooks {
         String keyListString = StringUtils.join(issueKeys, ",");
         return keyListString;
     }
-    /*
+    /**
     * Return valid jira issue key from scenario tags.
-    * Return empty string if not found.
     * Converts everything to uppercase.
     * <em> warning: may not be the first valid jira issuekey </em> as tags are
     * returned as a Collection.
+    * 
+    * @return  a possibly empty list of tags, or null if scenario is null. 
     *
      */
     public static List<String> getTagIssueKeys(Scenario scenario){
         logger.trace("Entered getTagIssueKeys");
         logger.debug("Checking scenario exists? : {}", (scenario != null));
+        if (scenario == null) {
+            return null;
+        }
         String message = "";
         for(StackTraceElement stackTraceElement : Thread.currentThread().getStackTrace()){
             message = message + System.lineSeparator() + stackTraceElement.toString();
@@ -169,7 +173,7 @@ public class JiraCukeHooks {
         Collection<String> tags = scenario.getSourceTagNames();
         // Jira official pattern:   Pattern pattern = Pattern.compile("((?<!([A-Z]{1,10})-?)[A-Z]+-\\d+)");
         // https://community.atlassian.com/t5/Bitbucket-questions/Regex-pattern-to-match-JIRA-issue-key/qaq-p/233319
-        Pattern  pattern = Pattern.compile("@([A-Z,a-z]{1,10}-\\d+$)");
+        Pattern  pattern = Pattern.compile("@([A-Za-z]{1,10}-\\d+$)");
 
         List <String> issueKeys = new ArrayList<String>();
         for (String tag : tags){
@@ -179,28 +183,21 @@ public class JiraCukeHooks {
                 issueKeys.add(found.toUpperCase());
             }
         }
-        //  List<String> IssueKeys = tags.stream()
-        //          .map(String:: toUpperCase)
-        //          .filter(pattern.asPredicate())
-        //          .collect(Collectors.toList());
 
-
-        if ( issueKeys.size() > 1) {
+        if (issueKeys.size() > 1) {
            logger.warn("multiple issuekeys found in scenario tag list");
         }
 
-//        String keysList = IssueKeys.stream().collect(Collectors.joining(", "));
         String keysList = StringUtils.join(issueKeys, ",");
         logger.trace("Jira issue keys found in scenario tags: {}", keysList);
 
-        // return a single value
         return issueKeys;
     }
 
     String getTagIssueKey(Scenario scenario) {
         List<String> tagIssueKeys = getTagIssueKeys(scenario);
         String issueTag;
-        if (tagIssueKeys.size() == 0) {
+        if (tagIssueKeys == null || tagIssueKeys.size() == 0) {
             issueTag = "";
         } else {
             issueTag = tagIssueKeys.get(0);
