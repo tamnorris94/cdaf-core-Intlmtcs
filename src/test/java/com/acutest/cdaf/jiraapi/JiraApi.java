@@ -167,7 +167,7 @@ public class JiraApi {
     
     private static char[] getPassword() {
         char[] result = System.getenv("JIRA_PASSWORD").toCharArray();
-        if (result == null || result.length > 0) {
+        if (result == null || result.length == 0) {
             result = promptUser("Please enter your password").toCharArray();
         }
         return result;
