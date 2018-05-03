@@ -6,6 +6,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Scanner;
 
 import com.fasterxml.jackson.core.JsonGenerationException;
 import com.fasterxml.jackson.databind.DeserializationFeature;
@@ -23,9 +24,9 @@ public class JiraApi {
     private static Logger logger = LogManager.getLogger(JiraApi.class);
     static {
         authority = "https://" + TestConfiguration.getProperty("jira.host");
-        String jiraUser = TestConfiguration.getProperty("jira.defaultUser");
-        String jiraPassword = System.getenv("JIRA_PASSWORD");
-        String credentials = jiraUser + ":" + jiraPassword;
+        String jiraUser = getUsername();
+        char[] jiraPassword = getPassword();
+        String credentials = jiraUser + ":" + new String(jiraPassword);
         authString = "Basic " + Base64.encodeBase64String(credentials.getBytes());
     }
 
@@ -155,6 +156,28 @@ public class JiraApi {
 
 
     }
+    
+    private static String getUsername() {
+        String result = TestConfiguration.getProperty("jira.defaultUser");
+        if (result == null || result.length() == 0) {
+            result = promptUser("Please enter your Jira username");
+        }
+        return result;
+    }
+    
+    private static char[] getPassword() {
+        char[] result = System.getenv("JIRA_PASSWORD").toCharArray();
+        if (result == null || result.length > 0) {
+            result = promptUser("Please enter your password").toCharArray();
+        }
+        return result;
+    }
 
-
+    private static String promptUser(String prompt) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println(prompt);
+        String result = sc.nextLine();
+        sc.close();
+        return result;
+    }
 }
