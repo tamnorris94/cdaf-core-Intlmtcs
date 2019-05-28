@@ -12,8 +12,8 @@
     <properties>
         <applicationUrl>http://www.google.com</applicationUrl>
         <surefire.fork.count>5</surefire.fork.count>
-        <cucumber.version>1.2.5</cucumber.version>
-        <selenium.version>2.53.1</selenium.version>
+        <cucumber.version>2.1.0</cucumber.version>
+        <selenium.version>3.6.0</selenium.version>
         <junit.version>4.11</junit.version>
     </properties>
 
@@ -96,22 +96,26 @@
 
     <dependencies>
         <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-java</artifactId>
+            <version>${cucumber.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-core</artifactId>
+            <version>${cucumber.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-junit</artifactId>
+            <version>${cucumber.version}</version>
+        </dependency>
+
+        <dependency>
             <groupId>info.cukes</groupId>
             <artifactId>cucumber-jvm-deps</artifactId>
             <scope>test</scope>
             <version>1.0.3</version>
-        </dependency>
-        <dependency>
-            <groupId>info.cukes</groupId>
-            <artifactId>cucumber-picocontainer</artifactId>
-            <version>${cucumber.version}</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>info.cukes</groupId>
-            <artifactId>cucumber-junit</artifactId>
-            <version>${cucumber.version}</version>
-            <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.picocontainer</groupId>
