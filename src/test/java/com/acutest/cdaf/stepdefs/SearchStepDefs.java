@@ -4,7 +4,7 @@ import static org.junit.Assert.assertEquals;
 
 import org.openqa.selenium.WebDriver;
 
-import com.acutest.cdaf.common.SharedDriver;
+import com.acutest.cdaf.SharedDriver;
 import com.acutest.cdaf.pageobjects.search.SearchPageObject;
 
 import cucumber.api.java.en.Given;

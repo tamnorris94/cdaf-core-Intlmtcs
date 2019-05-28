@@ -1,9 +1,9 @@
 package com.acutest.cdaf.stepdefs;
 
+import com.acutest.cdaf.helpers.DriverFactory;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-import com.acutest.cdaf.common.*;
 import com.acutest.cdaf.pageobjects.jira.LoginPageObject;
 import com.acutest.cdaf.pageobjects.jira.NavigationBarObject;
 
@@ -18,24 +18,25 @@ import org.apache.logging.log4j.Logger;
 public class JiraStepDefs {
 	private LoginPageObject loginPage;
 	private NavigationBarObject navigationBar;
-	private WebDriver webDriver;
+	protected WebDriver webDriver;
 
 	private String acutesttrainingUrl =
 			"https://acutesttraining.atlassian.net/projects/CDFJ/issues";
 	private static Logger logger = LogManager.getLogger();
 
-	public JiraStepDefs(SharedDriver webDriver) {
-	    logger.debug("Initialising JiraStepDefs");
-		this.webDriver = webDriver;
-		loginPage = new LoginPageObject(webDriver);
-		navigationBar = new NavigationBarObject(webDriver);
-	}
+	//public JiraStepDefs(SharedDriver webDriver) {
+	//    logger.debug("Initialising JiraStepDefs");
+	//	this.webDriver = webDriver;
+	//	loginPage = new LoginPageObject(webDriver);
+	//	navigationBar = new NavigationBarObject(webDriver);
+	//}
 	@Given("^I am on the acutesttraining Jira instance$")
 	public void i_am_on_the_acutesttraining_Jira_instance() throws Throwable {
+		webDriver = new DriverFactory().getDriver();
 		webDriver.get(acutesttrainingUrl);
-		loginPage.enterUsername("mike.jennings@acutest.co.uk");
+		//loginPage.enterUsername("mike.jennings@acutest.co.uk");
 		String jiraPassword = System.getenv("JIRA_PASSWORD");
-		loginPage.enterPassword(jiraPassword);
+		//loginPage.enterPassword(jiraPassword);
 	}
 	@When("^I open page at \"([^\"]*)\"$")
 	public void i_open_page_at(String arg1) throws Throwable {

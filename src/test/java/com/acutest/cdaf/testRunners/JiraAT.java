@@ -8,8 +8,8 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
 		monochrome = true,
 		features = "target/test-classes/cucumber/features/", 
-		glue = "target/test-classes/com/acutest/cdaf/stepdefs",
-		tags = {"@cdaf-13"},
+		//glue = "target/test-classes/com/acutest/cdaf/stepdefs/",
+		tags = {"@dev"},
 		plugin = {"pretty", "html:target/cucumber-report/autocorrect"})
 public class JiraAT {
 }
