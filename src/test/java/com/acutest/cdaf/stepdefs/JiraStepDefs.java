@@ -1,6 +1,6 @@
 package com.acutest.cdaf.stepdefs;
 
-import com.acutest.cdaf.helpers.DriverFactory;
+import com.acutest.cdaf.core.helpers.DriverFactory;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
