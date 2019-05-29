@@ -1,5 +1,5 @@
 @web @dev
-Feature: Read public jira issue page
+Feature: Read public jira issue page.
 
   Scenario: Check title of issue PUBLICA-1
     Given user accesses acutesttraining project accessible to anonymous users
