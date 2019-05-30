@@ -17,7 +17,7 @@ import java.util.Properties;
 
 public class DriverFactory {
 
-    protected   String downloadFilepath = "C:\\Users\\Public\\Jenkins-Automation-Framework\\csvFiles\\adminReport\\";
+    protected String downloadFilepath = "C:\\Users\\Public\\Jenkins-Automation-Framework\\csvFiles\\adminReport\\";
     protected static WebDriver driver;
     protected static Logger log;
     private static long implicitWaitTimeInSeconds;
@@ -30,17 +30,13 @@ public class DriverFactory {
         }
     };
 
-    private String setProperties() {
-//        FileInputStream propFile = new FileInputStream("C:\\Users\\P10493586\\IdeaProjects\\cdaf_20190528\\cdaf-core\\src\\test\\resources\\Properties.txt");
-//        Properties myProps = new Properties(System.getProperties());
-//        myProps.load(propFile);
-//        System.setProperties(myProps);
-//        return System.getProperty("browser");
-        System.setProperty("browser", "firefox");
+    private String setProperties() throws Exception {
+        FileInputStream propFile = new FileInputStream("./src/test/resources/environment.properties");
+        Properties myProps = new Properties(System.getProperties());
+        myProps.load(propFile);
+        System.setProperties(myProps);
         return System.getProperty("browser");
     }
-
-    String a = setProperties();
 
     String localDir = System.getProperty("user.dir");
     //File driverPath = new File(localDir + "\\src\\test\\resources\\driver\\chromedriver.exe");
@@ -48,17 +44,16 @@ public class DriverFactory {
     //private String filePath = "File driverPath = new File(\"C:\\\\cdaf_tools\\\\SeleniumWebDriver\\\\\");";
 
     // system variables
-    //private String browser = System.getProperty("browser", "firefox");
-    private String browser = System.getProperty("browser");
-//    {
-//        try {
-//            browser = setProperties();
-//        } catch (Exception e) {
-//            e.printStackTrace();
-//        }
-//    }
+    private String browser; //System.getProperty("browser");
+    {
+        try {
+            browser = setProperties();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
 
-    File driverPath = browser == "firefox" ? new File("C:\\cdaf_tools\\SeleniumWebDriver\\geckodriver.exe") : new File("C:\\cdaf_tools\\SeleniumWebDriver\\chromedriver.exe");
+    File driverPath = browser.equalsIgnoreCase("firefox") ? new File("C:\\cdaf_tools\\SeleniumWebDriver\\geckodriver.exe") : new File("C:\\cdaf_tools\\SeleniumWebDriver\\chromedriver.exe");
     //private String browser = "chrome";
     // Chrome driver path has been changed
     private String driverExec = (String) System.getProperty("driverExec", String.valueOf(driverPath));
