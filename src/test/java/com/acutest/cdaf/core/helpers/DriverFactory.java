@@ -1,5 +1,6 @@
 package com.acutest.cdaf.core.helpers;
 
+import com.acutest.cdaf.TestConfiguration;
 import org.apache.log4j.Logger;
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
@@ -9,8 +10,10 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
 
 import java.io.File;
+import java.io.FileInputStream;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Properties;
 
 public class DriverFactory {
 
@@ -27,15 +30,36 @@ public class DriverFactory {
         }
     };
 
+    private String setProperties() {
+//        FileInputStream propFile = new FileInputStream("C:\\Users\\P10493586\\IdeaProjects\\cdaf_20190528\\cdaf-core\\src\\test\\resources\\Properties.txt");
+//        Properties myProps = new Properties(System.getProperties());
+//        myProps.load(propFile);
+//        System.setProperties(myProps);
+//        return System.getProperty("browser");
+        System.setProperty("browser", "firefox");
+        return System.getProperty("browser");
+    }
 
+    String a = setProperties();
 
     String localDir = System.getProperty("user.dir");
     //File driverPath = new File(localDir + "\\src\\test\\resources\\driver\\chromedriver.exe");
-    File driverPath = new File("C:\\cdaf_tools\\SeleniumWebDriver\\geckodriver.exe");
+    //File driverPath = new File("C:\\cdaf_tools\\SeleniumWebDriver\\");
+    //private String filePath = "File driverPath = new File(\"C:\\\\cdaf_tools\\\\SeleniumWebDriver\\\\\");";
 
     // system variables
-    //private String browser = System.getProperty("browser", "chrome");
-    private String browser = "firefox";
+    //private String browser = System.getProperty("browser", "firefox");
+    private String browser = System.getProperty("browser");
+//    {
+//        try {
+//            browser = setProperties();
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
+//    }
+
+    File driverPath = browser == "firefox" ? new File("C:\\cdaf_tools\\SeleniumWebDriver\\geckodriver.exe") : new File("C:\\cdaf_tools\\SeleniumWebDriver\\chromedriver.exe");
+    //private String browser = "chrome";
     // Chrome driver path has been changed
     private String driverExec = (String) System.getProperty("driverExec", String.valueOf(driverPath));
     private boolean isHeadless = Boolean.valueOf(System.getProperty("headless", "false"));

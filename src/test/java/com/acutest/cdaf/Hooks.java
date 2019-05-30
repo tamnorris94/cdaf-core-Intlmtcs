@@ -40,6 +40,13 @@ public class Hooks {
             // Add items here to run before all scenarios.
             TestConfiguration.loadAPropertiesFile( "src/test/resources/testConfiguration.yaml");
 
+//            FileInputStream propFile = new FileInputStream("C:\\Users\\P10493586\\IdeaProjects\\cdaf_20190528\\cdaf-core\\src\\test\\resources\\Properties.txt");
+//            Properties myProps = new Properties(System.getProperties());
+//            myProps.load(propFile);
+//            System.setProperties(myProps);
+//            System.setProperty("browser", "chrome");
+
+
             dunit = true;
         }
     }
