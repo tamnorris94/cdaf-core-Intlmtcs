@@ -34,7 +34,7 @@ public class Hooks {
             Runtime.getRuntime().addShutdownHook(new Thread(){
                 public void run()  {
                     log.trace("Executing shutdownHook.");
-                    afterAll() ;
+                    afterAll();
                 }
             });
             // Add items here to run before all scenarios.
@@ -52,7 +52,6 @@ public class Hooks {
         if (isUsingWebdriver(scenario)) {
             DriverFactory driverFactory = new DriverFactory();
             driver = driverFactory.getDriver();
-
             driver.manage().deleteAllCookies();
             driver.manage().window().maximize();
             driverFactory.setImplicitWait(5); // Default value for rest of run
