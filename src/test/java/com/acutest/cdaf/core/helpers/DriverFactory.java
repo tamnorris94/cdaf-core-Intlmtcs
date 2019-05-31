@@ -28,18 +28,12 @@ public class DriverFactory {
     };
 
     String localDir = System.getProperty("user.dir");
-    //File driverPath = new File(localDir + "\\src\\test\\resources\\driver\\chromedriver.exe");
-    //File driverPath = new File("C:\\cdaf_tools\\SeleniumWebDriver\\");
-    //private String filePath = "File driverPath = new File(\"C:\\\\cdaf_tools\\\\SeleniumWebDriver\\\\\");";
-
+    private String path = "C:\\cdaf_tools\\SeleniumWebDriver\\";
+    File driverPath;
     // system variables
     private String browser = System.getProperty("browser", "firefox");
-
-    File driverPath = browser.equalsIgnoreCase("firefox") ? new File("C:\\cdaf_tools\\SeleniumWebDriver\\geckodriver.exe") : new File("C:\\cdaf_tools\\SeleniumWebDriver\\chromedriver.exe");
-    //private String browser = "chrome";
-    // Chrome driver path has been changed
-    private String driverExec = (String) System.getProperty("driverExec", String.valueOf(driverPath));
-    private boolean isHeadless = Boolean.valueOf(System.getProperty("headless", "false"));
+    private String driverExec;
+    private boolean isHeadless;
 
     public DriverFactory() {
 
@@ -55,45 +49,50 @@ public class DriverFactory {
 
     private void createNewDriverInstance() {
 
+        switch (browser){
+            case "firefox":
+                driverPath = new File(path + "geckodriver.exe");
+                driverExec = (String) System.getProperty("driverExec", String.valueOf(driverPath));
+                isHeadless = Boolean.valueOf(System.getProperty("headless", "false"));
+                System.setProperty("webdriver.gecko.driver", driverExec);
+                driver = new FirefoxDriver();
+                break;
+            case "chrome":
+                driverPath = new File(path + "chromedriver.exe");
+                driverExec = (String) System.getProperty("driverExec", String.valueOf(driverPath));
+                isHeadless = Boolean.valueOf(System.getProperty("headless", "false"));
+                System.setProperty("webdriver.chrome.driver", driverExec);
+                //     log.info("Setting ChromeOptions for fix 20180629");
+                Map<String, Object> prefs = new HashMap<String, Object>();
+                prefs.put("download.default_directory", downloadFilepath);
+                ChromeOptions options = new ChromeOptions()
+                        .addArguments("--start-maximized")
+                        .addArguments("--disable-gpu")
+                        //When you ar  running headless this line needs to be commented
+                        .addArguments("window-size=1200x600")
+                        // When you are not using headless-->set window size like below.Commen line:  .addArguments("window-size=1200x600") and use .addArguments("window-size=1200x1100")
+                        //When you are  running headless this line needs to be uncommented
+//                   .addArguments("window-size=1200x1100")
+                        .addArguments("--no-sandbox")
+                        .addArguments("--disable-dev-shm-usage");
+
+                options.setExperimentalOption("prefs", prefs);
+
+                if (isHeadless) {
+                    options.setHeadless(true).addArguments("--headless");
+                }
+
+                driver = new ChromeDriver(options);
+
+                Runtime.getRuntime().addShutdownHook(closeDriverThread);
+                break;
+            default:
+                log.error("property not valid: browser " + browser);
+                break;
+        }
 
        // log.info(String.format("Executing test using %S located %S", browser, driverExec));
      //   log.info("Message created 20180629 to check changes applied");
-
-        if (browser.equalsIgnoreCase("firefox")) {
-            System.setProperty("webdriver.gecko.driver", driverExec);
-            driver = new FirefoxDriver();
-         } else if (browser.equalsIgnoreCase("chrome")) {
-            System.setProperty("webdriver.chrome.driver", driverExec);
-
-       //     log.info("Setting ChromeOptions for fix 20180629");
-            Map<String, Object> prefs = new HashMap<String, Object>();
-            prefs.put("download.default_directory", downloadFilepath);
-
-
-            ChromeOptions options = new ChromeOptions()
-                    .addArguments("--start-maximized")
-                    .addArguments("--disable-gpu")
-                    //When you ar  running headless this line needs to be commented
-                    .addArguments("window-size=1200x600")
-                    // When you are not using headless-->set window size like below.Commen line:  .addArguments("window-size=1200x600") and use .addArguments("window-size=1200x1100")
-                    //When you are  running headless this line needs to be uncommented
-//                   .addArguments("window-size=1200x1100")
-                    .addArguments("--no-sandbox")
-                    .addArguments("--disable-dev-shm-usage");
-
-            options.setExperimentalOption("prefs", prefs);
-
-            if (isHeadless) {
-                options.setHeadless(true).addArguments("--headless");
-            }
-
-            driver = new ChromeDriver(options);
-
-            Runtime.getRuntime().addShutdownHook(closeDriverThread);
-
-        } else {
-            log.error("property not valid: browser " + browser);
-        }
 
         EventFiringWebDriver eventFiringWebDriver = new EventFiringWebDriver(driver);
         driver = eventFiringWebDriver.register(new WebEventListener());
