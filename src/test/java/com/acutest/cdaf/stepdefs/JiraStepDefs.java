@@ -80,7 +80,6 @@ public class JiraStepDefs {
 		webDriver.findElement(By.xpath(locator));
 		List<WebElement> elem = webDriver.findElements(By.xpath(locator));
 		assert(!elem.isEmpty());
-		webDriver.quit();
 	}
 
 

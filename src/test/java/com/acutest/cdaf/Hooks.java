@@ -9,6 +9,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebDriverException;
+import org.openqa.selenium.firefox.FirefoxDriver;
 
 import java.net.MalformedURLException;
 import java.util.List;
@@ -75,7 +76,10 @@ public class Hooks {
                         e2.printStackTrace();
                     }
                 }
+
             } finally {
+
+
 
                 // Use below line if you have a memory issue.
 //                new DriverFactory().destroyDriver();
@@ -100,8 +104,10 @@ public class Hooks {
      */
     public void afterAll(){
         log.trace("Executing afterAll");
-        // Add items here to run after tests
 
+
+// Add items here to run after tests
+        new DriverFactory().destroyDriver();
     }
 
 }
