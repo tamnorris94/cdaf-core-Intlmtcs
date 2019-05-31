@@ -11,8 +11,10 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
+import java.io.FileInputStream;
 import java.net.MalformedURLException;
 import java.util.List;
+import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 public class Hooks {
@@ -41,7 +43,13 @@ public class Hooks {
             // Add items here to run before all scenarios.
             TestConfiguration.loadAPropertiesFile( "src/test/resources/testConfiguration.yaml");
 
+            FileInputStream propFile = new FileInputStream("./src/test/resources/environment.properties");
+            Properties myProps = new Properties(System.getProperties());
+            myProps.load(propFile);
+            System.setProperties(myProps);
+
             dunit = true;
+
         }
     }
 
