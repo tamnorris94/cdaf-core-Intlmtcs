@@ -1,6 +1,5 @@
 package com.acutest.cdaf.core.helpers;
 
-import com.acutest.cdaf.TestConfiguration;
 import org.apache.log4j.Logger;
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
@@ -10,10 +9,8 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
 
 import java.io.File;
-import java.io.FileInputStream;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Properties;
 
 public class DriverFactory {
 
@@ -29,14 +26,6 @@ public class DriverFactory {
             }
         }
     };
-
-    private String setProperties() throws Exception {
-        FileInputStream propFile = new FileInputStream("./src/test/resources/environment.properties");
-        Properties myProps = new Properties(System.getProperties());
-        myProps.load(propFile);
-        System.setProperties(myProps);
-        return System.getProperty("browser");
-    }
 
     String localDir = System.getProperty("user.dir");
     //File driverPath = new File(localDir + "\\src\\test\\resources\\driver\\chromedriver.exe");
