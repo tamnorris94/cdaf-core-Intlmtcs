@@ -44,14 +44,7 @@ public class DriverFactory {
     //private String filePath = "File driverPath = new File(\"C:\\\\cdaf_tools\\\\SeleniumWebDriver\\\\\");";
 
     // system variables
-    private String browser; //System.getProperty("browser");
-    {
-        try {
-            browser = setProperties();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
+    private String browser = System.getProperty("browser", "firefox");
 
     File driverPath = browser.equalsIgnoreCase("firefox") ? new File("C:\\cdaf_tools\\SeleniumWebDriver\\geckodriver.exe") : new File("C:\\cdaf_tools\\SeleniumWebDriver\\chromedriver.exe");
     //private String browser = "chrome";
