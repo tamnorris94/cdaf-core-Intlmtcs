@@ -9,6 +9,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebDriverException;
+import org.openqa.selenium.firefox.FirefoxDriver;
 
 import java.net.MalformedURLException;
 import java.util.List;
@@ -34,7 +35,7 @@ public class Hooks {
             Runtime.getRuntime().addShutdownHook(new Thread(){
                 public void run()  {
                     log.trace("Executing shutdownHook.");
-                    afterAll() ;
+                    afterAll();
                 }
             });
             // Add items here to run before all scenarios.
@@ -52,7 +53,6 @@ public class Hooks {
         if (isUsingWebdriver(scenario)) {
             DriverFactory driverFactory = new DriverFactory();
             driver = driverFactory.getDriver();
-
             driver.manage().deleteAllCookies();
             driver.manage().window().maximize();
             driverFactory.setImplicitWait(5); // Default value for rest of run
@@ -76,7 +76,10 @@ public class Hooks {
                         e2.printStackTrace();
                     }
                 }
+
             } finally {
+
+
 
                 // Use below line if you have a memory issue.
 //                new DriverFactory().destroyDriver();
@@ -101,8 +104,10 @@ public class Hooks {
      */
     public void afterAll(){
         log.trace("Executing afterAll");
-        // Add items here to run after tests
 
+
+// Add items here to run after tests
+        new DriverFactory().destroyDriver();
     }
 
 }

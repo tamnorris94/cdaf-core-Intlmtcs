@@ -1,6 +1,8 @@
 package com.acutest.cdaf.stepdefs;
 
 import com.acutest.cdaf.core.helpers.DriverFactory;
+import org.apache.commons.lang3.ObjectUtils;
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
@@ -11,9 +13,17 @@ import cucumber.api.PendingException;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import java.lang.Object;
+import java.util.List;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.WebElement;
+import junit.framework.*;
+import org.junit.Assert;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 public class JiraStepDefs {
 	private LoginPageObject loginPage;
@@ -22,6 +32,7 @@ public class JiraStepDefs {
 
 	private String acutesttrainingUrl =
 			"https://acutesttraining.atlassian.net/projects/CDFJ/issues";
+
 	private static Logger logger = LogManager.getLogger();
 
 	//public JiraStepDefs(SharedDriver webDriver) {
@@ -30,15 +41,20 @@ public class JiraStepDefs {
 	//	loginPage = new LoginPageObject(webDriver);
 	//	navigationBar = new NavigationBarObject(webDriver);
 	//}
-	@Given("^I am on the acutesttraining Jira instance$")
+	@Given("^user accesses acutesttraining project accessible to anonymous users$")
+	public void user_accesses_acutesttraining_project_accessible_to_anonymous_users() throws Throwable {
+		webDriver = new DriverFactory().getDriver();
+		//Jira Public Issue Page;
+	}
+	@Given("^I am on the acutesttraining Jira Instance$")
 	public void i_am_on_the_acutesttraining_Jira_instance() throws Throwable {
 		webDriver = new DriverFactory().getDriver();
 		webDriver.get(acutesttrainingUrl);
-		//loginPage.enterUsername("mike.jennings@acutest.co.uk");
+		loginPage.enterUsername("mike.jennings@acutest.co.uk");
 		String jiraPassword = System.getenv("JIRA_PASSWORD");
-		//loginPage.enterPassword(jiraPassword);
+		loginPage.enterPassword(jiraPassword);
 	}
-	@When("^I open page at \"([^\"]*)\"$")
+	@When("^user opens page at \"([^\"]*)\"$")
 	public void i_open_page_at(String arg1) throws Throwable {
 		webDriver.get(arg1);
 	}
@@ -53,11 +69,13 @@ public class JiraStepDefs {
 	    throw new PendingException();
 	}
 
-	@Then("^I the page should contain the word \"([^\"]*)\"$")
-	public void i_the_page_should_contain_the_word(String arg1) throws Throwable {
+	@Then("^the page contains the word \"([^\"]*)\"$")
+	public void i_the_page_should_contain_the_word(String arg1)throws Throwable {
 		// Write code here that turns the phrase above into concrete actions
-        String locator = String.format("//*[contains(text(), '%s')]", arg1);
-        webDriver.findElement(By.xpath(locator));
+        String locator = String.format(".//*[contains(text(), '%s')]", arg1);
+		webDriver.findElement(By.xpath(locator));
+		List<WebElement> elem = webDriver.findElements(By.xpath(locator));
+		assert(!elem.isEmpty());
 	}
 
 

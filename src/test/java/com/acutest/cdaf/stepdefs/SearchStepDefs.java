@@ -3,8 +3,6 @@ package com.acutest.cdaf.stepdefs;
 import static org.junit.Assert.assertEquals;
 
 import org.openqa.selenium.WebDriver;
-
-import com.acutest.cdaf.SharedDriver;
 import com.acutest.cdaf.pageobjects.search.SearchPageObject;
 
 import cucumber.api.java.en.Given;
@@ -15,10 +13,6 @@ public class SearchStepDefs {
 	private SearchPageObject searchPage;
 	private WebDriver webDriver;
 
-	public SearchStepDefs(SharedDriver webDriver) {
-		this.webDriver = webDriver;
-		searchPage = new SearchPageObject(webDriver);
-	}
 
 	@Given("^I am on the website '(.+)'$")
 	public void I_am_on_the_website(String url) throws Throwable {
