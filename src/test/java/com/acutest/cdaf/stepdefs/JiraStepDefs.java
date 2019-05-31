@@ -33,9 +33,6 @@ public class JiraStepDefs {
 	private String acutesttrainingUrl =
 			"https://acutesttraining.atlassian.net/projects/CDFJ/issues";
 
-	private String acutestJiraIssuePage =
-			"https://acutesttraining.atlassian.net/browse/PUBLICA-1";
-
 	private static Logger logger = LogManager.getLogger();
 
 	//public JiraStepDefs(SharedDriver webDriver) {
@@ -47,16 +44,15 @@ public class JiraStepDefs {
 	@Given("^user accesses acutesttraining project accessible to anonymous users$")
 	public void user_accesses_acutesttraining_project_accessible_to_anonymous_users() throws Throwable {
 		webDriver = new DriverFactory().getDriver();
-		webDriver.get(acutestJiraIssuePage);
 		//Jira Public Issue Page;
 	}
 	@Given("^I am on the acutesttraining Jira Instance$")
 	public void i_am_on_the_acutesttraining_Jira_instance() throws Throwable {
 		webDriver = new DriverFactory().getDriver();
 		webDriver.get(acutesttrainingUrl);
-		//loginPage.enterUsername("mike.jennings@acutest.co.uk");
+		loginPage.enterUsername("mike.jennings@acutest.co.uk");
 		String jiraPassword = System.getenv("JIRA_PASSWORD");
-		//loginPage.enterPassword(jiraPassword);
+		loginPage.enterPassword(jiraPassword);
 	}
 	@When("^user opens page at \"([^\"]*)\"$")
 	public void i_open_page_at(String arg1) throws Throwable {
