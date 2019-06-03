@@ -21,3 +21,5 @@ put a break point on line:
 String localDir = System.getProperty("user.dir");
 
 run test in debug.
+
+For chrome to work you need to use chromedriver 74.
