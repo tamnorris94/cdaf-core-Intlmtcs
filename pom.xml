@@ -184,9 +184,10 @@
             <scope>test</scope>
         </dependency>
         <dependency>
-        <groupId>org.jvnet.com4j</groupId>
-        <artifactId>com4j-parent</artifactId>
-        <version>2.1</version>
-        <type>pom</type>
+            <groupId>org.jvnet.com4j</groupId>
+            <artifactId>com4j-parent</artifactId>
+            <version>2.1</version>
+            <type>pom</type>
+        </dependency>
     </dependencies>
 </project>

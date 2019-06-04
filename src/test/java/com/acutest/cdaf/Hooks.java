@@ -22,7 +22,6 @@ public class Hooks {
     private WebDriver driver;
     private static boolean dunit = false;
 
-
     public Hooks() {
         log = Logger.getLogger(Hooks.class);
     }
@@ -41,9 +40,9 @@ public class Hooks {
                 }
             });
             // Add items here to run before all scenarios.
-            TestConfiguration.loadAPropertiesFile( "src/test/resources/testConfiguration.yaml");
+            //TestConfiguration.loadAPropertiesFile( "src/test/resources/testConfiguration.yaml");
 
-            FileInputStream propFile = new FileInputStream("./src/test/resources/environment.properties");
+            FileInputStream propFile = new FileInputStream("./src/test/resources/testConfiguration.yaml");
             Properties myProps = new Properties(System.getProperties());
             myProps.load(propFile);
             System.setProperties(myProps);
