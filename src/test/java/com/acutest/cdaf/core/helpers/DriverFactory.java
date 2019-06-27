@@ -16,11 +16,12 @@ import org.apache.logging.log4j.Logger;
  */
 public class DriverFactory {
 
-    protected String downloadFilepath = "C:\\Users\\Public\\Jenkins-Automation-Framework\\csvFiles\\adminReport\\";
+
     protected static WebDriver driver;
     private static Logger log = LogManager.getLogger();
+
     private static long implicitWaitTimeInSeconds;
-    private final Thread closeDriverThread = new Thread() {
+    private static final Thread closeDriverThread = new Thread() {
         @Override
         public void run() {
             if (driver != null) {
@@ -30,31 +31,42 @@ public class DriverFactory {
     };
 
     String localDir = System.getProperty("user.dir");
-    private String path = "C:\\cdaf_tools\\SeleniumWebDriver\\";
-    File driverPath;
-    // system variables
-    private String browser = System.getProperty("browser", "firefox");
-    private String driverExec;
-    private boolean isHeadless;
 
-    public DriverFactory() {
+    private static DriverFactory driverFactoryInstance;
+    private DriverFactory() {
+
 
         initialize();
 
     }
 
-    protected void initialize() {
-         if (driver == null)
-             createNewDriverInstance();
-     }
 
-    private void createNewDriverInstance() {
-        /**
-         * returns the instance of the webdriver
-         * @return
-         */
+    /**
+     * initialises the driver as a singleton if not already initialised otherwise returns driver
+     * @return
+     */
+    public static WebDriver initialize() {
+        if(driverFactoryInstance == null) {
+            driverFactoryInstance = new DriverFactory();
+            createNewDriverInstance();
+        }
+         return driver;
+    }
 
+   
 
+    /**
+     * Opens the browser specified in testConfiguration.yaml
+     *
+     */
+    private static void createNewDriverInstance() {
+        String downloadFilepath = "C:\\Users\\Public\\Jenkins-Automation-Framework\\csvFiles\\adminReport\\";
+        String path = "C:\\cdaf_tools\\SeleniumWebDriver\\";
+        File driverPath;
+        // system variables
+        String browser = System.getProperty("browser", "firefox");
+        String driverExec;
+        boolean isHeadless;
         switch (browser){
             case "firefox":
                 driverPath = new File(path + "geckodriver.exe");
@@ -107,6 +119,10 @@ public class DriverFactory {
         Assert.assertNotNull("Driver failed initialization", driver);
     }
 
+    /**
+     * returns the instance of the webdriver
+     * @return
+     */
     public WebDriver getDriver() {
         return driver;
     }
@@ -115,19 +131,17 @@ public class DriverFactory {
      * Quits the browser at the end of each scenario
      */
 
-    public void destroyDriver() {
+    public static void destroyDriver() {
 
         driver.quit();
         driver = null;
     }
 
-
-
-    public long getImplicitWait() {
+    public static long getImplicitWait() {
         return implicitWaitTimeInSeconds;
     }
 
-    public void setImplicitWait(long waitTime) {
+    public static void setImplicitWait(long waitTime) {
         DriverFactory.implicitWaitTimeInSeconds = waitTime;
     }
 }

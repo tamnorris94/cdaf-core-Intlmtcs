@@ -1,9 +1,10 @@
 package com.acutest.cdaf.pageobjects.jira;
 
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+
+import org.openqa.selenium.support.ui.*;
 
 /**
  * Class enables automatic login through username-and-password authentication
@@ -17,14 +18,13 @@ public class LoginPageObject {
      * Method initializes an instance of webdriver
      */
     public LoginPageObject(WebDriver webDriver) {
-        LoginPageObject.webDriver = webDriver;
+        this.webDriver = webDriver;
     }
 
     private By usernameField = By.id("username");
     private By ContinueButton = By.id("login-submit");
     private By passwordField = By.id("password");
     private By loginButton = By.id("login-submit");
-
 
     /**
      * @param username
@@ -49,5 +49,4 @@ public class LoginPageObject {
         element.sendKeys(password);
         webDriver.findElement(loginButton).click();
     }
-
 }

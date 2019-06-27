@@ -32,4 +32,7 @@ String localDir = System.getProperty("user.dir");
 
 run test in debug.
 
-For chrome to work you need to use chromedriver 74.
+Jira Password is set as an environment variable: JIRA_PASSWORD
+
+Current version of chromedriver is 74.
+

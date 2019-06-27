@@ -10,9 +10,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebDriverException;
 
 import java.io.FileInputStream;
+import java.io.InputStream;
 import java.net.MalformedURLException;
-import java.util.List;
-import java.util.Properties;
+import java.util.*;
 import java.util.concurrent.TimeUnit;
 
 
@@ -27,9 +27,11 @@ public class Hooks {
     public Hooks() {
     }
 
+
     /**
      * Method contains necessary setups and initializations needed in place before any tests can run
      */
+
     @Before
     public void beforeAll(Scenario scenario )throws Exception {
         log.trace("Executing beforeAll, about to check 'dunit' value");
@@ -44,13 +46,7 @@ public class Hooks {
                 }
             });
             // Add items here to run before all scenarios.
-            //TestConfiguration.loadAPropertiesFile( "src/test/resources/testConfiguration.yaml");
-
-            FileInputStream propFile = new FileInputStream("./src/test/resources/testConfiguration.yaml");
-            Properties myProps = new Properties(System.getProperties());
-            myProps.load(propFile);
-            System.setProperties(myProps);
-
+            TestConfiguration.loadAPropertiesFile("./src/test/resources/testConfiguration.yaml");
             dunit = true;
 
         }
@@ -65,12 +61,11 @@ public class Hooks {
         log.debug("@Before scenario " + scenario.getName());
 
         if (isUsingWebdriver(scenario)) {
-            DriverFactory driverFactory = new DriverFactory();
-            driver = driverFactory.getDriver();
+            driver = DriverFactory.initialize();
             driver.manage().deleteAllCookies();
             driver.manage().window().maximize();
-            driverFactory.setImplicitWait(5); // Default value for rest of run
-            driver.manage().timeouts().implicitlyWait(driverFactory.getImplicitWait(), TimeUnit.SECONDS);
+            DriverFactory.setImplicitWait(5); // Default value for rest of run
+            driver.manage().timeouts().implicitlyWait(DriverFactory.getImplicitWait(), TimeUnit.SECONDS);
         }
     }
 
@@ -107,6 +102,9 @@ public class Hooks {
     }
 
     /**
+     * determines if the scenario requires webdriver to be used
+     * @param scenario
+     * @return
      * Method returns a boolean value asserting whether webdriver is used
      */
     private boolean isUsingWebdriver(Scenario scenario) {
@@ -132,7 +130,7 @@ public class Hooks {
 
 
 // Add items here to run after tests
-        new DriverFactory().destroyDriver();
+        DriverFactory.destroyDriver();
     }
 
 }
