@@ -21,3 +21,5 @@ put a break point on line:
 String localDir = System.getProperty("user.dir");
 
 run test in debug.
+
+Jira Password is set as an environment variable: JIRA_PASSWORD
