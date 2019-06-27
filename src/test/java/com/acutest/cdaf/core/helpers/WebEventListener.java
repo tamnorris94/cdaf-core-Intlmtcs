@@ -1,7 +1,8 @@
 package com.acutest.cdaf.core.helpers;
 
-import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -9,7 +10,7 @@ import org.openqa.selenium.support.events.WebDriverEventListener;
 
 public class WebEventListener implements WebDriverEventListener {
 
-    protected static Logger log = Logger.getLogger(WebEventListener.class);
+    private static Logger log = LogManager.getLogger();
     protected boolean isFeedbackToRemove = true;
 
     @Override

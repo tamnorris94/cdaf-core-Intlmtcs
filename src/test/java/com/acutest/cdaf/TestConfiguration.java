@@ -3,6 +3,9 @@ package com.acutest.cdaf;
 import java.io.*;
 import java.util.*;
 import com.esotericsoftware.yamlbeans.YamlReader;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 /**
  * Created by Mike Jennings 11/11/2017, based on implementation by Peter Gale.
  *
@@ -14,6 +17,7 @@ import com.esotericsoftware.yamlbeans.YamlReader;
 public class TestConfiguration {
     public static Properties properties = new Properties();
 
+    private static Logger log = LogManager.getLogger();
     public static String getProperty(String propertyName) {
         String propertyValue = properties.getProperty(propertyName);
         if (propertyValue == null || propertyValue.equals("")) {

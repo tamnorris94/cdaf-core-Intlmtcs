@@ -4,7 +4,6 @@ import com.acutest.cdaf.core.helpers.DriverFactory;
 import cucumber.api.Scenario;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
-import org.apache.log4j.Logger;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -17,13 +16,16 @@ import java.util.List;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 public class Hooks {
-    private static Logger log;
+    private static Logger log = LogManager.getLogger();
     private WebDriver driver;
     private static boolean dunit = false;
 
     public Hooks() {
-        log = Logger.getLogger(Hooks.class);
     }
 
     @Before
