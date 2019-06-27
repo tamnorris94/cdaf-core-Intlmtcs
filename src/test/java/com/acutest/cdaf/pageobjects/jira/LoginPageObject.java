@@ -1,6 +1,5 @@
 package com.acutest.cdaf.pageobjects.jira;
 
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -10,13 +9,13 @@ public class LoginPageObject {
     private static WebDriver webDriver;
 
     public LoginPageObject(WebDriver webDriver) {
-        LoginPageObject.webDriver = webDriver;
+        this.webDriver = webDriver;
     }
 
     private By usernameField = By.id("username");
     private By nextButton = By.id("login-submit");
     private By passwordField = By.id("password");
-
+    private By loginButton = By.id("login-submit");
 
     public void enterUsername(String username) {
         WebElement webElement = webDriver.findElement(usernameField);
@@ -25,9 +24,9 @@ public class LoginPageObject {
     }
 
     public void enterPassword(String password) {
-        WebElement webElement = webDriver.findElement(passwordField);
-        webElement.sendKeys(password);
-        webDriver.findElement(nextButton).click();
+        WebDriverWait wait = new WebDriverWait(webDriver, 10);
+        WebElement element = wait.until(ExpectedConditions.elementToBeClickable(passwordField));
+        element.sendKeys(password);
+        webDriver.findElement(loginButton).click();
     }
-
 }

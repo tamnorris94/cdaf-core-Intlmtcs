@@ -12,9 +12,9 @@ import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 import java.io.FileInputStream;
+import java.io.InputStream;
 import java.net.MalformedURLException;
-import java.util.List;
-import java.util.Properties;
+import java.util.*;
 import java.util.concurrent.TimeUnit;
 
 public class Hooks {
@@ -26,6 +26,7 @@ public class Hooks {
         log = Logger.getLogger(Hooks.class);
     }
 
+
     @Before
     public void beforeAll(Scenario scenario )throws Exception {
         log.trace("Executing beforeAll, about to check 'dunit' value");
@@ -36,17 +37,11 @@ public class Hooks {
             Runtime.getRuntime().addShutdownHook(new Thread(){
                 public void run()  {
                     log.trace("Executing shutdownHook.");
-                    afterAll();
+                    //afterAll();
                 }
             });
             // Add items here to run before all scenarios.
-            //TestConfiguration.loadAPropertiesFile( "src/test/resources/testConfiguration.yaml");
-
-            FileInputStream propFile = new FileInputStream("./src/test/resources/testConfiguration.yaml");
-            Properties myProps = new Properties(System.getProperties());
-            myProps.load(propFile);
-            System.setProperties(myProps);
-
+            TestConfiguration.loadAPropertiesFile("./src/test/resources/testConfiguration.yaml");
             dunit = true;
 
         }
@@ -58,12 +53,11 @@ public class Hooks {
         log.debug("@Before scenario " + scenario.getName());
 
         if (isUsingWebdriver(scenario)) {
-            DriverFactory driverFactory = new DriverFactory();
-            driver = driverFactory.getDriver();
+            driver = DriverFactory.initialize();
             driver.manage().deleteAllCookies();
             driver.manage().window().maximize();
-            driverFactory.setImplicitWait(5); // Default value for rest of run
-            driver.manage().timeouts().implicitlyWait(driverFactory.getImplicitWait(), TimeUnit.SECONDS);
+            DriverFactory.setImplicitWait(5); // Default value for rest of run
+            driver.manage().timeouts().implicitlyWait(DriverFactory.getImplicitWait(), TimeUnit.SECONDS);
         }
     }
 
@@ -94,6 +88,11 @@ public class Hooks {
         }
     }
 
+    /**
+     * determines if the scenario requires webdriver to be used
+     * @param scenario
+     * @return
+     */
     private boolean isUsingWebdriver(Scenario scenario) {
         boolean isWeb = true;
         List<String> scenarioTagList = (List<String>) scenario.getSourceTagNames();
@@ -114,7 +113,7 @@ public class Hooks {
 
 
 // Add items here to run after tests
-        new DriverFactory().destroyDriver();
+        DriverFactory.destroyDriver();
     }
 
 }

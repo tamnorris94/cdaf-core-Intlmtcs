@@ -12,13 +12,20 @@ import java.io.File;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * This class selects which browser to open before each scenario and closes the browser at the end.
+ *
+ * @author  Mike Jennings
+ * @author George Cooper
+ * @version 1.0
+ * @since   2019-05-26
+ */
 public class DriverFactory {
 
-    protected String downloadFilepath = "C:\\Users\\Public\\Jenkins-Automation-Framework\\csvFiles\\adminReport\\";
-    protected static WebDriver driver;
+    private static WebDriver driver;
     protected static Logger log;
     private static long implicitWaitTimeInSeconds;
-    private final Thread closeDriverThread = new Thread() {
+    private static final Thread closeDriverThread = new Thread() {
         @Override
         public void run() {
             if (driver != null) {
@@ -28,27 +35,38 @@ public class DriverFactory {
     };
 
     String localDir = System.getProperty("user.dir");
-    private String path = "C:\\cdaf_tools\\SeleniumWebDriver\\";
-    File driverPath;
-    // system variables
-    private String browser = System.getProperty("browser", "firefox");
-    private String driverExec;
-    private boolean isHeadless;
 
-    public DriverFactory() {
+    private static DriverFactory driverFactoryInstance;
+    private DriverFactory() {
 
         log = Logger.getLogger(DriverFactory.class);
-        initialize();
 
     }
 
-    protected void initialize() {
-         if (driver == null)
-             createNewDriverInstance();
-     }
+    /**
+     * initialises the driver as a singleton if not already initialised otherwise returns driver
+     * @return
+     */
+    public static WebDriver initialize() {
+        if(driverFactoryInstance == null) {
+            driverFactoryInstance = new DriverFactory();
+            createNewDriverInstance();
+        }
+         return driver;
+    }
 
-    private void createNewDriverInstance() {
-
+    /**
+     * Opens the browser specified in testConfiguration.yaml
+     *
+     */
+    private static void createNewDriverInstance() {
+        String downloadFilepath = "C:\\Users\\Public\\Jenkins-Automation-Framework\\csvFiles\\adminReport\\";
+        String path = "C:\\cdaf_tools\\SeleniumWebDriver\\";
+        File driverPath;
+        // system variables
+        String browser = System.getProperty("browser", "firefox");
+        String driverExec;
+        boolean isHeadless;
         switch (browser){
             case "firefox":
                 driverPath = new File(path + "geckodriver.exe");
@@ -101,22 +119,27 @@ public class DriverFactory {
         Assert.assertNotNull("Driver failed initialization", driver);
     }
 
+    /**
+     * returns the instance of the webdriver
+     * @return
+     */
     public WebDriver getDriver() {
         return driver;
     }
 
-    public void destroyDriver() {
+    /**
+     * Quits the browser at the end of each scenario
+     */
+    public static void destroyDriver() {
         driver.quit();
         driver = null;
     }
 
-
-
-    public long getImplicitWait() {
+    public static long getImplicitWait() {
         return implicitWaitTimeInSeconds;
     }
 
-    public void setImplicitWait(long waitTime) {
+    public static void setImplicitWait(long waitTime) {
         DriverFactory.implicitWaitTimeInSeconds = waitTime;
     }
 }
