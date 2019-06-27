@@ -37,7 +37,7 @@ public class Hooks {
             Runtime.getRuntime().addShutdownHook(new Thread(){
                 public void run()  {
                     log.trace("Executing shutdownHook.");
-                    //afterAll();
+                    afterAll();
                 }
             });
             // Add items here to run before all scenarios.
