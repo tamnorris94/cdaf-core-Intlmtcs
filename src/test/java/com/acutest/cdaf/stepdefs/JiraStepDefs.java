@@ -20,11 +20,6 @@ import org.openqa.selenium.WebElement;
 
 /**
  * Executes the steps defined in feature files
- *
- * @author Mike Jennings
- * @author George Cooper
- * @author Urim Haxhiaj
- * @since 2019/05/25
  */
 
 public class JiraStepDefs {
