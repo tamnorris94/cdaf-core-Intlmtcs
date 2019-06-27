@@ -5,29 +5,49 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-
+/**
+ * Class enables automatic login through username-and-password authentication
+ */
 public class LoginPageObject {
+
     private static WebDriver webDriver;
 
+    /**
+     * @param webDriver
+     * Method initializes an instance of webdriver
+     */
     public LoginPageObject(WebDriver webDriver) {
         LoginPageObject.webDriver = webDriver;
     }
 
     private By usernameField = By.id("username");
-    private By nextButton = By.id("login-submit");
+    private By ContinueButton = By.id("login-submit");
     private By passwordField = By.id("password");
+    private By loginButton = By.id("login-submit");
 
 
+    /**
+     * @param username
+     * Method locates username field and inputs a given username, then navigates
+     * to next page
+     */
     public void enterUsername(String username) {
+
         WebElement webElement = webDriver.findElement(usernameField);
         webElement.sendKeys(username);
-        webDriver.findElement(nextButton).click();
+        webDriver.findElement(ContinueButton).click();
     }
 
+    /**
+     * @param password
+     *Method locates password field and inputs a given password, then navigates
+     *to next page
+     */
     public void enterPassword(String password) {
-        WebElement webElement = webDriver.findElement(passwordField);
-        webElement.sendKeys(password);
-        webDriver.findElement(nextButton).click();
+        WebDriverWait wait = new WebDriverWait(webDriver, 10);
+        WebElement element = wait.until(ExpectedConditions.elementToBeClickable(passwordField));
+        element.sendKeys(password);
+        webDriver.findElement(loginButton).click();
     }
 
 }

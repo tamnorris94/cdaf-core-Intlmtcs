@@ -11,6 +11,9 @@ import java.util.Map;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+/**
+ * This class selects which browser to open before each scenario and closes the browser at the end.
+ */
 public class DriverFactory {
 
     protected String downloadFilepath = "C:\\Users\\Public\\Jenkins-Automation-Framework\\csvFiles\\adminReport\\";
@@ -46,6 +49,11 @@ public class DriverFactory {
      }
 
     private void createNewDriverInstance() {
+        /**
+         * returns the instance of the webdriver
+         * @return
+         */
+
 
         switch (browser){
             case "firefox":
@@ -103,7 +111,12 @@ public class DriverFactory {
         return driver;
     }
 
+    /**
+     * Quits the browser at the end of each scenario
+     */
+
     public void destroyDriver() {
+
         driver.quit();
         driver = null;
     }
