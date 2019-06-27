@@ -2,17 +2,6 @@
 # Mike Jennings 2017-08-21 CDAF-13
 
 # Jira password is set by environment variable JIRA_PASSWORD
-jira:
-  host: acutesttraining.atlassian.net
-  defaultUser: mike.jennings@acutest.co.uk
-  makeUpdates: false # switch to indicate not to update Jira with outcome.
-  customfieldId:
-    executionStatus: 10817
-    impactOfFailure: 10500
-    likelihoodOfFailure: 10501
-    risk Priority: 10809
-#
-# Test run parameters
-testrun:
-  featurefileLocation: target/test-classes/cucumber/features
-  cucumberOptionGlue: com.acutest.cdaf.stepdefs
+webdriver:
+  location: C:\cdaf_tools\SeleniumWebDriver
+  driver: firefox
