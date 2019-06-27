@@ -4,12 +4,12 @@ import com.acutest.cdaf.core.helpers.DriverFactory;
 import cucumber.api.Scenario;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
+import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebDriverException;
-import org.openqa.selenium.firefox.FirefoxDriver;
 
 import java.io.FileInputStream;
 import java.net.MalformedURLException;
@@ -27,6 +27,9 @@ public class Hooks {
         log = Logger.getLogger(Hooks.class);
     }
 
+    /**
+     * Method contains necessary setups and initializations needed in place before any tests can run
+     */
     @Before
     public void beforeAll(Scenario scenario )throws Exception {
         log.trace("Executing beforeAll, about to check 'dunit' value");
@@ -53,6 +56,9 @@ public class Hooks {
         }
     }
 
+    /**
+     * Method contains setups and initializations that need to be in place before each scenarion run
+     */
     @Before
     public void beforeEachScenario(Scenario scenario) throws MalformedURLException {
 
@@ -68,6 +74,11 @@ public class Hooks {
         }
     }
 
+    /**
+     * Method contains statements that terminate or shut down setups after each scenario has
+     * finished running
+     *
+     */
     @After
     public void afterEachScenario(Scenario scenario) {
         log.debug("@After scenario " + scenario.getName());
@@ -95,6 +106,9 @@ public class Hooks {
         }
     }
 
+    /**
+     * Method returns a boolean value asserting whether webdriver is used
+     */
     private boolean isUsingWebdriver(Scenario scenario) {
         boolean isWeb = true;
         List<String> scenarioTagList = (List<String>) scenario.getSourceTagNames();
@@ -109,6 +123,9 @@ public class Hooks {
     }
     /**
      * AFTER ALL SCENARIOS AND FEATURES
+     */
+    /**
+     * Method deletes the driver instance after scenarios have finished running
      */
     public void afterAll(){
         log.trace("Executing afterAll");
