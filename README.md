@@ -1,7 +1,17 @@
 # cdaf-core
-Acutest continuous delivery automation framework core component. Baseline for client specific implementations.
+Acutest continuous delivery automation framework core component.
+Baseline for client specific implementations.
 
-Configured so you can choose between running tests in either firefox of chrome. Possible to update framework to accept other browers in the future.
+This implementation includes a webdriver session by default. Firefox or chrome
+can be selected by setting the configuration file, or overidden by run time option.
+
+Webdriver agents are to be installed in C:\cdaf_tools\SeleniumWebDriver. You can set the location
+in testConfig.yaml.
+
+For an installation test run the feature "ReadPublicJiraIssue".
+
+Configured so you can choose between running tests in either firefox of chrome.
+Possible to update framework to accept other browers in the future.
 
 Default setting is firefox.
 
@@ -23,3 +33,6 @@ String localDir = System.getProperty("user.dir");
 run test in debug.
 
 Jira Password is set as an environment variable: JIRA_PASSWORD
+
+Current version of chromedriver is 74.
+

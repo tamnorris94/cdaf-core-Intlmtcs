@@ -1,24 +1,25 @@
 package com.acutest.cdaf.core.helpers;
-
-import org.apache.log4j.Logger;
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
-
 import java.io.File;
 import java.util.HashMap;
 import java.util.Map;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 /**
  * This class selects which browser to open before each scenario and closes the browser at the end.
  */
 public class DriverFactory {
 
-    private static WebDriver driver;
-    protected static Logger log;
+
+    protected static WebDriver driver;
+    private static Logger log = LogManager.getLogger();
+
     private static long implicitWaitTimeInSeconds;
     private static final Thread closeDriverThread = new Thread() {
         @Override
@@ -34,7 +35,8 @@ public class DriverFactory {
     private static DriverFactory driverFactoryInstance;
     private DriverFactory() {
 
-        log = Logger.getLogger(DriverFactory.class);
+
+        initialize();
 
     }
 
