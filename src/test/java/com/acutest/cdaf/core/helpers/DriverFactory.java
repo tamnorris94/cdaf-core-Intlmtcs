@@ -13,11 +13,6 @@ import org.apache.logging.log4j.Logger;
 
 /**
  * This class selects which browser to open before each scenario and closes the browser at the end.
- *
- * @author  Mike Jennings
- * @author George Cooper
- * @version 1.0
- * @since   2019-05-26
  */
 public class DriverFactory {
 
