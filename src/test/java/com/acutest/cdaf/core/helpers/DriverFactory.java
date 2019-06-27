@@ -40,6 +40,7 @@ public class DriverFactory {
 
     }
 
+
     /**
      * initialises the driver as a singleton if not already initialised otherwise returns driver
      * @return
@@ -51,6 +52,8 @@ public class DriverFactory {
         }
          return driver;
     }
+
+   
 
     /**
      * Opens the browser specified in testConfiguration.yaml
@@ -127,7 +130,9 @@ public class DriverFactory {
     /**
      * Quits the browser at the end of each scenario
      */
+
     public static void destroyDriver() {
+
         driver.quit();
         driver = null;
     }

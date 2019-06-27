@@ -8,7 +8,6 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebDriverException;
-import org.openqa.selenium.firefox.FirefoxDriver;
 
 import java.io.FileInputStream;
 import java.io.InputStream;
@@ -28,6 +27,10 @@ public class Hooks {
     public Hooks() {
     }
 
+
+    /**
+     * Method contains necessary setups and initializations needed in place before any tests can run
+     */
 
     @Before
     public void beforeAll(Scenario scenario )throws Exception {
@@ -49,6 +52,9 @@ public class Hooks {
         }
     }
 
+    /**
+     * Method contains setups and initializations that need to be in place before each scenarion run
+     */
     @Before
     public void beforeEachScenario(Scenario scenario) throws MalformedURLException {
 
@@ -63,6 +69,11 @@ public class Hooks {
         }
     }
 
+    /**
+     * Method contains statements that terminate or shut down setups after each scenario has
+     * finished running
+     *
+     */
     @After
     public void afterEachScenario(Scenario scenario) {
         log.debug("@After scenario " + scenario.getName());
@@ -94,6 +105,7 @@ public class Hooks {
      * determines if the scenario requires webdriver to be used
      * @param scenario
      * @return
+     * Method returns a boolean value asserting whether webdriver is used
      */
     private boolean isUsingWebdriver(Scenario scenario) {
         boolean isWeb = true;
@@ -109,6 +121,9 @@ public class Hooks {
     }
     /**
      * AFTER ALL SCENARIOS AND FEATURES
+     */
+    /**
+     * Method deletes the driver instance after scenarios have finished running
      */
     public void afterAll(){
         log.trace("Executing afterAll");

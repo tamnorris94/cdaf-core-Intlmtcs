@@ -2,12 +2,14 @@ package com.acutest.cdaf.stepdefs;
 
 import com.acutest.cdaf.core.helpers.DriverFactory;
 import org.apache.commons.lang3.ObjectUtils;
+
 import org.junit.Assert;
 import org.openqa.selenium.*;
 
+
+
 import com.acutest.cdaf.pageobjects.jira.LoginPageObject;
 import com.acutest.cdaf.pageobjects.jira.NavigationBarObject;
-
 import cucumber.api.PendingException;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -17,11 +19,14 @@ import java.util.List;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+
 import junit.framework.*;
 import org.junit.Assert;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
+
+/**
+ * Executes the steps defined in feature files
+ */
 
 import com.acutest.cdaf.engine.*;
 
@@ -29,7 +34,11 @@ import com.acutest.cdaf.engine.*;
  * Executes the steps defined in feature files
  */
 public class JiraStepDefs {
-	private LoginPageObject loginPage;
+	/**
+	 * Navigates to acutest's publica Jira page which doesn't require authentication
+	 * @throws Throwable
+	 */
+
 	private NavigationBarObject navigationBar;
 	protected WebDriver webDriver = DriverFactory.initialize();
 	protected LoginPageObject loginPage;
@@ -51,7 +60,13 @@ public class JiraStepDefs {
 	 */
 	@Given("^user accesses acutesttraining project accessible to anonymous users$")
 	public void user_accesses_acutesttraining_project_accessible_to_anonymous_users() throws Throwable {
-		//webDriver = new DriverFactory().getDriver();
+		/**
+		 * navigates to Jira login page, enters username specified in testConfuration.yaml
+		 * and password from environment variables
+		 * @throws Throwable
+		 */
+
+		webDriver = new DriverFactory().getDriver();
 		//Jira Public Issue Page;
 	}
 
@@ -73,9 +88,11 @@ public class JiraStepDefs {
 	/**
 	 * Navigates to specific page in browser
 	 *
+
 	 * @param webPage
 	 * @throws Throwable
 	 */
+
 	@When("^user opens page at \"([^\"]*)\"$")
 	public void i_open_page_at(String webPage) throws Throwable {
 		webDriver.get(webPage);
@@ -92,7 +109,7 @@ public class JiraStepDefs {
 	}
 
 	/**
-	 * Returns the title of a jira page and compares against expected title
+	 * Returns the title of a jira page and compares against expected title.
 	 * @param title
 	 * @throws Throwable
 	 */
