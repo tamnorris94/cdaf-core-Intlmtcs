@@ -1,16 +1,15 @@
 package com.acutest.cdaf.core.helpers;
-
-import org.apache.log4j.Logger;
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
-
 import java.io.File;
 import java.util.HashMap;
 import java.util.Map;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 /**
  * This class selects which browser to open before each scenario and closes the browser at the end.
@@ -24,7 +23,7 @@ public class DriverFactory {
 
     protected String downloadFilepath = "C:\\Users\\Public\\Jenkins-Automation-Framework\\csvFiles\\adminReport\\";
     protected static WebDriver driver;
-    protected static Logger log;
+    private static Logger log = LogManager.getLogger();
     private static long implicitWaitTimeInSeconds;
     private final Thread closeDriverThread = new Thread() {
         @Override
@@ -45,7 +44,6 @@ public class DriverFactory {
 
     public DriverFactory() {
 
-        log = Logger.getLogger(DriverFactory.class);
         initialize();
 
     }
@@ -69,6 +67,7 @@ public class DriverFactory {
                 isHeadless = Boolean.valueOf(System.getProperty("headless", "false"));
                 System.setProperty("webdriver.gecko.driver", driverExec);
                 driver = new FirefoxDriver();
+                Runtime.getRuntime().addShutdownHook(closeDriverThread);
                 break;
             case "chrome":
                 driverPath = new File(path + "chromedriver.exe");
