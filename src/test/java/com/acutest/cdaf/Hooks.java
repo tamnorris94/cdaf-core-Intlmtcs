@@ -119,6 +119,7 @@ public class Hooks {
         }
         return isWeb;
     }
+
     /**
      * AFTER ALL SCENARIOS AND FEATURES
      */

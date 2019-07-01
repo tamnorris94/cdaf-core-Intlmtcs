@@ -3,5 +3,5 @@
 
 # Jira password is set by environment variable JIRA_PASSWORD
 webdriver:
-  location: C:\cdaf_tools\SeleniumWebDriver
+  location: C:\cdaf_tools\SeleniumWebDriver\
   driver: firefox

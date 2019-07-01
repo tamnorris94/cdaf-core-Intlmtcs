@@ -36,7 +36,7 @@ public class DriverFactory {
     private DriverFactory() {
 
 
-        initialize();
+        //initialize();
 
     }
 
@@ -64,7 +64,7 @@ public class DriverFactory {
         String path = "C:\\cdaf_tools\\SeleniumWebDriver\\";
         File driverPath;
         // system variables
-        String browser = System.getProperty("browser", "firefox");
+        String browser = System.getProperty("webdriver.driver", "firefox");
         String driverExec;
         boolean isHeadless;
         switch (browser){

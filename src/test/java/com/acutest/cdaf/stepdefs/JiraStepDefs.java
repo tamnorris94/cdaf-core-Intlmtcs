@@ -27,17 +27,7 @@ import org.junit.Assert;
 /**
  * Executes the steps defined in feature files
  */
-
-import com.acutest.cdaf.engine.*;
-
-/**
- * Executes the steps defined in feature files
- */
 public class JiraStepDefs {
-	/**
-	 * Navigates to acutest's publica Jira page which doesn't require authentication
-	 * @throws Throwable
-	 */
 
 	private NavigationBarObject navigationBar;
 	protected WebDriver webDriver = DriverFactory.initialize();
@@ -66,7 +56,7 @@ public class JiraStepDefs {
 		 * @throws Throwable
 		 */
 
-		webDriver = new DriverFactory().getDriver();
+		webDriver = DriverFactory.initialize();
 		//Jira Public Issue Page;
 	}
 
@@ -79,7 +69,7 @@ public class JiraStepDefs {
 	public void i_am_on_the_acutesttraining_Jira_instance() throws Throwable {
 		webDriver.get(acutesttrainingUrl);
         LoginPageObject loginPage = new LoginPageObject(webDriver);
-		String userName = System.getProperty("jiraUsername");
+		String userName = System.getProperty("jira.jiraUsername");
 		loginPage.enterUsername(userName);
 		String jiraPassword = System.getenv("JIRA_PASSWORD");
 		loginPage.enterPassword(jiraPassword);
