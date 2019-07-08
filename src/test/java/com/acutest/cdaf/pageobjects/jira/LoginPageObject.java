@@ -48,5 +48,6 @@ public class LoginPageObject {
         WebElement element = wait.until(ExpectedConditions.elementToBeClickable(passwordField));
         element.sendKeys(password);
         webDriver.findElement(loginButton).click();
+        webDriver.findElement(By.className("icon aui-ss-icon noloading drop-menu"));
     }
 }
