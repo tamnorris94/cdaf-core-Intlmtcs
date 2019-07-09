@@ -48,6 +48,9 @@ public class LoginPageObject {
         WebElement element = wait.until(ExpectedConditions.elementToBeClickable(passwordField));
         element.sendKeys(password);
         webDriver.findElement(loginButton).click();
-        webDriver.findElement(By.className("icon aui-ss-icon noloading drop-menu"));
+        //element = wait.until(ExpectedConditions.elementToBeClickable(By.id("createGlobalIssue")));
+        //webDriver.findElement(By.id("createGlobalIssue")).click();
+        //element = wait.until(ExpectedConditions.elementToBeClickable(By.id("create-issue-submit")));
+        //webDriver.findElement(By.id("createGlobalIssue"));
     }
 }

@@ -1,4 +1,4 @@
-#@web @dev
+
 Feature: Read public jira issue page.
 
   Scenario: Check title of issue PUBLICA-1

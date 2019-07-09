@@ -27,7 +27,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
  */
 public class JiraStepDefs {
 
-	private NavigationBarObject navigationBar;
+	protected NavigationBarObject navigationBar;
 	protected WebDriver webDriver = DriverFactory.initialize();
 	protected LoginPageObject loginPage;
 	protected JiraIssue jiraIssue;
@@ -101,10 +101,12 @@ public class JiraStepDefs {
 	 *
 	 * @throws Throwable
 	 */
+
 	@When("^user creates a new issue with description \"([^\"]*)\", summary \"([^\"]*)\"$")
-	public void user_creates_a_new_issue(String descr, String Summary, String ex_Status) throws Throwable {
-		//webDriver.get("https://acutesttraining.atlassian.net/projects/CDAFSBXC/issues");
+	public void user_creates_a_new_issue(String descr, String Summary) throws Throwable {
+		NavigationBarObject navigationBar = new NavigationBarObject(webDriver);
 		navigationBar.create();
+		JiraIssue jiraIssue = new JiraIssue(webDriver);
 		jiraIssue.enterStoryDetails(Summary, descr);
 	}
 
