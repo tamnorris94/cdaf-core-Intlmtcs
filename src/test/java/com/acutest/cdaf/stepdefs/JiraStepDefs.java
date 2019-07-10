@@ -106,8 +106,12 @@ public class JiraStepDefs {
 	public void user_creates_a_new_issue(String descr, String Summary) throws Throwable {
 		NavigationBarObject navigationBar = new NavigationBarObject(webDriver);
 		navigationBar.create();
+
 		JiraIssue jiraIssue = new JiraIssue(webDriver);
 		jiraIssue.enterStoryDetails(Summary, descr);
+		navigationBar.search();
+		//jiraIssue.addTestAttributes(String)
+
 	}
 
 	@When("^user sets risk impact \"([^\"]*)\" and risk likelihood \"([^\"]*)\", and adds the following comment \"([^\"]*)\"$")

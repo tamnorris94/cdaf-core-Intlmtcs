@@ -51,6 +51,5 @@ public class LoginPageObject {
         //element = wait.until(ExpectedConditions.elementToBeClickable(By.id("createGlobalIssue")));
         //webDriver.findElement(By.id("createGlobalIssue")).click();
         //element = wait.until(ExpectedConditions.elementToBeClickable(By.id("create-issue-submit")));
-        //webDriver.findElement(By.id("createGlobalIssue"));
     }
 }
