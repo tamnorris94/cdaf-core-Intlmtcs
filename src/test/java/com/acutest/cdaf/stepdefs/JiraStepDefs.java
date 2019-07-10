@@ -102,22 +102,21 @@ public class JiraStepDefs {
 	 * @throws Throwable
 	 */
 
-	@When("^user creates a new issue with description \"([^\"]*)\", summary \"([^\"]*)\"$")
-	public void user_creates_a_new_issue(String descr, String Summary) throws Throwable {
+	@When("^user creates a new issue with description \"([^\"]*)\", summary \"([^\"]*)\", Project Name \"([^\"]*)\"$")
+	public void user_creates_a_new_issue(String descr, String summary, String projectName) throws Throwable {
 		NavigationBarObject navigationBar = new NavigationBarObject(webDriver);
 		navigationBar.create();
 
 		JiraIssue jiraIssue = new JiraIssue(webDriver);
-		jiraIssue.enterStoryDetails(Summary, descr);
+		jiraIssue.enterStoryDetails(summary, descr, projectName);
 		navigationBar.search();
-		//jiraIssue.addTestAttributes(String)
 
 	}
 
-	@When("^user sets risk impact \"([^\"]*)\" and risk likelihood \"([^\"]*)\", and adds the following comment \"([^\"]*)\"$")
-	public void user_sets_attributes(String risk_Impact, String risk_like, String comment) throws Throwable
+	@When("^user provides \"([^\"]*)\", risk impact \"([^\"]*)\" and risk likelihood \"([^\"]*)\", test execution status \"([^\"]*)\" and comment \"([^\"]*)\"$")
+	public void user_provides_attributes(String summary, String riskImpact, String riskLike, String execStatus, String comment) throws Throwable
 	{
-
+		jiraIssue.addTestAttributes(summary, riskImpact, riskLike, execStatus, comment);
 	}
 	/**
 	 * Returns the title of a jira page and compares against expected title.
