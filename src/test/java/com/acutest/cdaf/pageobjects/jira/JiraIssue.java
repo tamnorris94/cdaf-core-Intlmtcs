@@ -49,20 +49,20 @@ public class JiraIssue {
         //String issueKey = webDriver.switchTo().alert().getText();
         //element = wait.until(ExpectedConditions.elementToBeClickable(issueLink));
         //webDriver.findElement(issueLink).click();
-        try {
-          Thread.sleep(15000);
-        } catch(InterruptedException e) {
-            System.out.println("got interrupted!");
-        }
         //element = wait.until(ExpectedConditions.elementToBeClickable(issueLink));
         //element = wait.until(ExpectedConditions.elementToBeClickable(By.className("Icon__IconWrapper-dyhwwi-0 jdkWJB")));
 
     }
-    public void addTestAttributes(String summary, String riskImpact, String riskLikelihood, String execStatus,String comment)
+    public void addTestAttributes(String summary, String riskImpact, String riskLikelihood, String execStatus,String comment) throws Throwable
     {
         WebDriverWait wait = new WebDriverWait(webDriver, 15);
         WebElement element = wait.until(ExpectedConditions.elementToBeClickable(By.id("quickSearchGlobalItem")));
         webDriver.findElement(By.id("quickSearchGlobalItem")).click();
+        try {
+            Thread.sleep(15000);
+        } catch(InterruptedException e) {
+            System.out.println("got interrupted!");
+        }
         element = wait.until(ExpectedConditions.elementToBeClickable(searchBox));
         webDriver.findElement(searchBox).sendKeys(summary);
         element = wait.until(ExpectedConditions.elementToBeClickable(wantedSearchItem));

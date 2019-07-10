@@ -109,7 +109,7 @@ public class JiraStepDefs {
 
 		JiraIssue jiraIssue = new JiraIssue(webDriver);
 		jiraIssue.enterStoryDetails(summary, descr, projectName);
-		navigationBar.search();
+		//navigationBar.search();
 
 	}
 
