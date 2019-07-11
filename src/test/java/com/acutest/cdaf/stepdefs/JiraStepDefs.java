@@ -113,10 +113,13 @@ public class JiraStepDefs {
 
 	}
 
-	@When("^user provides \"([^\"]*)\", risk impact \"([^\"]*)\" and risk likelihood \"([^\"]*)\", test execution status \"([^\"]*)\" and comment \"([^\"]*)\"$")
-	public void user_provides_attributes(String summary, String riskImpact, String riskLike, String execStatus, String comment) throws Throwable
+	@When("^user provides \"([^\"]*)\", description \"([^\"]*)\", automation status\"([^\"]*)\", risk likelihood\"([^\"]*)\", risk impact \"([^\"]*)\", execution status\"([^\"]*)\" comment \"([^\"]*)\"$")
+	public void user_provides_attributes(String summary, String description2, String autoStatus, String riskLi, String riskIm, String execStatus, String comment) throws Throwable
 	{
-		jiraIssue.addTestAttributes(summary, riskImpact, riskLike, execStatus, comment);
+		//NavigationBarObject navigationBar = new NavigationBarObject(webDriver);
+		//navigationBar.search();
+		JiraIssue jiraIssue = new JiraIssue(webDriver);
+		jiraIssue.addTestAttributes(summary, description2, autoStatus, riskLi, riskIm, execStatus, comment);
 	}
 	/**
 	 * Returns the title of a jira page and compares against expected title.
