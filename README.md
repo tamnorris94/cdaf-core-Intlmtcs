@@ -14,7 +14,7 @@ check in maven logs for the line: [ERROR] Sent successfully{"id":....
 
 # to run from Jenkins:
 
-Set-up Jenkins and install Environment Injector Plugin & restart Jenkins server
+Set-up Jenkins and install Environment 'Injector Plugin' & restart Jenkins server
 
 point Jenkins at CDAF-core branch CDAF-137_Xray
 
