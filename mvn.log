@@ -26,7 +26,7 @@
 -------------------------------------------------------
  T E S T S
 -------------------------------------------------------
-Running com.acutest.cdaf.testRunners.JiraApiTest
+Running com.acutest.cdaf.testRunners.JiraApiAT
 Feature: Filler text from automation.
 [DEBUG] 20171201T161532+0000 [main] JiraCukeHooks - Checking scenario or no exists? : false
 

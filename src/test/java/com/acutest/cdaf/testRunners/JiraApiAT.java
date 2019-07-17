@@ -13,7 +13,7 @@ import org.junit.runner.RunWith;
 		glue = "com/acutest/cdaf/jiraapi",
 		tags = {"@jiraapi-test"},
 		plugin = {"pretty", "html:target/cucumber-report/autocorrect"})
-public class JiraApiTest {
+public class JiraApiAT {
 
 
 

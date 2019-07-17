@@ -13,7 +13,7 @@ webdriver:
 jira:
   protocol: https
   host: acutesttraining.atlassian.net
-  defaultUser: mike.jennings@acutest.co.uk
+  defaultUser: tam.norris@acutest.com
   makeUpdates: true # switch to indicate not to update Jira with outcome.
   customfieldId:
     executionStatus: 10817
