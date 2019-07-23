@@ -1,5 +1,6 @@
-package com.acutest.cdaf;
+package com.acutest.cdaf.stepdefs;
 
+import com.acutest.cdaf.TestConfiguration;
 import com.acutest.cdaf.core.helpers.DriverFactory;
 import cucumber.api.Scenario;
 import cucumber.api.java.After;

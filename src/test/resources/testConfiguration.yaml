@@ -5,3 +5,6 @@
 webdriver:
   location: C:\cdaf_tools\SeleniumWebDriver\
   driver: firefox
+  
+Xray:
+  clientId: B30BF224EC134C909DAF7A024B84A718
