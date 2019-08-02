@@ -6,6 +6,8 @@ import org.openqa.selenium.WebElement;
 
 import org.openqa.selenium.support.ui.*;
 
+import java.util.List;
+
 /**
  * Class enables automatic login through username-and-password authentication
  */
@@ -48,5 +50,27 @@ public class LoginPageObject {
         WebElement element = wait.until(ExpectedConditions.elementToBeClickable(passwordField));
         element.sendKeys(password);
         webDriver.findElement(loginButton).click();
+    }
+
+    /**
+     * Mehtod used for Xray demo. Checks the page is correct
+     * @return email form placeholder
+     */
+    public String checkPage(){
+        WebElement webElement = webDriver.findElement(usernameField);
+        return webElement.getAttribute("placeholder");
+    }
+
+    /**
+     * Mehtod used for Xray demo. Checks the landed on page is correct
+     * @return
+     */
+    public String checkSandboxProject() {
+        String xPath = "//*[@id='breadcrumbs-container']//span[@class='css-eaycls']";
+        List<WebElement> list = webDriver.findElements(By.xpath(xPath));
+        WebElement element = list.stream().filter(e -> e.getAttribute("innerText")
+                .equals("CDAF Demonstration sandbox"))
+                .findFirst().get();
+        return element.getText();
     }
 }

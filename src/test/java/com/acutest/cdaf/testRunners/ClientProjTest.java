@@ -10,7 +10,7 @@ import org.junit.runner.RunWith;
 		monochrome = true,
 		//features = "target/test-classes/cucumber/features/",
 		features = "src/test/resources/cucumber/features",
-		glue = "com/acutest/cdaf/clientproj",
+		glue = "com/acutest/cdaf/jiraapi",
 		tags = {"@jiraapi-test"},
 		plugin = {"pretty", "html:target/cucumber-report/autocorrect"})
 public class ClientProjTest {
