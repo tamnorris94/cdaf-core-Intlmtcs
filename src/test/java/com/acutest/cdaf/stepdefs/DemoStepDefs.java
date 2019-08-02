@@ -51,7 +51,7 @@ public class DemoStepDefs {
         String bulletSub = newBullet.substring(location);
         String base = newBullet.substring(0, location);
         String expectedText = base + word;
-        Assert.assertEquals("The bullet point doesn't have the correct text", newBullet, expectedText);
+        Assert.assertEquals("The bullet point doesn't have the correct text", expectedText, newBullet);
     }
 
     @When("I navigate to the About page")
@@ -64,7 +64,7 @@ public class DemoStepDefs {
         String xPath = "//h2";
         WebElement element = driver.findElement(By.xpath(xPath));
         String text = element.getText();
-        Assert.assertEquals("The page title is not correct", text, title);
+        Assert.assertEquals("The page title is not correct", title, text);
     }
 
     @Given("I have permission to access Acutest sandboxd project on Jira")
@@ -96,7 +96,7 @@ public class DemoStepDefs {
     @Then("the page contains the phrase {string}")
     public void thePageContainsThePhrasePhrase(String phrase) {
         String project = loginPage.checkSandboxProject();
-        Assert.assertEquals("You are not on the correct page", project, phrase);
+        Assert.assertEquals("You are not on the correct page", phrase, project);
     }
 
     @When("I click on a link {string}")
@@ -111,6 +111,6 @@ public class DemoStepDefs {
     public void theTitleOfTheNewPageIsTitle(String title) {
         String xPath = "//*[@id='overview-of-aspnet-core-security']";
         String actualTitle = webTestPage.getTitle(xPath);
-        Assert.assertEquals("The given text doen not match the title", actualTitle, title);
+        Assert.assertEquals("The given text does not match the expected title", title, actualTitle);
     }
 }
