@@ -97,7 +97,7 @@ public class DemoStepDefs {
     public void thePageContainsThePhrasePhrase(String phrase) {
         
         WebDriverWait wait = new WebDriverWait(driver,20);
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.className("css-eaycls")));
+        wait.until(ExpectedConditions.elementToBeClickable(By.className("css-eaycls")));
         String project = loginPage.checkSandboxProject();
         Assert.assertEquals("You are not on the correct page", phrase, project);
     }
