@@ -78,7 +78,7 @@ public class DemoStepDefs {
     }
 
     @When("I enter my username {string} and password")
-    public void iEnterMyUsernameUserNameAndPassword(String username) {
+    public void iEnterMyUsernameUserNameAndPassword(String username) throws InterruptedException {
         loginPage.enterUsername(username);
         WebElement element = null;
         try{
