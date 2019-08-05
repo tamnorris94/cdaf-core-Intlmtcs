@@ -90,7 +90,7 @@ public class DemoStepDefs {
         Assert.assertNull( "Your username is incorrect", element);
         loginPage.enterPassword(System.getenv("JIRA_PASSWORD"));
         WebDriverWait wait = new WebDriverWait(driver,50);
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.id("xflow-app")));
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.id("flags")));
     }
 
     @Then("the page contains the phrase {string}")
