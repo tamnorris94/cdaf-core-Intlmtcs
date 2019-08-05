@@ -24,4 +24,4 @@ Xray:
   featureFileLocation: target/test-classes/XrayFiles/
 
 webdriver:
-  driver: chrome
+  driver: firefox
