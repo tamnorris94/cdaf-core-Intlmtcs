@@ -89,8 +89,9 @@ public class DemoStepDefs {
 
         Assert.assertNull( "Your username is incorrect", element);
         loginPage.enterPassword(System.getenv("JIRA_PASSWORD"));
-        WebDriverWait wait = new WebDriverWait(driver,50);
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.id("flags")));
+        Thread.sleep(5000);
+        //WebDriverWait wait = new WebDriverWait(driver,50);
+        //wait.until(ExpectedConditions.presenceOfElementLocated(By.id("flags")));
     }
 
     @Then("the page contains the phrase {string}")
