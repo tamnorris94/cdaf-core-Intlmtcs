@@ -22,3 +22,6 @@ testrun:
 Xray:
   clientId: 27CA37CB7795492D9BB38CC852F95B42
   featureFileLocation: target/test-classes/XrayFiles/
+
+webdriver:
+  driver: firefox

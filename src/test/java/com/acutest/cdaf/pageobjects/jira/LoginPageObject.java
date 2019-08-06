@@ -49,6 +49,7 @@ public class LoginPageObject {
         WebDriverWait wait = new WebDriverWait(webDriver, 10);
         WebElement element = wait.until(ExpectedConditions.elementToBeClickable(passwordField));
         element.sendKeys(password);
+        wait.until(ExpectedConditions.elementToBeClickable(loginButton));
         webDriver.findElement(loginButton).click();
     }
 
