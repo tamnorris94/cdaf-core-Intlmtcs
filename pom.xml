@@ -4,10 +4,10 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.acutest</groupId>
-    <artifactId>cdaf-core</artifactId>
-    <version>1.0.0</version>
-    <packaging>jar</packaging>
+	<groupId>com.acutest</groupId>
+	<artifactId>cdaf-core</artifactId>
+	<version>1.0.0</version>
+	<packaging>jar</packaging>
 
     <properties>
         <applicationUrl>http://www.google.com</applicationUrl>
@@ -23,6 +23,7 @@
         <maven-compiler-plugin.version>3.6.1</maven-compiler-plugin.version>
         <java.version>1.8</java.version>
     </properties>
+
     <profiles>
         <profile>
             <id>xray-integration-test</id>
@@ -64,7 +65,7 @@
                                 </goals>
                                 <configuration>
                                     <includes>
-                                        <include>**/*IT.class</include>
+                                        <include>**/*XR.class</include>
                                     </includes>
                                     <testFailureIgnore>true</testFailureIgnore>
                                 </configuration>
@@ -130,6 +131,7 @@
             </build>
         </profile>
     </profiles>
+
     <build>
         <plugins>
             <plugin>
@@ -242,14 +244,19 @@
                 <directory>src/test/resources</directory>
                 <filtering>true</filtering>
             </resource>
-            <!--            <resource>-->
-            <!--                <directory>src/test/resources</directory>-->
-            <!--                <filtering>true</filtering>-->
-            <!--            </resource>-->
+<!--            <resource>-->
+<!--                <directory>src/test/resources</directory>-->
+<!--                <filtering>true</filtering>-->
+<!--            </resource>-->
         </resources>
     </build>
 
     <dependencies>
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>2.4</version>
+        </dependency>
         <dependency>
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-java</artifactId>
@@ -270,7 +277,7 @@
             <artifactId>gherkin</artifactId>
             <version>2.12.2</version>
         </dependency>
-        <dependency>
+      <dependency>
             <groupId>org.picocontainer</groupId>
             <artifactId>picocontainer</artifactId>
             <version>2.14.2</version>
@@ -300,20 +307,15 @@
             <version>1.3.2</version>
         </dependency>
         <dependency>
-            <groupId>commons-io</groupId>
-            <artifactId>commons-io</artifactId>
-            <version>2.4</version>
-        </dependency>
-        <dependency>
             <groupId>com.esotericsoftware.yamlbeans</groupId>
             <artifactId>yamlbeans</artifactId>
             <version>1.12</version>
         </dependency>
-        <!--        <dependency>-->
-        <!--            <groupId>log4j</groupId>-->
-        <!--            <artifactId>log4j</artifactId>-->
-        <!--            <version>1.2.17</version>-->
-        <!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>log4j</groupId>-->
+<!--            <artifactId>log4j</artifactId>-->
+<!--            <version>1.2.17</version>-->
+<!--        </dependency>-->
         <dependency>
             <groupId>org.apache.logging.log4j</groupId>
             <artifactId>log4j-api</artifactId>
@@ -339,16 +341,16 @@
             <artifactId>slf4j-api</artifactId>
             <version>1.7.5</version>
         </dependency>
-        <dependency>
-            <groupId>org.jvnet.com4j</groupId>
-            <artifactId>com4j-parent</artifactId>
-            <version>2.1</version>
-            <type>pom</type>
+          <dependency>
+          <groupId>org.jvnet.com4j</groupId>
+          <artifactId>com4j-parent</artifactId>
+          <version>2.1</version>
+          <type>pom</type>
         </dependency>
         <dependency>
-            <groupId>com.acutest.cdaf</groupId>
-            <artifactId>jira-api</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
+          <groupId>com.acutest.cdaf</groupId>
+          <artifactId>jira-api</artifactId>
+          <version>1.0.0-SNAPSHOT</version>
         </dependency>
     </dependencies>
 </project>

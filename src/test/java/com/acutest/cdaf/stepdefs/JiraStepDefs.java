@@ -77,8 +77,6 @@ public class JiraStepDefs {
 
 	/**
 	 * Navigates to specific page in browser
-	 *
-
 	 * @param webPage
 	 * @throws Throwable
 	 */
