@@ -5,3 +5,9 @@
 webdriver:
   location: C:\cdaf_tools\SeleniumWebDriver\
   driver: firefox
+  
+Xray:
+  clientId: 27CA37CB7795492D9BB38CC852F95B42
+testrun:
+  featurefileLocation: target/test-classes/com/acutest/cdaf
+  cucumberOptionGlue: com.acutest.cdafjirajira.stepdefs
