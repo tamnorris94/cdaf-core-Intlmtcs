@@ -100,6 +100,7 @@ public class DemoStepDefs {
         wait.until(ExpectedConditions.presenceOfElementLocated(By.className("css-eaycls")));
         String project = loginPage.checkSandboxProject();
         Assert.assertEquals("You are not on the correct page", phrase, project);
+        logger.info("Test");
     }
 
     @When("I click on a link {string}")
