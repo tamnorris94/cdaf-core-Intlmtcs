@@ -9,11 +9,10 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
 
         monochrome = true,
-        features = "target/test-classes/features/cdaf/jirapi/",
+        features = "target/test-classes/com/acutest/cdaf/",
         glue = {"com/acutest/cdaf/xray/stepdefs"},
         tags = {"@XrayBuildTest"},
         plugin = {"json:target/cucumber-report/autocorrect/cucumber-report.json"}
 )
-public class XrayJiraAT {
-
-}
+public class XrayJiraAT
+{ }

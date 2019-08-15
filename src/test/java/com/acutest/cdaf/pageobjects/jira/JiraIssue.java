@@ -76,19 +76,15 @@ public class JiraIssue {
     }
     public void addTestAttributes(String summary, String description,String autoStatus, String riskLi, String riskIm, String execStatus,String comment)
     {
-        //WebElement element = wait.until(ExpectedConditions.elementToBeClickable(By.id("quickSearchGlobalItem")));
 
+        WebDriverWait wait = new WebDriverWait(webDriver, 15);
         try {
             Thread.sleep(3500);
         } catch(InterruptedException e) {
             System.out.println("got interrupted!");
         }
-        webDriver.findElement(By.id("quickSearchGlobalItem")).click();
-        WebDriverWait wait = new WebDriverWait(webDriver, 15);
-        WebElement element = wait.until(ExpectedConditions.elementToBeClickable(searchBox));
-        webDriver.findElement(searchBox).sendKeys(summary);
-        element = wait.until(ExpectedConditions.elementToBeClickable(wantedSearchItem));
-        webDriver.findElement(wantedSearchItem).click();
+        WebElement element = wait.until(ExpectedConditions.elementToBeClickable(By.id("aui-flag-container")));
+        webDriver.findElement(By.id("aui-flag-container")).click();
         element = wait.until(ExpectedConditions.elementToBeClickable(issueStatus));
         webDriver.findElement(issueStatus).click();
         element = wait.until(ExpectedConditions.elementToBeClickable(issueStage1));
