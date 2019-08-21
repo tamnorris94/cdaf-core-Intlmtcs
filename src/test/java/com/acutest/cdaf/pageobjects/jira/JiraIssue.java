@@ -16,24 +16,31 @@ public class JiraIssue {
     private By summaryField = By.id("summary");
     private By descriptionField = By.id("description");
     private By createButton = By.id("create-issue-submit");
-    private By issueLink = By.className("issue-created-key issue-link");
     private By searchBox = By.xpath("//*[@placeholder='Search Jira']");
-    private By wantedSearchItem = By.className("ItemParts__Content-sc-14xek3m-5 jRBaLt");
     private By projectField = By.id("project-field");
     private By openIssueType = By.className("sc-RbTVP jFtvcR");
-    private By issueType_xTest = By.className("ItemParts__Content-sc-14xek3m-5 jRBaLt");
     private By commentField = By.id("comment");
     private By riskImpact = By.id("customfield_10500");
     private By riskLikelihood = By.id("customfield_10501");
 
     String identifyIssue = LocalDateTime.now().toString();
-    private By issueStatus = By.className("Icon__IconWrapper-dyhwwi-0 jdkWJB");
-    private By issueStage1 = By.className("css-q5kkvr");
-    private By issueNextStage = By.className("ItemParts__Content-sc-14xek3m-5 jRBaLt");
+    private By issueStatus = By.xpath("//*[contains(@class,'elro8wh2 css-1robokv')]");
+    private By issueStatus2 = By.xpath("//*[contains(@class,'sc-QRZpq dEHKOP')]");
+    private By issueStage1 = By.xpath("//*[contains(@id,'react-select-2-option-1')]");
+    private By issueStage2 = By.xpath("//*[contains(@id,'react-select-3-option-2')]");
+    private By riskVisible = By.xpath("//*[contains(text(),'2 - Visible')]");
+    private By riskQuiteLikely = By.xpath("//*[contains(text(),'2 - Quite likely')]");
+    private By issueStatus3 = By.xpath("//*[contains(@class,'sc-QRZpq dEHKOP')]");
+    private By issueStage3 = By.xpath("//*[contains(@id,'react-select-4-option-3')]");
+    private By testAutomationStatus = By.id("customfield_10825");
+    private By testAutomationPassed = By.xpath("//*[contains(text(),'Passed')]");
+    private By issueStatus4 = By.xpath("//*[contains(@class,'sc-QRZpq dEHKOP')]");
+    private By issueStage4 = By.xpath("//*[contains(@id,'react-select-5-option-3')]");
+    private By testExecutionStatus = By.id("customfield_10817");
+    private By testExecutionPassed = By.xpath("//*[contains(text(),'In Progress')]");
+
 
     private By confirmStage = By.id("issue-workflow-transition-submit");
-   // private By issueStage3 = By.className("ItemParts__Content-sc-14xek3m-5 jRBaLt");
-   // private By issueStage4 = By.className("ItemParts__Content-sc-14xek3m-5 jRBaLt");
 
     private String parentWindowHandler;
     private String subWindowHandler;
@@ -93,17 +100,73 @@ public class JiraIssue {
         element = wait.until(ExpectedConditions.elementToBeClickable(commentField));
         webDriver.findElement(commentField).sendKeys("Stage 1 complete");
         webDriver.findElement(confirmStage).click();
+        try {
+            Thread.sleep(3500);
+        } catch(InterruptedException e) {
+            System.out.println("got interrupted!");
+        }
         /* Stage 2 transition*/
-        element = wait.until(ExpectedConditions.elementToBeClickable(issueStatus));
-        webDriver.findElement(issueStatus).click();
-        element = wait.until(ExpectedConditions.elementToBeClickable(issueNextStage));
-        webDriver.findElement(issueStage1).click();
+        element = wait.until(ExpectedConditions.presenceOfElementLocated(issueStatus2));
+        element = wait.until(ExpectedConditions.elementToBeClickable(issueStatus2));
+        webDriver.findElement(issueStatus2).click();
+        element = wait.until(ExpectedConditions.elementToBeClickable(issueStage2));
+        webDriver.findElement(issueStage2).click();
+        element = wait.until(ExpectedConditions.elementToBeClickable(riskImpact));
+        webDriver.findElement(riskImpact).click();
+        element = wait.until(ExpectedConditions.elementToBeClickable(riskVisible));
+        webDriver.findElement(riskVisible).click();
+        element = wait.until(ExpectedConditions.elementToBeClickable(riskLikelihood));
+        webDriver.findElement(riskLikelihood).click();
+        element = wait.until(ExpectedConditions.elementToBeClickable(riskQuiteLikely));
+        webDriver.findElement(riskQuiteLikely).click();
+        element = wait.until(ExpectedConditions.elementToBeClickable(commentField));
+        webDriver.findElement(commentField).sendKeys("Stage 2 complete");
+        element = wait.until(ExpectedConditions.elementToBeClickable(confirmStage));
+        webDriver.findElement(confirmStage).click();
+        try {
+            Thread.sleep(3500);
+        } catch(InterruptedException e) {
+            System.out.println("got interrupted!");
+        }
 
+        element = wait.until(ExpectedConditions.elementToBeClickable(issueStatus3));
+        webDriver.findElement(issueStatus3).click();
+        element = wait.until(ExpectedConditions.elementToBeClickable(issueStage3));
+        webDriver.findElement(issueStage3).click();
+        element = wait.until(ExpectedConditions.elementToBeClickable(testAutomationStatus));
+        webDriver.findElement(testAutomationStatus).click();
+        element = wait.until(ExpectedConditions.elementToBeClickable(testAutomationPassed));
+        webDriver.findElement(testAutomationPassed).click();
+        element = wait.until(ExpectedConditions.elementToBeClickable(commentField));
+        webDriver.findElement(commentField).sendKeys("Stage 3 complete");
+        element = wait.until(ExpectedConditions.elementToBeClickable(confirmStage));
+        webDriver.findElement(confirmStage).click();
 
-        //element = wait.until(ExpectedConditions.elementToBeClickable(openIssueType));
-        //webDriver.findElement(openIssueType).click();
-        //element = wait.until(ExpectedConditions.elementToBeClickable(issueType_xTest));
-        //webDriver.findElement(issueType_xTest).click();
-   }
+        try {
+            Thread.sleep(3500);
+        } catch(InterruptedException e) {
+            System.out.println("got interrupted!");
+        }
+
+        element = wait.until(ExpectedConditions.elementToBeClickable(issueStatus4));
+        webDriver.findElement(issueStatus4).click();
+
+        element = wait.until(ExpectedConditions.elementToBeClickable(issueStage4));
+        webDriver.findElement(issueStage4).click();
+        element = wait.until(ExpectedConditions.elementToBeClickable(testExecutionStatus));
+        webDriver.findElement(testExecutionStatus).click();
+        element = wait.until(ExpectedConditions.elementToBeClickable(testExecutionPassed));
+        webDriver.findElement(testExecutionPassed).click();
+        element = wait.until(ExpectedConditions.elementToBeClickable(commentField));
+        webDriver.findElement(commentField).sendKeys("Stage 4 complete");
+        element = wait.until(ExpectedConditions.elementToBeClickable(confirmStage));
+        webDriver.findElement(confirmStage).click();
+
+        try {
+            Thread.sleep(3500);
+        } catch(InterruptedException e) {
+            System.out.println("got interrupted!");
+        }
+    }
 
 }

@@ -3763,3 +3763,1692 @@ Session ID: ab08be7a-a8b4-4c63-a0d7-e59eac17c36c
 [DEBUG] 20190815T105638.143+0100 [main] Hooks - @After scenario As an automation framework developer
 [DEBUG] 20190815T105638.143+0100 [main] Hooks - @web
 [DEBUG] 20190815T105638.143+0100 [main] Hooks - @dev
+[DEBUG] 20190815T115952.36+0100 [main] Hooks - @Before scenario As an automation framework developer
+[DEBUG] 20190815T115952.39+0100 [main] Hooks - @web
+[DEBUG] 20190815T115952.40+0100 [main] Hooks - @dev
+[DEBUG] 20190815T120005.366+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190815T120005.666+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190815T120006.829+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190815T120006.968+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190815T120014.110+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190815T120021.440+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190815T120025.993+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190815T120026.418+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190815T120026.855+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190815T120027.295+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190815T120028.196+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190815T120029.144+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190815T120033.115+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190815T120057.337+0100 [main] Hooks - @After scenario As an automation framework developer
+[DEBUG] 20190815T120057.337+0100 [main] Hooks - @web
+[DEBUG] 20190815T120057.337+0100 [main] Hooks - @dev
+[DEBUG] 20190815T122247.647+0100 [main] Hooks - @Before scenario As an automation framework developer
+[DEBUG] 20190815T122247.663+0100 [main] Hooks - @web
+[DEBUG] 20190815T122247.663+0100 [main] Hooks - @dev
+[DEBUG] 20190815T122300.876+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190815T122301.146+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190815T122302.275+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190815T122302.410+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190815T122309.717+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190815T122320.29+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190815T122322.264+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190815T122322.511+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190815T122322.955+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190815T122324.178+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190815T122325.00+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190815T122325.980+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190815T122329.919+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190815T122353.94+0100 [main] Hooks - @After scenario As an automation framework developer
+[DEBUG] 20190815T122353.95+0100 [main] Hooks - @web
+[DEBUG] 20190815T122353.95+0100 [main] Hooks - @dev
+[DEBUG] 20190815T122846.802+0100 [main] Hooks - @Before scenario As an automation framework developer
+[DEBUG] 20190815T122846.817+0100 [main] Hooks - @web
+[DEBUG] 20190815T122846.817+0100 [main] Hooks - @dev
+[DEBUG] 20190815T122859.980+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190815T122900.335+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190815T122901.437+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190815T122901.584+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190815T122908.905+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190815T122917.268+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190815T122919.190+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190815T122919.432+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190815T122919.817+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190815T122920.760+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190815T122921.180+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190815T122922.132+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190815T122926.52+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190815T122949.715+0100 [main] Hooks - @After scenario As an automation framework developer
+[DEBUG] 20190815T122949.715+0100 [main] Hooks - @web
+[DEBUG] 20190815T122949.715+0100 [main] Hooks - @dev
+[DEBUG] 20190815T142400.582+0100 [main] Hooks - @Before scenario As an automation framework developer
+[DEBUG] 20190815T142400.582+0100 [main] Hooks - @web
+[DEBUG] 20190815T142400.582+0100 [main] Hooks - @dev
+[DEBUG] 20190815T142413.253+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190815T142413.516+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190815T142414.681+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190815T142414.888+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190815T142421.761+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190815T142427.373+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190815T142432.55+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190815T142432.324+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190815T142432.640+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190815T142433.103+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190815T142433.503+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190815T142434.473+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190815T142438.383+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190815T142501.991+0100 [main] Hooks - @After scenario As an automation framework developer
+[DEBUG] 20190815T142501.991+0100 [main] Hooks - @web
+[DEBUG] 20190815T142501.991+0100 [main] Hooks - @dev
+[DEBUG] 20190816T092627.194+0100 [main] Hooks - @Before scenario As an automation framework developer
+[DEBUG] 20190816T092627.194+0100 [main] Hooks - @web
+[DEBUG] 20190816T092627.210+0100 [main] Hooks - @dev
+[DEBUG] 20190816T092642.148+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190816T092642.449+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190816T092643.716+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190816T092643.843+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190816T092650.191+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190816T092656.537+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190816T092700.569+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190816T092700.854+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190816T092701.244+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190816T092701.925+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190816T092702.326+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190816T092703.213+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190816T092707.287+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190816T092730.456+0100 [main] Hooks - @After scenario As an automation framework developer
+[DEBUG] 20190816T092730.456+0100 [main] Hooks - @web
+[DEBUG] 20190816T092730.456+0100 [main] Hooks - @dev
+[DEBUG] 20190816T092934.869+0100 [main] Hooks - @Before scenario As an automation framework developer
+[DEBUG] 20190816T092934.869+0100 [main] Hooks - @web
+[DEBUG] 20190816T092934.869+0100 [main] Hooks - @dev
+[DEBUG] 20190816T092947.456+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190816T092947.804+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190816T092948.578+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190816T092948.736+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190816T092955.551+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190816T093004.782+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190816T093006.600+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190816T093006.844+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190816T093007.184+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190816T093007.624+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190816T093008.16+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190816T093009.72+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190816T093013.16+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190816T093022.451+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190816T093038.907+0100 [main] Hooks - @After scenario As an automation framework developer
+[DEBUG] 20190816T093038.907+0100 [main] Hooks - @web
+[DEBUG] 20190816T093038.907+0100 [main] Hooks - @dev
+[DEBUG] 20190816T121911.932+0100 [main] Hooks - @Before scenario As an automation framework developer
+[DEBUG] 20190816T121911.932+0100 [main] Hooks - @web
+[DEBUG] 20190816T121911.932+0100 [main] Hooks - @dev
+[DEBUG] 20190816T121924.473+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190816T121924.774+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190816T121926.59+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190816T121926.191+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190816T121934.613+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190816T121941.642+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190816T121943.453+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190816T121943.681+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190816T121943.989+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190816T121944.391+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190816T121944.960+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190816T121946.417+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190816T121950.366+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190816T122013.549+0100 [main] Hooks - @After scenario As an automation framework developer
+[DEBUG] 20190816T122013.549+0100 [main] Hooks - @web
+[DEBUG] 20190816T122013.549+0100 [main] Hooks - @dev
+[DEBUG] 20190816T124207.820+0100 [main] Hooks - @Before scenario As an automation framework developer
+[DEBUG] 20190816T124207.824+0100 [main] Hooks - @web
+[DEBUG] 20190816T124207.824+0100 [main] Hooks - @dev
+[DEBUG] 20190816T124219.441+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190816T124219.825+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190816T124221.222+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190816T124221.350+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190816T124228.05+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190816T124231.105+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190816T124246.526+0100 [main] Hooks - @After scenario As an automation framework developer
+[DEBUG] 20190816T124246.530+0100 [main] Hooks - @web
+[DEBUG] 20190816T124246.530+0100 [main] Hooks - @dev
+[DEBUG] 20190816T124302.22+0100 [main] Hooks - @Before scenario As an automation framework developer
+[DEBUG] 20190816T124302.26+0100 [main] Hooks - @web
+[DEBUG] 20190816T124302.27+0100 [main] Hooks - @dev
+[DEBUG] 20190816T124314.608+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190816T124314.874+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190816T124316.123+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190816T124316.283+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190816T124323.387+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190816T124324.815+0100 [main] Hooks - @After scenario As an automation framework developer
+[DEBUG] 20190816T124324.815+0100 [main] Hooks - @web
+[DEBUG] 20190816T124324.819+0100 [main] Hooks - @dev
+[DEBUG] 20190816T124413.267+0100 [main] Hooks - @Before scenario As an automation framework developer
+[DEBUG] 20190816T124413.267+0100 [main] Hooks - @web
+[DEBUG] 20190816T124413.267+0100 [main] Hooks - @dev
+[DEBUG] 20190816T124425.660+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190816T124425.945+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190816T124427.261+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190816T124427.425+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190816T124433.888+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190816T124438.972+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190816T124439.698+0100 [main] Hooks - @After scenario As an automation framework developer
+[DEBUG] 20190816T124439.698+0100 [main] Hooks - @web
+[DEBUG] 20190816T124439.698+0100 [main] Hooks - @dev
+[DEBUG] 20190816T124500.197+0100 [main] Hooks - @Before scenario As an automation framework developer
+[DEBUG] 20190816T124500.197+0100 [main] Hooks - @web
+[DEBUG] 20190816T124500.197+0100 [main] Hooks - @dev
+[DEBUG] 20190816T124511.106+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190816T124511.394+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190816T124512.671+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190816T124512.819+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190816T124519.729+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190816T124524.707+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190816T124544.872+0100 [main] Hooks - @After scenario As an automation framework developer
+[DEBUG] 20190816T124544.872+0100 [main] Hooks - @web
+[DEBUG] 20190816T124544.872+0100 [main] Hooks - @dev
+[DEBUG] 20190816T124646.862+0100 [main] Hooks - @Before scenario As an automation framework developer
+[DEBUG] 20190816T124646.862+0100 [main] Hooks - @web
+[DEBUG] 20190816T124646.862+0100 [main] Hooks - @dev
+[DEBUG] 20190816T124657.897+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190816T124658.132+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190816T124659.249+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190816T124659.384+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190816T124705.698+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190816T124708.763+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190816T124723.954+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190816T124724.236+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190816T124724.655+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190816T124725.432+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190816T124725.829+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190816T124726.845+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190816T124730.837+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190816T124753.349+0100 [main] Hooks - @After scenario As an automation framework developer
+[DEBUG] 20190816T124753.353+0100 [main] Hooks - @web
+[DEBUG] 20190816T124753.353+0100 [main] Hooks - @dev
+[DEBUG] 20190816T145319.584+0100 [main] Hooks - @Before scenario As an automation framework developer
+[DEBUG] 20190816T145319.588+0100 [main] Hooks - @web
+[DEBUG] 20190816T145319.588+0100 [main] Hooks - @dev
+[DEBUG] 20190816T145330.550+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190816T145330.806+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190816T145332.123+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190816T145332.284+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190816T145338.816+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190816T145341.770+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190816T145355.750+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190816T145355.986+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190816T145356.319+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190816T145357.39+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190816T145357.408+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190816T145358.420+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190816T145402.455+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190816T145424.741+0100 [main] Hooks - @After scenario As an automation framework developer
+[DEBUG] 20190816T145424.741+0100 [main] Hooks - @web
+[DEBUG] 20190816T145424.741+0100 [main] Hooks - @dev
+[DEBUG] 20190816T145613.867+0100 [main] Hooks - @Before scenario As an automation framework developer
+[DEBUG] 20190816T145613.867+0100 [main] Hooks - @web
+[DEBUG] 20190816T145613.871+0100 [main] Hooks - @dev
+[DEBUG] 20190816T145624.495+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190816T145624.767+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190816T145625.959+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190816T145626.75+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190816T145632.897+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190816T145638.424+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190816T145642.536+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190816T145642.932+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190816T145643.264+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190816T145644.60+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190816T145644.569+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190816T145645.454+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190816T145649.565+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190816T145712.119+0100 [main] Hooks - @After scenario As an automation framework developer
+[DEBUG] 20190816T145712.123+0100 [main] Hooks - @web
+[DEBUG] 20190816T145712.123+0100 [main] Hooks - @dev
+[DEBUG] 20190816T145928.843+0100 [main] Hooks - @Before scenario As an automation framework developer
+[DEBUG] 20190816T145928.847+0100 [main] Hooks - @web
+[DEBUG] 20190816T145928.847+0100 [main] Hooks - @dev
+[DEBUG] 20190816T145941.183+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190816T145941.431+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190816T145942.581+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190816T145942.748+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190816T145949.602+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190816T145955.80+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190816T145959.45+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190816T145959.275+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190816T145959.647+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190816T150000.64+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190816T150000.888+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190816T150002.61+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190816T150006.10+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190816T150028.711+0100 [main] Hooks - @After scenario As an automation framework developer
+[DEBUG] 20190816T150028.711+0100 [main] Hooks - @web
+[DEBUG] 20190816T150028.711+0100 [main] Hooks - @dev
+[DEBUG] 20190819T102105.922+0100 [main] Hooks - @Before scenario As an automation framework developer
+[DEBUG] 20190819T102105.922+0100 [main] Hooks - @web
+[DEBUG] 20190819T102105.922+0100 [main] Hooks - @dev
+[DEBUG] 20190819T102119.479+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190819T102119.748+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190819T102120.422+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190819T102120.660+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190819T102128.157+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190819T102129.568+0100 [main] Hooks - @After scenario As an automation framework developer
+[DEBUG] 20190819T102129.568+0100 [main] Hooks - @web
+[DEBUG] 20190819T102129.568+0100 [main] Hooks - @dev
+[DEBUG] 20190819T102209.631+0100 [main] Hooks - @Before scenario As an automation framework developer
+[DEBUG] 20190819T102209.631+0100 [main] Hooks - @web
+[DEBUG] 20190819T102209.631+0100 [main] Hooks - @dev
+[DEBUG] 20190819T102221.992+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190819T102222.382+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190819T102223.707+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190819T102223.939+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190819T102231.788+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190819T102234.256+0100 [main] Hooks - @After scenario As an automation framework developer
+[DEBUG] 20190819T102234.256+0100 [main] Hooks - @web
+[DEBUG] 20190819T102234.257+0100 [main] Hooks - @dev
+[DEBUG] 20190819T110649.584+0100 [main] Hooks - @Before scenario As an automation framework developer
+[DEBUG] 20190819T110649.584+0100 [main] Hooks - @web
+[DEBUG] 20190819T110649.584+0100 [main] Hooks - @dev
+[DEBUG] 20190819T110700.752+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190819T110701.30+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190819T110701.776+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190819T110701.977+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190819T110709.102+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190819T110718.202+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190819T110720.59+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190819T110720.291+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190819T110720.676+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190819T110721.646+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190819T110722.163+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190819T110723.329+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190819T110727.303+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190819T110750.243+0100 [main] Hooks - @After scenario As an automation framework developer
+[DEBUG] 20190819T110750.243+0100 [main] Hooks - @web
+[DEBUG] 20190819T110750.243+0100 [main] Hooks - @dev
+[DEBUG] 20190819T120056.660+0100 [main] Hooks - @Before scenario As an automation framework developer
+[DEBUG] 20190819T120056.663+0100 [main] Hooks - @web
+[DEBUG] 20190819T120056.663+0100 [main] Hooks - @dev
+[DEBUG] 20190819T120114.260+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190819T120114.773+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190819T120115.730+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190819T120115.985+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190819T120123.841+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190819T120137.325+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190819T120140.401+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190819T120140.829+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190819T120141.337+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190819T120142.872+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190819T120143.582+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190819T120144.924+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190819T120149.01+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190819T120218.718+0100 [main] Hooks - @After scenario As an automation framework developer
+[DEBUG] 20190819T120218.718+0100 [main] Hooks - @web
+[DEBUG] 20190819T120218.719+0100 [main] Hooks - @dev
+[DEBUG] 20190819T121936.258+0100 [main] Hooks - @Before scenario As an automation framework developer
+[DEBUG] 20190819T121936.261+0100 [main] Hooks - @web
+[DEBUG] 20190819T121936.261+0100 [main] Hooks - @dev
+[DEBUG] 20190819T121950.537+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190819T121950.923+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190819T121952.218+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190819T121952.389+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190819T122001.446+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190819T122005.07+0100 [main] Hooks - @After scenario As an automation framework developer
+[DEBUG] 20190819T122005.08+0100 [main] Hooks - @web
+[DEBUG] 20190819T122005.08+0100 [main] Hooks - @dev
+[DEBUG] 20190819T122023.230+0100 [main] Hooks - @Before scenario As an automation framework developer
+[DEBUG] 20190819T122023.235+0100 [main] Hooks - @web
+[DEBUG] 20190819T122023.235+0100 [main] Hooks - @dev
+[DEBUG] 20190819T122040.994+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190819T122041.675+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190819T122043.130+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190819T122043.321+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190819T122051.35+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190819T122054.432+0100 [main] Hooks - @After scenario As an automation framework developer
+[DEBUG] 20190819T122054.433+0100 [main] Hooks - @web
+[DEBUG] 20190819T122054.433+0100 [main] Hooks - @dev
+[DEBUG] 20190819T122537.308+0100 [main] Hooks - @Before scenario As an automation framework developer
+[DEBUG] 20190819T122537.312+0100 [main] Hooks - @web
+[DEBUG] 20190819T122537.312+0100 [main] Hooks - @dev
+[DEBUG] 20190819T122551.663+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190819T122551.964+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190819T122553.211+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190819T122553.395+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190819T122600.175+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190819T122601.533+0100 [main] Hooks - @After scenario As an automation framework developer
+[DEBUG] 20190819T122601.534+0100 [main] Hooks - @web
+[DEBUG] 20190819T122601.534+0100 [main] Hooks - @dev
+[DEBUG] 20190819T122623.693+0100 [main] Hooks - @Before scenario As an automation framework developer
+[DEBUG] 20190819T122623.693+0100 [main] Hooks - @web
+[DEBUG] 20190819T122623.693+0100 [main] Hooks - @dev
+[DEBUG] 20190819T122635.111+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190819T122635.426+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190819T122636.182+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190819T122636.356+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190819T122642.883+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190819T122652.446+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190819T122655.219+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190819T122655.504+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190819T122655.904+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190819T122656.707+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190819T122657.139+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190819T122658.187+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190819T122702.148+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190819T122725.765+0100 [main] Hooks - @After scenario As an automation framework developer
+[DEBUG] 20190819T122725.765+0100 [main] Hooks - @web
+[DEBUG] 20190819T122725.765+0100 [main] Hooks - @dev
+[DEBUG] 20190819T233508.712+0100 [main] Hooks - @Before scenario As an automation framework developer
+[DEBUG] 20190819T233508.728+0100 [main] Hooks - @web
+[DEBUG] 20190819T233508.728+0100 [main] Hooks - @dev
+[DEBUG] 20190819T233525.628+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190819T233525.944+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190819T233527.149+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190819T233527.269+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190819T233536.418+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190819T233539.634+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190819T233556.115+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190819T233556.331+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190819T233556.671+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190819T233557.93+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190819T233557.513+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190819T233558.678+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190819T233602.581+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190819T233612.962+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190819T233613.546+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190819T233629.391+0100 [main] Hooks - @After scenario As an automation framework developer
+[DEBUG] 20190819T233629.391+0100 [main] Hooks - @web
+[DEBUG] 20190819T233629.391+0100 [main] Hooks - @dev
+[DEBUG] 20190819T234249.272+0100 [main] Hooks - @Before scenario As an automation framework developer
+[DEBUG] 20190819T234249.274+0100 [main] Hooks - @web
+[DEBUG] 20190819T234249.275+0100 [main] Hooks - @dev
+[DEBUG] 20190819T234302.88+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190819T234302.553+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190819T234303.782+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190819T234303.963+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190819T234310.392+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190819T234313.354+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190819T234328.106+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190819T234328.384+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190819T234328.797+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190819T234329.847+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190819T234330.279+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190819T234331.139+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190819T234335.97+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190819T234344.431+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190819T234400.556+0100 [main] Hooks - @After scenario As an automation framework developer
+[DEBUG] 20190819T234400.556+0100 [main] Hooks - @web
+[DEBUG] 20190819T234400.572+0100 [main] Hooks - @dev
+[DEBUG] 20190819T234537.124+0100 [main] Hooks - @Before scenario As an automation framework developer
+[DEBUG] 20190819T234537.128+0100 [main] Hooks - @web
+[DEBUG] 20190819T234537.128+0100 [main] Hooks - @dev
+[DEBUG] 20190819T234550.46+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190819T234550.300+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190819T234551.572+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190819T234551.720+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190819T234559.664+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190819T234602.598+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190819T234616.133+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190819T234616.460+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190819T234616.793+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190819T234617.221+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190819T234618.01+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190819T234618.910+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190819T234622.909+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190819T234631.135+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190819T234646.685+0100 [main] Hooks - @After scenario As an automation framework developer
+[DEBUG] 20190819T234646.685+0100 [main] Hooks - @web
+[DEBUG] 20190819T234646.685+0100 [main] Hooks - @dev
+[DEBUG] 20190820T083329.192+0100 [main] Hooks - @Before scenario As an automation framework developer
+[DEBUG] 20190820T083329.194+0100 [main] Hooks - @web
+[DEBUG] 20190820T083329.195+0100 [main] Hooks - @dev
+[DEBUG] 20190820T083342.842+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190820T083343.118+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T083344.271+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190820T083344.445+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T083350.372+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T083356.80+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T083402.707+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190820T083402.957+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190820T083403.678+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T083404.138+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190820T083404.610+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T083405.777+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T083409.770+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T083419.130+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T083434.753+0100 [main] Hooks - @After scenario As an automation framework developer
+[DEBUG] 20190820T083434.753+0100 [main] Hooks - @web
+[DEBUG] 20190820T083434.753+0100 [main] Hooks - @dev
+[DEBUG] 20190820T083501.907+0100 [main] Hooks - @Before scenario As an automation framework developer
+[DEBUG] 20190820T083501.909+0100 [main] Hooks - @web
+[DEBUG] 20190820T083501.909+0100 [main] Hooks - @dev
+[DEBUG] 20190820T083512.725+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190820T083513.62+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T083514.173+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190820T083514.313+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T083521.133+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T083527.729+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T083532.605+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190820T083533.01+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190820T083533.354+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T083534.162+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190820T083534.514+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T083535.679+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T083539.669+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T083548.376+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T083549.307+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T083605.47+0100 [main] Hooks - @After scenario As an automation framework developer
+[DEBUG] 20190820T083605.47+0100 [main] Hooks - @web
+[DEBUG] 20190820T083605.47+0100 [main] Hooks - @dev
+[DEBUG] 20190820T083724.980+0100 [main] Hooks - @Before scenario As an automation framework developer
+[DEBUG] 20190820T083724.980+0100 [main] Hooks - @web
+[DEBUG] 20190820T083724.980+0100 [main] Hooks - @dev
+[DEBUG] 20190820T083737.55+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190820T083737.331+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T083738.495+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190820T083738.637+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T083746.935+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T083749.771+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T083805.289+0100 [main] Hooks - @After scenario As an automation framework developer
+[DEBUG] 20190820T083805.293+0100 [main] Hooks - @web
+[DEBUG] 20190820T083805.293+0100 [main] Hooks - @dev
+[DEBUG] 20190820T083827.376+0100 [main] Hooks - @Before scenario As an automation framework developer
+[DEBUG] 20190820T083827.380+0100 [main] Hooks - @web
+[DEBUG] 20190820T083827.380+0100 [main] Hooks - @dev
+[DEBUG] 20190820T083837.786+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190820T083838.49+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T083839.287+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190820T083839.399+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T083845.931+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T083854.416+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T083856.558+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190820T083856.767+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190820T083857.117+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T083857.799+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190820T083858.197+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T083859.198+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T083903.292+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T083910.696+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T083911.609+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T083913.907+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190820T083914.46+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T083929.602+0100 [main] Hooks - @After scenario As an automation framework developer
+[DEBUG] 20190820T083929.602+0100 [main] Hooks - @web
+[DEBUG] 20190820T083929.602+0100 [main] Hooks - @dev
+[DEBUG] 20190820T084347.509+0100 [main] Hooks - @Before scenario As an automation framework developer
+[DEBUG] 20190820T084347.509+0100 [main] Hooks - @web
+[DEBUG] 20190820T084347.509+0100 [main] Hooks - @dev
+[DEBUG] 20190820T084359.46+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190820T084359.385+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T084400.546+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190820T084400.690+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T084407.927+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T084415.751+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T084417.538+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190820T084417.742+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190820T084418.82+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T084418.762+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190820T084419.122+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T084420.187+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T084424.137+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T084431.703+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T084432.307+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T084433.961+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190820T084434.109+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T084449.960+0100 [main] Hooks - @After scenario As an automation framework developer
+[DEBUG] 20190820T084449.960+0100 [main] Hooks - @web
+[DEBUG] 20190820T084449.964+0100 [main] Hooks - @dev
+[DEBUG] 20190820T144604.112+0100 [main] Hooks - @Before scenario As an automation framework developer
+[DEBUG] 20190820T144604.116+0100 [main] Hooks - @web
+[DEBUG] 20190820T144604.116+0100 [main] Hooks - @dev
+[DEBUG] 20190820T144617.719+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190820T144618.23+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T144619.306+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190820T144619.474+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T144625.846+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T144630.359+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T144638.761+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190820T144639.275+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190820T144639.919+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T144640.484+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190820T144640.950+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T144642.229+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T144646.228+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T144655.06+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T144655.681+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T144657.740+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190820T144657.922+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T144658.374+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T144658.498+0100 [main] Hooks - @After scenario As an automation framework developer
+[DEBUG] 20190820T144658.498+0100 [main] Hooks - @web
+[DEBUG] 20190820T144658.498+0100 [main] Hooks - @dev
+[DEBUG] 20190820T145135.660+0100 [main] Hooks - @Before scenario As an automation framework developer
+[DEBUG] 20190820T145135.660+0100 [main] Hooks - @web
+[DEBUG] 20190820T145135.660+0100 [main] Hooks - @dev
+[DEBUG] 20190820T145147.807+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190820T145148.66+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T145148.734+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190820T145148.898+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T145154.718+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T145157.744+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T145213.330+0100 [main] Hooks - @After scenario As an automation framework developer
+[DEBUG] 20190820T145213.330+0100 [main] Hooks - @web
+[DEBUG] 20190820T145213.330+0100 [main] Hooks - @dev
+[DEBUG] 20190820T145239.969+0100 [main] Hooks - @Before scenario As an automation framework developer
+[DEBUG] 20190820T145239.973+0100 [main] Hooks - @web
+[DEBUG] 20190820T145239.973+0100 [main] Hooks - @dev
+[DEBUG] 20190820T145251.143+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190820T145251.430+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T145252.95+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190820T145252.266+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T145257.680+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T145303.191+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T145308.265+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190820T145308.609+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190820T145309.17+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T145309.853+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190820T145310.261+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T145311.430+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T145315.409+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T145322.504+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T145323.72+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T145325.105+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190820T145325.262+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T145325.722+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T145326.254+0100 [main] Hooks - @After scenario As an automation framework developer
+[DEBUG] 20190820T145326.254+0100 [main] Hooks - @web
+[DEBUG] 20190820T145326.254+0100 [main] Hooks - @dev
+[DEBUG] 20190820T150645.712+0100 [main] Hooks - @Before scenario As an automation framework developer
+[DEBUG] 20190820T150645.716+0100 [main] Hooks - @web
+[DEBUG] 20190820T150645.716+0100 [main] Hooks - @dev
+[DEBUG] 20190820T150658.35+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190820T150658.339+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T150659.496+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190820T150659.625+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T150707.736+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T150710.616+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T150725.989+0100 [main] Hooks - @After scenario As an automation framework developer
+[DEBUG] 20190820T150725.989+0100 [main] Hooks - @web
+[DEBUG] 20190820T150725.989+0100 [main] Hooks - @dev
+[DEBUG] 20190820T150737.491+0100 [main] Hooks - @Before scenario As an automation framework developer
+[DEBUG] 20190820T150737.496+0100 [main] Hooks - @web
+[DEBUG] 20190820T150737.497+0100 [main] Hooks - @dev
+[DEBUG] 20190820T150743.35+0100 [main] Hooks - @Before scenario As an automation framework developer
+[DEBUG] 20190820T150743.38+0100 [main] Hooks - @web
+[DEBUG] 20190820T150743.38+0100 [main] Hooks - @dev
+[DEBUG] 20190820T150754.565+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190820T150755.54+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T150756.149+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190820T150756.351+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T150758.707+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190820T150759.185+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T150800.392+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190820T150800.580+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T150806.202+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T150811.85+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T150814.114+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T150817.100+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T150827.182+0100 [main] Hooks - @After scenario As an automation framework developer
+[DEBUG] 20190820T150827.182+0100 [main] Hooks - @web
+[DEBUG] 20190820T150827.182+0100 [main] Hooks - @dev
+[DEBUG] 20190820T150832.464+0100 [main] Hooks - @After scenario As an automation framework developer
+[DEBUG] 20190820T150832.464+0100 [main] Hooks - @web
+[DEBUG] 20190820T150832.465+0100 [main] Hooks - @dev
+[DEBUG] 20190820T150845.318+0100 [main] Hooks - @Before scenario As an automation framework developer
+[DEBUG] 20190820T150845.320+0100 [main] Hooks - @web
+[DEBUG] 20190820T150845.320+0100 [main] Hooks - @dev
+[DEBUG] 20190820T150857.21+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190820T150857.406+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T150858.166+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190820T150858.322+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T150904.636+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T150907.605+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T150923.289+0100 [main] Hooks - @After scenario As an automation framework developer
+[DEBUG] 20190820T150923.289+0100 [main] Hooks - @web
+[DEBUG] 20190820T150923.289+0100 [main] Hooks - @dev
+[DEBUG] 20190820T150935.824+0100 [main] Hooks - @Before scenario As an automation framework developer
+[DEBUG] 20190820T150935.828+0100 [main] Hooks - @web
+[DEBUG] 20190820T150935.828+0100 [main] Hooks - @dev
+[DEBUG] 20190820T150947.896+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190820T150948.382+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T150949.152+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190820T150949.320+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T150955.594+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T150958.600+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T151013.582+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190820T151013.874+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190820T151014.224+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T151014.641+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190820T151015.269+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T151016.323+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T151020.510+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T151027.961+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T151028.573+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T151030.399+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190820T151030.560+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T151030.980+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T151031.48+0100 [main] Hooks - @After scenario As an automation framework developer
+[DEBUG] 20190820T151031.48+0100 [main] Hooks - @web
+[DEBUG] 20190820T151031.52+0100 [main] Hooks - @dev
+[DEBUG] 20190820T162151.877+0100 [main] Hooks - @Before scenario As an automation framework developer
+[DEBUG] 20190820T162151.877+0100 [main] Hooks - @web
+[DEBUG] 20190820T162151.877+0100 [main] Hooks - @dev
+[DEBUG] 20190820T162204.852+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190820T162205.156+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T162206.330+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190820T162206.484+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T162213.976+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T162217.648+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T162224.711+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190820T162224.995+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190820T162225.496+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T162226.13+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190820T162226.514+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T162227.785+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T162231.918+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T162239.504+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T162240.136+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T162242.355+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190820T162242.593+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T162243.26+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T162243.111+0100 [main] Hooks - @After scenario As an automation framework developer
+[DEBUG] 20190820T162243.111+0100 [main] Hooks - @web
+[DEBUG] 20190820T162243.111+0100 [main] Hooks - @dev
+[DEBUG] 20190820T162538.231+0100 [main] Hooks - @Before scenario As an automation framework developer
+[DEBUG] 20190820T162538.231+0100 [main] Hooks - @web
+[DEBUG] 20190820T162538.231+0100 [main] Hooks - @dev
+[DEBUG] 20190820T162551.71+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190820T162551.304+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T162551.989+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190820T162552.199+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T162559.723+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T162602.618+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T162617.173+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190820T162617.580+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190820T162618.705+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T162619.387+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190820T162619.964+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T162621.92+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T162625.30+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T162632.881+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T162633.491+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T162635.389+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190820T162635.556+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T162636.21+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T162636.100+0100 [main] Hooks - @After scenario As an automation framework developer
+[DEBUG] 20190820T162636.100+0100 [main] Hooks - @web
+[DEBUG] 20190820T162636.100+0100 [main] Hooks - @dev
+[DEBUG] 20190820T234333.285+0100 [main] Hooks - @Before scenario As an automation framework developer
+[DEBUG] 20190820T234333.289+0100 [main] Hooks - @web
+[DEBUG] 20190820T234333.289+0100 [main] Hooks - @dev
+[DEBUG] 20190820T234346.271+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190820T234346.615+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T234347.759+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190820T234347.879+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T234354.604+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T234358.418+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T234410.561+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190820T234410.894+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190820T234411.194+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T234411.595+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190820T234412.71+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T234413.56+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T234416.983+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T234425.80+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T234425.664+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T234427.482+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190820T234427.682+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T234428.718+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T234428.822+0100 [main] Hooks - @After scenario As an automation framework developer
+[DEBUG] 20190820T234428.826+0100 [main] Hooks - @web
+[DEBUG] 20190820T234428.826+0100 [main] Hooks - @dev
+[DEBUG] 20190820T234921.106+0100 [main] Hooks - @Before scenario As an automation framework developer
+[DEBUG] 20190820T234921.110+0100 [main] Hooks - @web
+[DEBUG] 20190820T234921.110+0100 [main] Hooks - @dev
+[DEBUG] 20190820T234933.221+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190820T234933.553+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T234934.765+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190820T234934.916+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T234940.770+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T234943.654+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T234959.56+0100 [main] Hooks - @After scenario As an automation framework developer
+[DEBUG] 20190820T234959.56+0100 [main] Hooks - @web
+[DEBUG] 20190820T234959.56+0100 [main] Hooks - @dev
+[DEBUG] 20190820T235011.612+0100 [main] Hooks - @Before scenario As an automation framework developer
+[DEBUG] 20190820T235011.612+0100 [main] Hooks - @web
+[DEBUG] 20190820T235011.612+0100 [main] Hooks - @dev
+[DEBUG] 20190820T235023.277+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190820T235023.598+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T235024.853+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190820T235024.985+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T235031.924+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T235034.763+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T235050.164+0100 [main] Hooks - @After scenario As an automation framework developer
+[DEBUG] 20190820T235050.165+0100 [main] Hooks - @web
+[DEBUG] 20190820T235050.165+0100 [main] Hooks - @dev
+[DEBUG] 20190820T235102.385+0100 [main] Hooks - @Before scenario As an automation framework developer
+[DEBUG] 20190820T235102.389+0100 [main] Hooks - @web
+[DEBUG] 20190820T235102.389+0100 [main] Hooks - @dev
+[DEBUG] 20190820T235113.942+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190820T235114.230+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T235115.393+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190820T235115.517+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T235124.300+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T235127.245+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T235140.207+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190820T235140.573+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190820T235141.21+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T235142.13+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190820T235142.510+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T235143.507+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T235147.484+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T235156.80+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T235156.909+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T235159.42+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190820T235159.230+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T235203.189+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T235218.975+0100 [main] Hooks - @After scenario As an automation framework developer
+[DEBUG] 20190820T235218.975+0100 [main] Hooks - @web
+[DEBUG] 20190820T235218.975+0100 [main] Hooks - @dev
+[DEBUG] 20190820T235555.719+0100 [main] Hooks - @Before scenario As an automation framework developer
+[DEBUG] 20190820T235555.723+0100 [main] Hooks - @web
+[DEBUG] 20190820T235555.723+0100 [main] Hooks - @dev
+[DEBUG] 20190820T235607.765+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190820T235608.118+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T235609.243+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190820T235609.415+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T235615.533+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T235623.178+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T235629.74+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190820T235629.479+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190820T235629.964+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T235630.949+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190820T235631.434+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T235632.394+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T235636.319+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T235645.364+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T235645.974+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T235647.761+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190820T235647.953+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T235651.852+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190820T235707.850+0100 [main] Hooks - @After scenario As an automation framework developer
+[DEBUG] 20190820T235707.851+0100 [main] Hooks - @web
+[DEBUG] 20190820T235707.851+0100 [main] Hooks - @dev
+[DEBUG] 20190821T085734.915+0100 [main] Hooks - @Before scenario As an automation framework developer
+[DEBUG] 20190821T085734.919+0100 [main] Hooks - @web
+[DEBUG] 20190821T085734.919+0100 [main] Hooks - @dev
+[DEBUG] 20190821T085747.955+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T085748.215+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T085749.492+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T085749.659+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T085756.411+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T085800.194+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T085815.884+0100 [main] Hooks - @After scenario As an automation framework developer
+[DEBUG] 20190821T085815.884+0100 [main] Hooks - @web
+[DEBUG] 20190821T085815.888+0100 [main] Hooks - @dev
+[DEBUG] 20190821T085831.527+0100 [main] Hooks - @Before scenario As an automation framework developer
+[DEBUG] 20190821T085831.527+0100 [main] Hooks - @web
+[DEBUG] 20190821T085831.527+0100 [main] Hooks - @dev
+[DEBUG] 20190821T085843.92+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T085843.472+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T085844.56+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T085844.220+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T085850.612+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T085851.981+0100 [main] Hooks - @After scenario As an automation framework developer
+[DEBUG] 20190821T085851.981+0100 [main] Hooks - @web
+[DEBUG] 20190821T085851.981+0100 [main] Hooks - @dev
+[DEBUG] 20190821T085911.937+0100 [main] Hooks - @Before scenario As an automation framework developer
+[DEBUG] 20190821T085911.937+0100 [main] Hooks - @web
+[DEBUG] 20190821T085911.937+0100 [main] Hooks - @dev
+[DEBUG] 20190821T085924.292+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T085924.540+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T085925.718+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T085925.855+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T085937.678+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T085942.999+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T085947.555+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T085947.879+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T085948.238+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T085949.145+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T085949.601+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T085950.627+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T085954.627+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T090003.406+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T090003.962+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T090005.804+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T090005.972+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T090025.115+0100 [main] Hooks - @After scenario As an automation framework developer
+[DEBUG] 20190821T090025.117+0100 [main] Hooks - @web
+[DEBUG] 20190821T090025.117+0100 [main] Hooks - @dev
+[DEBUG] 20190821T090322.186+0100 [main] Hooks - @Before scenario As an automation framework developer
+[DEBUG] 20190821T090322.189+0100 [main] Hooks - @web
+[DEBUG] 20190821T090322.189+0100 [main] Hooks - @dev
+[DEBUG] 20190821T090334.322+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T090334.650+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T090335.741+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T090335.917+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T090347.468+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T090352.809+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T090357.839+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T090358.327+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T090358.812+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T090359.307+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T090359.852+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T090400.801+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T090404.849+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T090412.976+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T090413.595+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T090415.844+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T090416.68+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T090420.98+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T090435.965+0100 [main] Hooks - @After scenario As an automation framework developer
+[DEBUG] 20190821T090435.965+0100 [main] Hooks - @web
+[DEBUG] 20190821T090435.965+0100 [main] Hooks - @dev
+[DEBUG] 20190821T090459.923+0100 [main] Hooks - @Before scenario As an automation framework developer
+[DEBUG] 20190821T090459.923+0100 [main] Hooks - @web
+[DEBUG] 20190821T090459.923+0100 [main] Hooks - @dev
+[DEBUG] 20190821T090519.437+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T090519.661+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T090520.895+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T090521.80+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T090532.359+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T090538.173+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T090552.608+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T090552.824+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T090553.214+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T090553.653+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T090554.171+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T090555.220+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T090559.537+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T090609.24+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T090609.657+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T090611.669+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T090611.805+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T090615.824+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T090615.884+0100 [main] Hooks - @After scenario As an automation framework developer
+[DEBUG] 20190821T090615.885+0100 [main] Hooks - @web
+[DEBUG] 20190821T090615.885+0100 [main] Hooks - @dev
+[DEBUG] 20190821T090633.968+0100 [main] Hooks - @Before scenario As an automation framework developer
+[DEBUG] 20190821T090633.972+0100 [main] Hooks - @web
+[DEBUG] 20190821T090633.972+0100 [main] Hooks - @dev
+[DEBUG] 20190821T090649.547+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T090649.775+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T090650.466+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T090650.698+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T090703.411+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T090706.612+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T090707.409+0100 [main] Hooks - @After scenario As an automation framework developer
+[DEBUG] 20190821T090707.413+0100 [main] Hooks - @web
+[DEBUG] 20190821T090707.413+0100 [main] Hooks - @dev
+[DEBUG] 20190821T090724.459+0100 [main] Hooks - @Before scenario As an automation framework developer
+[DEBUG] 20190821T090724.463+0100 [main] Hooks - @web
+[DEBUG] 20190821T090724.463+0100 [main] Hooks - @dev
+[DEBUG] 20190821T090740.180+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T090740.425+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T090741.706+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T090741.829+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T090750.231+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T090753.760+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T090808.467+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T090808.700+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T090808.943+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T090809.348+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T090809.928+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T090811.49+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T090815.196+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T090823.39+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T090823.942+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T090826.788+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T090826.951+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T090846.227+0100 [main] Hooks - @After scenario As an automation framework developer
+[DEBUG] 20190821T090846.227+0100 [main] Hooks - @web
+[DEBUG] 20190821T090846.227+0100 [main] Hooks - @dev
+[DEBUG] 20190821T090901.238+0100 [main] Hooks - @Before scenario As an automation framework developer
+[DEBUG] 20190821T090901.238+0100 [main] Hooks - @web
+[DEBUG] 20190821T090901.238+0100 [main] Hooks - @dev
+[DEBUG] 20190821T090915.902+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T090916.139+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T090916.755+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T090916.924+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T090932.470+0100 [main] Hooks - @After scenario As an automation framework developer
+[DEBUG] 20190821T090932.470+0100 [main] Hooks - @web
+[DEBUG] 20190821T090932.470+0100 [main] Hooks - @dev
+[DEBUG] 20190821T091011.940+0100 [main] Hooks - @Before scenario As an automation framework developer
+[DEBUG] 20190821T091011.942+0100 [main] Hooks - @web
+[DEBUG] 20190821T091011.943+0100 [main] Hooks - @dev
+[DEBUG] 20190821T091023.680+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T091024.65+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T091025.270+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T091025.403+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T091037.994+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T091042.966+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T091047.564+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T091047.920+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T091048.233+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T091048.933+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T091049.319+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T091050.236+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T091054.173+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T091102.633+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T091103.467+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T091105.337+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T091105.497+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T091109.927+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T091126.18+0100 [main] Hooks - @After scenario As an automation framework developer
+[DEBUG] 20190821T091126.22+0100 [main] Hooks - @web
+[DEBUG] 20190821T091126.22+0100 [main] Hooks - @dev
+[DEBUG] 20190821T091351.750+0100 [main] Hooks - @Before scenario As an automation framework developer
+[DEBUG] 20190821T091351.752+0100 [main] Hooks - @web
+[DEBUG] 20190821T091351.753+0100 [main] Hooks - @dev
+[DEBUG] 20190821T091404.893+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T091405.243+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T091405.962+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T091406.140+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T091415.411+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T091416.955+0100 [main] Hooks - @After scenario As an automation framework developer
+[DEBUG] 20190821T091416.955+0100 [main] Hooks - @web
+[DEBUG] 20190821T091416.955+0100 [main] Hooks - @dev
+[DEBUG] 20190821T091430.859+0100 [main] Hooks - @Before scenario As an automation framework developer
+[DEBUG] 20190821T091430.875+0100 [main] Hooks - @web
+[DEBUG] 20190821T091430.875+0100 [main] Hooks - @dev
+[DEBUG] 20190821T091441.702+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T091442.135+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T091442.918+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T091443.53+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T091450.770+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T091459.85+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T091501.466+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T091501.682+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T091501.978+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T091502.439+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T091502.879+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T091503.907+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T091508.84+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T091515.996+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T091516.641+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T091518.683+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T091518.839+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T091523.194+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T091539.88+0100 [main] Hooks - @After scenario As an automation framework developer
+[DEBUG] 20190821T091539.92+0100 [main] Hooks - @web
+[DEBUG] 20190821T091539.112+0100 [main] Hooks - @dev
+[DEBUG] 20190821T092026.513+0100 [main] Hooks - @Before scenario As an automation framework developer
+[DEBUG] 20190821T092026.516+0100 [main] Hooks - @web
+[DEBUG] 20190821T092026.516+0100 [main] Hooks - @dev
+[DEBUG] 20190821T092037.885+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T092038.280+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T092039.631+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T092039.757+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T092049.66+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T092050.526+0100 [main] Hooks - @After scenario As an automation framework developer
+[DEBUG] 20190821T092050.526+0100 [main] Hooks - @web
+[DEBUG] 20190821T092050.526+0100 [main] Hooks - @dev
+[DEBUG] 20190821T092108.514+0100 [main] Hooks - @Before scenario As an automation framework developer
+[DEBUG] 20190821T092108.518+0100 [main] Hooks - @web
+[DEBUG] 20190821T092108.518+0100 [main] Hooks - @dev
+[DEBUG] 20190821T092119.879+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T092120.167+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T092121.286+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T092121.406+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T092129.66+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T092138.66+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T092138.166+0100 [main] Hooks - @After scenario As an automation framework developer
+[DEBUG] 20190821T092138.166+0100 [main] Hooks - @web
+[DEBUG] 20190821T092138.166+0100 [main] Hooks - @dev
+[DEBUG] 20190821T092154.209+0100 [main] Hooks - @Before scenario As an automation framework developer
+[DEBUG] 20190821T092154.211+0100 [main] Hooks - @web
+[DEBUG] 20190821T092154.211+0100 [main] Hooks - @dev
+[DEBUG] 20190821T092207.246+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T092207.486+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T092208.667+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T092208.843+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T092215.634+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T092225.411+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T092227.436+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T092227.668+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T092227.984+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T092228.425+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T092229.257+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T092230.335+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T092234.360+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T092241.704+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T092242.282+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T092244.382+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T092244.551+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T092248.538+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T092249.255+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T092249.667+0100 [main] Hooks - @After scenario As an automation framework developer
+[DEBUG] 20190821T092249.667+0100 [main] Hooks - @web
+[DEBUG] 20190821T092249.671+0100 [main] Hooks - @dev
+[DEBUG] 20190821T100518.314+0100 [main] Hooks - @Before scenario As an automation framework developer
+[DEBUG] 20190821T100518.319+0100 [main] Hooks - @web
+[DEBUG] 20190821T100518.319+0100 [main] Hooks - @dev
+[DEBUG] 20190821T100531.690+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T100532.39+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T100533.271+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T100533.400+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T100539.824+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T100550.114+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T100553.70+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T100553.506+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T100553.797+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T100554.669+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T100555.36+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T100556.103+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T100600.43+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T100609.482+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T100610.107+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T100611.987+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T100612.192+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T100616.508+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T100617.108+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T100618.688+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T100619.83+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T100619.465+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T100619.853+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T100620.265+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T100620.505+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T100624.403+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T100625.520+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T100626.933+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T100627.304+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T100627.663+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T100627.958+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T100631.938+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T100632.803+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T100648.629+0100 [main] Hooks - @After scenario As an automation framework developer
+[DEBUG] 20190821T100648.629+0100 [main] Hooks - @web
+[DEBUG] 20190821T100648.629+0100 [main] Hooks - @dev
+[DEBUG] 20190821T100852.679+0100 [main] Hooks - @Before scenario As an automation framework developer
+[DEBUG] 20190821T100852.679+0100 [main] Hooks - @web
+[DEBUG] 20190821T100852.679+0100 [main] Hooks - @dev
+[DEBUG] 20190821T100910.193+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T100910.492+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T100911.713+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T100911.857+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T100919.195+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T100927.563+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T100930.591+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T100931.09+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T100931.395+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T100932.25+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T100933.190+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T100934.202+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T100938.119+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T100947.84+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T100947.640+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T100949.297+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T100949.449+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T100953.450+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T100954.166+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T100955.388+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T100955.756+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T100956.156+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T100956.561+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T100956.961+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T100957.161+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T101001.62+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T101001.654+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T101003.152+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T101003.556+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T101003.996+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T101004.232+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T101101.29+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T101116.995+0100 [main] Hooks - @After scenario As an automation framework developer
+[DEBUG] 20190821T101116.995+0100 [main] Hooks - @web
+[DEBUG] 20190821T101116.999+0100 [main] Hooks - @dev
+[DEBUG] 20190821T101133.583+0100 [main] Hooks - @Before scenario As an automation framework developer
+[DEBUG] 20190821T101133.587+0100 [main] Hooks - @web
+[DEBUG] 20190821T101133.587+0100 [main] Hooks - @dev
+[DEBUG] 20190821T101145.83+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T101145.343+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T101146.79+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T101146.353+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T101154.658+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T101156.803+0100 [main] Hooks - @After scenario As an automation framework developer
+[DEBUG] 20190821T101156.803+0100 [main] Hooks - @web
+[DEBUG] 20190821T101156.804+0100 [main] Hooks - @dev
+[DEBUG] 20190821T101214.206+0100 [main] Hooks - @Before scenario As an automation framework developer
+[DEBUG] 20190821T101214.206+0100 [main] Hooks - @web
+[DEBUG] 20190821T101214.206+0100 [main] Hooks - @dev
+[DEBUG] 20190821T101228.798+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T101229.134+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T101229.909+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T101230.105+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T101236.538+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T101245.33+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T101247.81+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T101247.317+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T101247.666+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T101248.355+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T101248.759+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T101249.727+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T101253.737+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T101301.600+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T101302.308+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T101304.66+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T101304.237+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T101308.230+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T101309.300+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T101310.364+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T101310.674+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T101311.106+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T101311.572+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T101312.111+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T101312.295+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T101316.215+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T101317.273+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T101318.506+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T101318.918+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T101319.403+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T101319.631+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T101323.565+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T101324.727+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T101325.872+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T101326.257+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T101326.336+0100 [main] Hooks - @After scenario As an automation framework developer
+[DEBUG] 20190821T101326.336+0100 [main] Hooks - @web
+[DEBUG] 20190821T101326.340+0100 [main] Hooks - @dev
+[DEBUG] 20190821T101643.378+0100 [main] Hooks - @Before scenario As an automation framework developer
+[DEBUG] 20190821T101643.378+0100 [main] Hooks - @web
+[DEBUG] 20190821T101643.378+0100 [main] Hooks - @dev
+[DEBUG] 20190821T101654.373+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T101654.622+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T101655.893+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T101656.09+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T101702.699+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T101711.932+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T101713.882+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T101714.82+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T101714.443+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T101715.278+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T101715.658+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T101716.738+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T101720.695+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T101728.231+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T101728.859+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T101730.638+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T101730.787+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T101734.853+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T101735.779+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T101737.73+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T101737.419+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T101737.821+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T101738.205+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T101738.562+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T101738.778+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T101742.702+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T101743.483+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T101745.36+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T101745.439+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T101745.867+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T101746.119+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T101750.14+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T101750.735+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T101752.94+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T101752.410+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T101752.458+0100 [main] Hooks - @After scenario As an automation framework developer
+[DEBUG] 20190821T101752.458+0100 [main] Hooks - @web
+[DEBUG] 20190821T101752.458+0100 [main] Hooks - @dev
+[DEBUG] 20190821T102145.482+0100 [main] Hooks - @Before scenario As an automation framework developer
+[DEBUG] 20190821T102145.486+0100 [main] Hooks - @web
+[DEBUG] 20190821T102145.486+0100 [main] Hooks - @dev
+[DEBUG] 20190821T102201.60+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T102201.291+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T102202.515+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T102202.655+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T102211.248+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T102212.792+0100 [main] Hooks - @After scenario As an automation framework developer
+[DEBUG] 20190821T102212.792+0100 [main] Hooks - @web
+[DEBUG] 20190821T102212.792+0100 [main] Hooks - @dev
+[DEBUG] 20190821T102228.763+0100 [main] Hooks - @Before scenario As an automation framework developer
+[DEBUG] 20190821T102228.763+0100 [main] Hooks - @web
+[DEBUG] 20190821T102228.767+0100 [main] Hooks - @dev
+[DEBUG] 20190821T102241.593+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T102241.834+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T102243.43+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T102243.233+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T102251.692+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T102254.329+0100 [main] Hooks - @After scenario As an automation framework developer
+[DEBUG] 20190821T102254.329+0100 [main] Hooks - @web
+[DEBUG] 20190821T102254.329+0100 [main] Hooks - @dev
+[DEBUG] 20190821T102308.297+0100 [main] Hooks - @Before scenario As an automation framework developer
+[DEBUG] 20190821T102308.301+0100 [main] Hooks - @web
+[DEBUG] 20190821T102308.301+0100 [main] Hooks - @dev
+[DEBUG] 20190821T102319.490+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T102319.782+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T102320.916+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T102321.45+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T102328.584+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T102337.537+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T102339.786+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T102340.35+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T102340.421+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T102340.831+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T102341.288+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T102342.437+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T102346.364+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T102354.739+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T102355.367+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T102356.973+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T102357.149+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T102401.455+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T102402.219+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T102403.592+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T102404.08+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T102404.368+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T102404.740+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T102405.80+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T102405.377+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T102409.316+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T102409.976+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T102411.541+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T102411.965+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T102412.333+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T102412.545+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T102416.474+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T102417.545+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T102419.90+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T102419.442+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T102419.490+0100 [main] Hooks - @After scenario As an automation framework developer
+[DEBUG] 20190821T102419.490+0100 [main] Hooks - @web
+[DEBUG] 20190821T102419.490+0100 [main] Hooks - @dev
+[DEBUG] 20190821T103135.218+0100 [main] Hooks - @Before scenario As an automation framework developer
+[DEBUG] 20190821T103135.226+0100 [main] Hooks - @web
+[DEBUG] 20190821T103135.226+0100 [main] Hooks - @dev
+[DEBUG] 20190821T103150.833+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T103151.70+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T103152.335+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T103152.486+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T103158.954+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T103204.387+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T103209.290+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T103209.595+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T103209.979+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T103210.847+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T103211.235+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T103212.288+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T103216.326+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T103223.717+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T103224.343+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T103226.68+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T103226.232+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T103230.174+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T103231.403+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T103232.752+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T103233.125+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T103233.527+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T103233.894+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T103234.290+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T103234.514+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T103238.419+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T103239.261+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T103240.837+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T103241.176+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T103241.559+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T103241.771+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T103245.673+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T103246.600+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T103248.168+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T103248.622+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T103248.685+0100 [main] Hooks - @After scenario As an automation framework developer
+[DEBUG] 20190821T103248.686+0100 [main] Hooks - @web
+[DEBUG] 20190821T103248.686+0100 [main] Hooks - @dev
+[DEBUG] 20190821T103346.825+0100 [main] Hooks - @Before scenario As an automation framework developer
+[DEBUG] 20190821T103346.829+0100 [main] Hooks - @web
+[DEBUG] 20190821T103346.829+0100 [main] Hooks - @dev
+[DEBUG] 20190821T103359.517+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T103359.935+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T103401.148+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T103401.325+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T103409.467+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T103412.418+0100 [main] Hooks - @After scenario As an automation framework developer
+[DEBUG] 20190821T103412.420+0100 [main] Hooks - @web
+[DEBUG] 20190821T103412.421+0100 [main] Hooks - @dev
+[DEBUG] 20190821T103442.828+0100 [main] Hooks - @Before scenario As an automation framework developer
+[DEBUG] 20190821T103442.831+0100 [main] Hooks - @web
+[DEBUG] 20190821T103442.831+0100 [main] Hooks - @dev
+[DEBUG] 20190821T103453.921+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T103454.217+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T103454.913+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T103455.55+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T103507.735+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T103510.830+0100 [main] Hooks - @After scenario As an automation framework developer
+[DEBUG] 20190821T103510.830+0100 [main] Hooks - @web
+[DEBUG] 20190821T103510.834+0100 [main] Hooks - @dev
+[DEBUG] 20190821T103526.301+0100 [main] Hooks - @Before scenario As an automation framework developer
+[DEBUG] 20190821T103526.306+0100 [main] Hooks - @web
+[DEBUG] 20190821T103526.307+0100 [main] Hooks - @dev
+[DEBUG] 20190821T103537.645+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T103537.941+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T103539.122+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T103539.274+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T103545.542+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T103548.112+0100 [main] Hooks - @After scenario As an automation framework developer
+[DEBUG] 20190821T103548.112+0100 [main] Hooks - @web
+[DEBUG] 20190821T103548.116+0100 [main] Hooks - @dev
+[DEBUG] 20190821T103602.398+0100 [main] Hooks - @Before scenario As an automation framework developer
+[DEBUG] 20190821T103602.401+0100 [main] Hooks - @web
+[DEBUG] 20190821T103602.401+0100 [main] Hooks - @dev
+[DEBUG] 20190821T103613.436+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T103613.680+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T103615.01+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T103615.125+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T103624.83+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T103631.326+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T103633.543+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T103633.747+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T103634.75+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T103634.516+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T103635.108+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T103636.749+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T103640.791+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T103648.289+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T103648.954+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T103651.06+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T103651.163+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T103655.24+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T103655.819+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T103657.00+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T103657.401+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T103657.825+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T103658.225+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T103658.621+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T103658.817+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T103702.731+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T103703.251+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T103704.341+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T103704.709+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T103705.118+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T103705.285+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T103709.204+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T103709.736+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T103711.253+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T103711.791+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T103711.891+0100 [main] Hooks - @After scenario As an automation framework developer
+[DEBUG] 20190821T103711.891+0100 [main] Hooks - @web
+[DEBUG] 20190821T103711.891+0100 [main] Hooks - @dev
+[DEBUG] 20190821T103813.621+0100 [main] Hooks - @Before scenario As an automation framework developer
+[DEBUG] 20190821T103813.625+0100 [main] Hooks - @web
+[DEBUG] 20190821T103813.625+0100 [main] Hooks - @dev
+[DEBUG] 20190821T103824.642+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T103824.934+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T103826.351+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T103826.489+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T103833.125+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T103838.413+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T103842.582+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T103842.914+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T103843.282+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T103844.78+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T103844.455+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T103845.327+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T103849.394+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T103856.786+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T103857.372+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T103859.215+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T103859.391+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T103903.378+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T103903.983+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T103905.472+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T103905.913+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T103906.353+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T103906.801+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T103907.234+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T103907.474+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T103911.393+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T103911.921+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T103912.991+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T103913.382+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T103913.811+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T103914.75+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T103917.977+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T103918.595+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T103919.853+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T103920.218+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T103920.298+0100 [main] Hooks - @After scenario As an automation framework developer
+[DEBUG] 20190821T103920.298+0100 [main] Hooks - @web
+[DEBUG] 20190821T103920.302+0100 [main] Hooks - @dev
+[DEBUG] 20190821T104124.522+0100 [main] Hooks - @Before scenario As an automation framework developer
+[DEBUG] 20190821T104124.522+0100 [main] Hooks - @web
+[DEBUG] 20190821T104124.522+0100 [main] Hooks - @dev
+[DEBUG] 20190821T104136.319+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T104136.667+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T104137.332+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T104137.464+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T104147.938+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T104149.617+0100 [main] Hooks - @After scenario As an automation framework developer
+[DEBUG] 20190821T104149.621+0100 [main] Hooks - @web
+[DEBUG] 20190821T104149.625+0100 [main] Hooks - @dev
+[DEBUG] 20190821T104207.177+0100 [main] Hooks - @Before scenario As an automation framework developer
+[DEBUG] 20190821T104207.181+0100 [main] Hooks - @web
+[DEBUG] 20190821T104207.181+0100 [main] Hooks - @dev
+[DEBUG] 20190821T104223.280+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T104223.512+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T104224.682+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T104224.794+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T104230.873+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T104233.859+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T104246.124+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T104246.379+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T104246.768+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T104247.556+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T104248.57+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T104249.218+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T104253.180+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T104300.925+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T104301.595+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T104304.09+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T104304.197+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T104308.136+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T104308.776+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T104310.21+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T104310.454+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T104310.890+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T104311.226+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T104311.639+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T104311.855+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T104315.780+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T104316.360+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T104317.875+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T104318.280+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T104318.764+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T104319.36+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T104322.954+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T104323.776+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T104324.933+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T104422.436+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T104422.492+0100 [main] Hooks - @After scenario As an automation framework developer
+[DEBUG] 20190821T104422.492+0100 [main] Hooks - @web
+[DEBUG] 20190821T104422.492+0100 [main] Hooks - @dev
+[DEBUG] 20190821T104501.258+0100 [main] Hooks - @Before scenario As an automation framework developer
+[DEBUG] 20190821T104501.258+0100 [main] Hooks - @web
+[DEBUG] 20190821T104501.258+0100 [main] Hooks - @dev
+[DEBUG] 20190821T104512.844+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T104513.204+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T104513.880+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T104514.74+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T104526.364+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T104534.212+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T104534.276+0100 [main] Hooks - @After scenario As an automation framework developer
+[DEBUG] 20190821T104534.276+0100 [main] Hooks - @web
+[DEBUG] 20190821T104534.276+0100 [main] Hooks - @dev
+[DEBUG] 20190821T104552.40+0100 [main] Hooks - @Before scenario As an automation framework developer
+[DEBUG] 20190821T104552.40+0100 [main] Hooks - @web
+[DEBUG] 20190821T104552.40+0100 [main] Hooks - @dev
+[DEBUG] 20190821T104604.73+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T104604.359+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T104605.486+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T104605.630+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T104611.920+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T104618.602+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T104622.803+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T104623.191+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T104623.535+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T104624.299+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T104624.679+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T104625.556+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T104629.620+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T104637.316+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T104638.456+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T104640.147+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T104640.308+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T104644.339+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T104645.193+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T104646.371+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T104646.687+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T104647.51+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T104647.479+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T104647.918+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T104648.127+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T104652.51+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T104652.683+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T104654.201+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T104654.608+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T104655.28+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T104655.269+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T104659.189+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T104659.961+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T104701.101+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T104701.461+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T104701.917+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T104702.121+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T104705.902+0100 [main] Hooks - @After scenario As an automation framework developer
+[DEBUG] 20190821T104705.902+0100 [main] Hooks - @web
+[DEBUG] 20190821T104705.902+0100 [main] Hooks - @dev
+[DEBUG] 20190821T110009.130+0100 [main] Hooks - @Before scenario As an automation framework developer
+[DEBUG] 20190821T110009.137+0100 [main] Hooks - @web
+[DEBUG] 20190821T110009.139+0100 [main] Hooks - @dev
+[DEBUG] 20190821T110022.942+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T110023.344+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T110024.439+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T110024.677+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T110031.395+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T110033.921+0100 [main] Hooks - @After scenario As an automation framework developer
+[DEBUG] 20190821T110033.922+0100 [main] Hooks - @web
+[DEBUG] 20190821T110033.922+0100 [main] Hooks - @dev
+[DEBUG] 20190821T110717.771+0100 [main] Hooks - @Before scenario As an automation framework developer
+[DEBUG] 20190821T110717.773+0100 [main] Hooks - @web
+[DEBUG] 20190821T110717.774+0100 [main] Hooks - @dev
+[DEBUG] 20190821T110735.771+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T110736.358+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T110738.03+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T110738.272+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T110749.942+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T110802.315+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T110802.920+0100 [main] Hooks - @After scenario As an automation framework developer
+[DEBUG] 20190821T110802.921+0100 [main] Hooks - @web
+[DEBUG] 20190821T110802.922+0100 [main] Hooks - @dev
+[DEBUG] 20190821T111411.934+0100 [main] Hooks - @Before scenario As an automation framework developer
+[DEBUG] 20190821T111411.937+0100 [main] Hooks - @web
+[DEBUG] 20190821T111411.937+0100 [main] Hooks - @dev
+[DEBUG] 20190821T111430.292+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T111431.262+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T111432.594+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T111433.149+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T111445.887+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T111501.656+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T111505.694+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T111506.278+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T111507.113+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T111507.727+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T111509.696+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T111511.475+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T111515.445+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T111533.711+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T111534.912+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T111537.269+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T111537.755+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T111542.611+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T111543.811+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T111545.386+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T111545.723+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T111546.264+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T111546.597+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T111547.06+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T111547.593+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T111552.224+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T111553.202+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T111554.837+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T111555.327+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T111555.752+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T111556.253+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T111600.317+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T111601.194+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T111602.956+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T111603.286+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T111603.755+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T111604.07+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T111607.902+0100 [main] Hooks - @After scenario As an automation framework developer
+[DEBUG] 20190821T111607.903+0100 [main] Hooks - @web
+[DEBUG] 20190821T111607.903+0100 [main] Hooks - @dev
+[DEBUG] 20190821T111929.464+0100 [main] Hooks - @Before scenario As an automation framework developer
+[DEBUG] 20190821T111929.469+0100 [main] Hooks - @web
+[DEBUG] 20190821T111929.469+0100 [main] Hooks - @dev
+[DEBUG] 20190821T111946.457+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T111947.109+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T111948.480+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T111948.940+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T111958.940+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T112002.935+0100 [main] Hooks - @After scenario As an automation framework developer
+[DEBUG] 20190821T112002.936+0100 [main] Hooks - @web
+[DEBUG] 20190821T112002.937+0100 [main] Hooks - @dev
+[DEBUG] 20190821T112305.00+0100 [main] Hooks - @Before scenario As an automation framework developer
+[DEBUG] 20190821T112305.02+0100 [main] Hooks - @web
+[DEBUG] 20190821T112305.03+0100 [main] Hooks - @dev
+[DEBUG] 20190821T112323.378+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T112323.751+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T112324.942+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T112325.534+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T112335.139+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T112338.692+0100 [main] Hooks - @After scenario As an automation framework developer
+[DEBUG] 20190821T112338.692+0100 [main] Hooks - @web
+[DEBUG] 20190821T112338.692+0100 [main] Hooks - @dev
+[DEBUG] 20190821T112405.793+0100 [main] Hooks - @Before scenario As an automation framework developer
+[DEBUG] 20190821T112405.796+0100 [main] Hooks - @web
+[DEBUG] 20190821T112405.797+0100 [main] Hooks - @dev
+[DEBUG] 20190821T112424.721+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T112425.482+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T112426.972+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T112427.268+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T112445.198+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T112448.635+0100 [main] Hooks - @After scenario As an automation framework developer
+[DEBUG] 20190821T112448.635+0100 [main] Hooks - @web
+[DEBUG] 20190821T112448.635+0100 [main] Hooks - @dev
+[DEBUG] 20190821T112521.316+0100 [main] Hooks - @Before scenario As an automation framework developer
+[DEBUG] 20190821T112521.325+0100 [main] Hooks - @web
+[DEBUG] 20190821T112521.327+0100 [main] Hooks - @dev
+[DEBUG] 20190821T112537.180+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T112537.772+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T112539.590+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T112540.06+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T112547.533+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T112603.989+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T112609.664+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T112610.250+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T112610.893+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T112611.502+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T112613.59+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T112617.245+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T112621.361+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T112636.337+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T112637.463+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T112639.803+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T112640.174+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T112644.659+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T112646.184+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T112647.717+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T112648.153+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T112648.584+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T112649.20+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T112649.491+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T112650.95+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T112654.73+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T112654.821+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T112656.140+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T112656.557+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T112657.41+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T112657.288+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T112701.208+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T112702.216+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T112703.550+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T112703.969+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T112704.466+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190821T112704.902+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190821T112708.746+0100 [main] Hooks - @After scenario As an automation framework developer
+[DEBUG] 20190821T112708.746+0100 [main] Hooks - @web
+[DEBUG] 20190821T112708.746+0100 [main] Hooks - @dev
