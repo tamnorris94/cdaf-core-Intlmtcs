@@ -14,8 +14,8 @@ Feature: Jira Issue Management
      #Then the issue with the given summary "<summary>" and execution status "<exStatus>" is successfully created
 
     Examples:
-      | description                    |Description2 |summary                      | riskIm      | riskLi |exStatus  |autoStatus| comment   |
-      | First Automated Test Creation  |Update Stage |Test Test creation no1       | Lowest      |        | Passed   |Ready     | First run |
-      #| Second Automated Test Creation|             |Test Test creation no2       | Low         |        | To Do    |          | Second run|
-      #| Third Automated Test Creation |             |Test Test creation no3       | High        |        | Failed   |          | Third run |
-      #| Fourth Automated Test Creation|             |Test Test creation no4       | Highest     |        | Passed   |          | Fourth run|
+      | description                    |Description2 |summary                | riskIm      | riskLi |exStatus  |autoStatus| comment   |
+      | First Automated Test Creation  |Update Stage |Test Test creation no1 | Visible     |Quite Likely| Passed   |Ready     | First run |
+      #| Second Automated Test Creation|             |Test Test creation no2 | Low         |        | To Do    |          | Second run|
+      #| Third Automated Test Creation |             |Test Test creation no3 | High        |        | Failed   |          | Third run |
+      #| Fourth Automated Test Creation|             |Test Test creation no4 | Highest     |        | Passed   |          | Fourth run|
