@@ -146,9 +146,10 @@ public class JiraStepDefs {
 	}
 
 	@Then("^the issue with the given summary \"([^\"]*)\" and execution status \"([^\"]*)\" is successfully created$")
-	public void issue_with_attributes_is_created(String summary, String exc_Status) throws Throwable
+	public void issue_with_attributes_is_created(String summary, String excStatus) throws Throwable
 	{
-
+		JiraIssue jiraIssue = new JiraIssue(webDriver);
+		jiraIssue.verifyIssueCreation(summary, excStatus);
 	}
 
 	@Then("^I should get a new Jira issue id$")

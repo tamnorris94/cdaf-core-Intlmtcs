@@ -150,4 +150,11 @@ public class JiraIssue {
         }
     }
 
+    public void verifyIssueCreation(String summary, String execStatus)
+    {
+        String issueVerifier = summary + " " + identifyIssue;
+        List<WebElement> identify = webDriver.findElements(By.xpath("//*[contains(text(),'%s'"));
+        assert(!identify.isEmpty());
+    }
+
 }

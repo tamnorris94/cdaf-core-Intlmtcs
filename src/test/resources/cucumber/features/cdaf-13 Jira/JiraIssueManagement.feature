@@ -11,10 +11,10 @@ Feature: Jira Issue Management
 
     And user provides description "<Description2>", automation status"<autoStatus>", risk likelihood"<riskLi>", risk impact "<riskIm>", execution status"<exStatus>" comment "<comment>"
 
-    #Then the issue with the given summary "<summary>" and execution status "<exStatus>" is successfully created
+    Then the issue with the given summary "<summary>" and execution status "<exStatus>" is successfully created
 
     Examples:
       | description                    |Description2  |summary                | riskIm          | riskLi          |exStatus    |autoStatus| comment   |
-      |  Automated Test Creation  |Update Stage  |Test Test creation no1 | 2 - Visible     | 2 - Quite likely| Blocked    |Ready     | First run |
+      |  Automated Test Creation       |Update Stage  |Test Test creation no1 | 2 - Visible     | 2 - Quite likely| Blocked    |Ready     | First run |
       #| Second Automated Test Creation |              |Test Test creation no2 | 3 - Minor       | 3 - Unlikely    | In Progress|Passed    | Second run|
       #| Third Automated Test Creation  |              |Test Test creation no3 | 1 - Interruption| 1 - Very likely | Blocked    |Failed    | Third run |
