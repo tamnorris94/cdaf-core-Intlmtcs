@@ -74,7 +74,7 @@ public class JiraStepDefs {
 		loginPage.enterPassword(jiraPassword);
 	}
 
-	@Given("^Acutest test automation developer logs into Jira$")
+	@Given("^Acutest test automation developer logs in to Jira$")
 	public void user_logs_in_to_Jira() throws Throwable {
 		webDriver.get(acutesttrainingUrl);
 		LoginPageObject loginPage = new LoginPageObject(webDriver);
@@ -109,17 +109,16 @@ public class JiraStepDefs {
 
 		JiraIssue jiraIssue = new JiraIssue(webDriver);
 		jiraIssue.enterStoryDetails(summary, descr, projectName);
-		//navigationBar.search();
 
 	}
 
-	@When("^user provides \"([^\"]*)\", description \"([^\"]*)\", automation status\"([^\"]*)\", risk likelihood\"([^\"]*)\", risk impact \"([^\"]*)\", execution status\"([^\"]*)\" comment \"([^\"]*)\"$")
-	public void user_provides_attributes(String summary, String description2, String autoStatus, String riskLi, String riskIm, String execStatus, String comment) throws Throwable
+	@When("^user provides description \"([^\"]*)\", automation status\"([^\"]*)\", risk likelihood\"([^\"]*)\", risk impact \"([^\"]*)\", execution status\"([^\"]*)\" comment \"([^\"]*)\"$")
+	public void user_provides_attributes(String description2, String autoStatus, String riskLi, String riskIm, String execStatus, String comment) throws Throwable
 	{
 		//NavigationBarObject navigationBar = new NavigationBarObject(webDriver);
 		//navigationBar.search();
 		JiraIssue jiraIssue = new JiraIssue(webDriver);
-		jiraIssue.addTestAttributes(summary, description2, autoStatus, riskLi, riskIm, execStatus, comment);
+		jiraIssue.addTestAttributes(description2, autoStatus, riskLi, riskIm, execStatus, comment);
 	}
 	/**
 	 * Returns the title of a jira page and compares against expected title.

@@ -28,29 +28,25 @@ public class JiraIssue {
     private By issueStatus3 = By.xpath("//*[contains(text(),'CDAFSBXB Stage 3')]");
     private By issueStage1 = By.xpath("//*[contains(@id,'react-select-2-option-1')]");
     private By issueStage2 = By.xpath("//*[contains(@id,'react-select-3-option-2')]");
-    private By riskVisible = By.xpath("//*[contains(text(),'2 - Visible')]");
-    private By riskQuiteLikely = By.xpath("//*[contains(text(),'2 - Quite likely')]");
     private By issueStage3 = By.xpath("//*[contains(@id,'react-select-4-option-3')]");
     private By testAutomationStatus = By.id("customfield_10825");
-    private By testAutomationPassed = By.xpath("//*[contains(text(),'Passed')]");
     private By issueStage4 = By.xpath("//*[contains(@id,'react-select-5-option-3')]");
     private By testExecutionStatus = By.id("customfield_10817");
-    private By testExecutionPassed = By.xpath("//*[contains(text(),'In Progress')]");
     private By confirmStage = By.id("issue-workflow-transition-submit");
 
     public JiraIssue(WebDriver webDriver) {this.webDriver = webDriver;};
 
-    public void enterStoryDetails(String summary, String description, String projectName)
+    public void enterStoryDetails(String description, String summary, String projectName)
     {
 
         WebDriverWait wait = new WebDriverWait(webDriver, 30);
-        WebElement element = wait.until(ExpectedConditions.elementToBeClickable(By.id("createGlobalItem")));
+        WebElement element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[contains(@id,'createGlobalItem')]/parent::div")));
         try {
             Thread.sleep(10500);
         } catch(InterruptedException e) {
             System.out.println("got interrupted!");
         }
-        webDriver.findElement(By.id("createGlobalItem")).click();
+        webDriver.findElement(By.xpath("//*[contains(@id,'createGlobalItem')]/parent::div")).click();
         element = wait.until(ExpectedConditions.elementToBeClickable(summaryField));
         webDriver.findElement(summaryField).sendKeys(summary + " " + identifyIssue );
         webDriver.findElement(descriptionField).sendKeys(description);
@@ -62,7 +58,7 @@ public class JiraIssue {
 
 
     }
-    public void addTestAttributes(String summary, String description,String autoStatus, String riskLi, String riskIm, String execStatus,String comment)
+    public void addTestAttributes(String description2,String autoStatus, String riskLi, String riskIm, String execStatus,String comment)
     {
 
         WebDriverWait wait = new WebDriverWait(webDriver, 15);
@@ -79,7 +75,7 @@ public class JiraIssue {
         webDriver.findElement(issueStage1).click();
 
         element = wait.until(ExpectedConditions.elementToBeClickable(commentField));
-        webDriver.findElement(descriptionField).sendKeys("Modified Description for Stage 1");
+        webDriver.findElement(descriptionField).sendKeys(description2);
         webDriver.findElement(commentField).sendKeys("Stage 1 complete");
         webDriver.findElement(confirmStage).click();
         try {
@@ -95,12 +91,12 @@ public class JiraIssue {
         webDriver.findElement(issueStage2).click();
         element = wait.until(ExpectedConditions.elementToBeClickable(riskImpact));
         webDriver.findElement(riskImpact).click();
-        element = wait.until(ExpectedConditions.elementToBeClickable(riskVisible));
-        webDriver.findElement(riskVisible).click();
+        element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[contains(text(),'" + riskIm + "')]")));
+        webDriver.findElement(By.xpath("//*[contains(text(),'" + riskIm + "')]")).click();
         element = wait.until(ExpectedConditions.elementToBeClickable(riskLikelihood));
         webDriver.findElement(riskLikelihood).click();
-        element = wait.until(ExpectedConditions.elementToBeClickable(riskQuiteLikely));
-        webDriver.findElement(riskQuiteLikely).click();
+        element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[contains(text(),'" + riskLi + "')]")));
+        webDriver.findElement(By.xpath("//*[contains(text(),'" + riskLi + "')]")).click();
         element = wait.until(ExpectedConditions.elementToBeClickable(commentField));
         webDriver.findElement(commentField).sendKeys("Stage 2 complete");
         element = wait.until(ExpectedConditions.elementToBeClickable(confirmStage));
@@ -119,8 +115,8 @@ public class JiraIssue {
         webDriver.findElement(issueStage3).click();
         element = wait.until(ExpectedConditions.elementToBeClickable(testAutomationStatus));
         webDriver.findElement(testAutomationStatus).click();
-        element = wait.until(ExpectedConditions.elementToBeClickable(testAutomationPassed));
-        webDriver.findElement(testAutomationPassed).click();
+        element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[contains(text(),'" + autoStatus + "')]")));
+        webDriver.findElement(By.xpath("//*[contains(text(),'" + autoStatus + "')]")).click();
         element = wait.until(ExpectedConditions.elementToBeClickable(commentField));
         webDriver.findElement(commentField).sendKeys("Stage 3 complete");
         element = wait.until(ExpectedConditions.elementToBeClickable(confirmStage));
@@ -140,8 +136,8 @@ public class JiraIssue {
         webDriver.findElement(issueStage4).click();
         element = wait.until(ExpectedConditions.elementToBeClickable(testExecutionStatus));
         webDriver.findElement(testExecutionStatus).click();
-        element = wait.until(ExpectedConditions.elementToBeClickable(testExecutionPassed));
-        webDriver.findElement(testExecutionPassed).click();
+        element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[contains(text(),'" + execStatus + "')]")));
+        webDriver.findElement(By.xpath("//*[contains(text(),'" + execStatus + "')]")).click();
         element = wait.until(ExpectedConditions.elementToBeClickable(commentField));
         webDriver.findElement(commentField).sendKeys("Stage 4 complete");
         element = wait.until(ExpectedConditions.elementToBeClickable(confirmStage));
