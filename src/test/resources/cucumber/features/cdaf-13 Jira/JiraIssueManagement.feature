@@ -11,7 +11,7 @@ Feature: Jira Issue Management
 
     And user provides description "<Description2>", automation status"<autoStatus>", risk likelihood"<riskLi>", risk impact "<riskIm>", execution status"<exStatus>" comment "<comment>"
 
-    Then the issue with the given summary "<summary>" and execution status "<exStatus>" is successfully created
+    Then the issue with the given summary "<summary>" is successfully created
 
     Examples:
       | description                    |Description2  |summary                | riskIm          | riskLi          |exStatus    |autoStatus| comment   |

@@ -1,6 +1,7 @@
 package com.acutest.cdaf.pageobjects.jira;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -21,6 +22,7 @@ public class JiraIssue {
     private By riskImpact = By.id("customfield_10500");
     private By riskLikelihood = By.id("customfield_10501");
 
+    private By createGlobalItem = By.xpath("//*[contains(@id,'createGlobalItem')]/parent::div");
     String identifyIssue = LocalDateTime.now().toString();
     private By issueStatus = By.xpath("//*[contains(text(),'Backlog')]");
     private By issueStatus1 = By.xpath("//*[contains(text(),'CDAFSBXB Stage 1')]");
@@ -40,15 +42,19 @@ public class JiraIssue {
     {
 
         WebDriverWait wait = new WebDriverWait(webDriver, 30);
-        WebElement element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[contains(@id,'createGlobalItem')]/parent::div")));
+        WebElement element;
         try {
-            Thread.sleep(10500);
+            Thread.sleep(15500);
         } catch(InterruptedException e) {
             System.out.println("got interrupted!");
         }
-        webDriver.findElement(By.xpath("//*[contains(@id,'createGlobalItem')]/parent::div")).click();
+        element = wait.until(ExpectedConditions.refreshed(ExpectedConditions.elementToBeClickable(createGlobalItem)));
+
+        webDriver.findElement(createGlobalItem).click();
+
         element = wait.until(ExpectedConditions.elementToBeClickable(summaryField));
-        webDriver.findElement(summaryField).sendKeys(summary + " " + identifyIssue );
+        String concatSummary = summary +" " + identifyIssue;
+        webDriver.findElement(summaryField).sendKeys(concatSummary );
         webDriver.findElement(descriptionField).sendKeys(description);
         element = wait.until(ExpectedConditions.elementToBeClickable(projectField));
         webDriver.findElement(projectField).click();
@@ -74,8 +80,9 @@ public class JiraIssue {
         element = wait.until(ExpectedConditions.elementToBeClickable(issueStage1));
         webDriver.findElement(issueStage1).click();
 
-        element = wait.until(ExpectedConditions.elementToBeClickable(commentField));
+        element = wait.until(ExpectedConditions.visibilityOfElementLocated(descriptionField));
         webDriver.findElement(descriptionField).sendKeys(description2);
+        element = wait.until(ExpectedConditions.elementToBeClickable(commentField));
         webDriver.findElement(commentField).sendKeys("Stage 1 complete");
         webDriver.findElement(confirmStage).click();
         try {
@@ -150,10 +157,10 @@ public class JiraIssue {
         }
     }
 
-    public void verifyIssueCreation(String summary, String execStatus)
+    public void verifyIssueCreation(String summary)
     {
-        String issueVerifier = summary + " " + identifyIssue;
-        List<WebElement> identify = webDriver.findElements(By.xpath("//*[contains(text(),'%s'"));
+        String issueVerifier = String.format(".//*[contains(text(), '%s')]",summary + " " + identifyIssue);
+        List<WebElement> identify = webDriver.findElements(By.xpath(issueVerifier));
         assert(!identify.isEmpty());
     }
 
