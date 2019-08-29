@@ -15,7 +15,7 @@ public class NavigationBarObject
         NavigationBarObject.webDriver = webDriver;
     }
 
-    private By createButton = By.id("createGlobalItem");
+    private By createButton = By.xpath("//*[contains(@id,'createGlobalItem')]/parent::div");
     private By globalButton = By.id("productLogoGlobalItem");
     private By searchButton = By.id("quickSearchGlobalItem");
 
@@ -24,6 +24,11 @@ public class NavigationBarObject
 
         WebDriverWait wait = new WebDriverWait(webDriver, 15);
         //webDriver.switchTo().parentFrame();
+        try {
+            Thread.sleep(13500);
+        } catch(InterruptedException e) {
+            System.out.println("got interrupted!");
+        }
         WebElement element = wait.until(ExpectedConditions.elementToBeClickable(createButton));
         webDriver.findElement((createButton)).click();
         //webDriver.findElement((By.id("createGlobaltem"))).click();

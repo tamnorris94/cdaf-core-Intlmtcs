@@ -43,11 +43,7 @@ public class JiraIssue {
 
         WebDriverWait wait = new WebDriverWait(webDriver, 30);
         WebElement element;
-        try {
-            Thread.sleep(15500);
-        } catch(InterruptedException e) {
-            System.out.println("got interrupted!");
-        }
+
         element = wait.until(ExpectedConditions.refreshed(ExpectedConditions.elementToBeClickable(createGlobalItem)));
 
         webDriver.findElement(createGlobalItem).click();
