@@ -15,7 +15,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-//trigger build
+
 public class DemoStepDefs {
 
     private static Logger logger = LogManager.getLogger(DemoStepDefs.class);
@@ -54,9 +54,14 @@ public class DemoStepDefs {
         Assert.assertEquals("The bullet point doesn't have the correct text", expectedText, newBullet);
     }
 
-    @When("I navigate to the About page")
-    public void iNavigateToTheAboutPage() {
-        driver.get(URL + "/About");
+//     @When("I navigate to the About page")
+//     public void iNavigateToTheAboutPage() {
+//         driver.get(URL + "/About");
+//     }
+    
+    @When("I navigate to the {string} page")
+    public void iNavigateToTheAboutPage(String page) {
+        driver.get(URL + "/" + page);
     }
 
     @Then("the title is {string}")
