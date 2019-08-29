@@ -29,8 +29,8 @@ public class NavigationBarObject
         } catch(InterruptedException e) {
             System.out.println("got interrupted!");
         }
-        WebElement element = wait.until(ExpectedConditions.elementToBeClickable(createButton));
-        webDriver.findElement((createButton)).click();
+        //WebElement element = wait.until(ExpectedConditions.elementToBeClickable(createButton));
+        //webDriver.findElement((createButton)).click();
         //webDriver.findElement((By.id("createGlobaltem"))).click();
         //element = wait.until(ExpectedConditions.elementToBeClickable(By.id("create-issue-submit")));
     }
