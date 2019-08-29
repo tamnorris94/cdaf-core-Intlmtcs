@@ -44,7 +44,7 @@ public class JiraIssue {
         WebDriverWait wait = new WebDriverWait(webDriver, 30);
         WebElement element;
 
-        element = wait.until(ExpectedConditions.refreshed(ExpectedConditions.elementToBeClickable(createGlobalItem)));
+        element = wait.until(ExpectedConditions.elementToBeClickable(createGlobalItem));
 
         webDriver.findElement(createGlobalItem).click();
 
