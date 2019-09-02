@@ -24,7 +24,6 @@ public class JiraIssue {
 
     private By createGlobalItem = By.xpath("//*[contains(@id,'createGlobalItem')]/parent::div");
     String identifyIssue = LocalDateTime.now().toString();
-    String concatSummary = identifyIssue;
     private By issueStatus = By.xpath("//*[contains(text(),'Backlog')]");
     private By issueStatus1 = By.xpath("//*[contains(text(),'CDAFSBXB Stage 1')]");
     private By issueStatus2 = By.xpath("//*[contains(text(),'CDAFSBXB Stage 2')]");
@@ -54,7 +53,7 @@ public class JiraIssue {
         webDriver.findElement(createGlobalItem).click();
 
         element = wait.until(ExpectedConditions.elementToBeClickable(summaryField));
-        webDriver.findElement(summaryField).sendKeys(summary + concatSummary );
+        webDriver.findElement(summaryField).sendKeys(summary + identifyIssue );
         webDriver.findElement(descriptionField).sendKeys(description);
         element = wait.until(ExpectedConditions.elementToBeClickable(projectField));
         webDriver.findElement(projectField).click();
@@ -80,7 +79,7 @@ public class JiraIssue {
         element = wait.until(ExpectedConditions.elementToBeClickable(issueStage1));
         webDriver.findElement(issueStage1).click();
         try {
-            Thread.sleep(1500);
+            Thread.sleep(2500);
         } catch(InterruptedException e) {
             System.out.println("got interrupted!");
         }
@@ -163,7 +162,8 @@ public class JiraIssue {
 
     public void verifyIssueCreation(String summary)
     {
-        String issueVerifier = String.format("//*[contains(text(),'%s')]",summary + concatSummary);
+        String issueVerifier = String.format("//*[contains(text(),'%s')]",summary);
+        //Boolean check = webDriver.findElement(By.xpath(issueVerifier)).isDisplayed();  //temporary
         List<WebElement> identify = webDriver.findElements(By.xpath(issueVerifier));
         assert(!identify.isEmpty());
     }

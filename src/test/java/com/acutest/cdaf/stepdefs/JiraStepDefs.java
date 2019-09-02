@@ -142,7 +142,7 @@ public class JiraStepDefs {
         String locator = String.format(".//*[contains(text(), '%s')]", word);
 		webDriver.findElement(By.xpath(locator));
 		List<WebElement> elem = webDriver.findElements(By.xpath(locator));
-		assert(!elem.isEmpty());
+		assert (!elem.isEmpty());
 	}
 
 	@Then("^the issue with the given summary \"([^\"]*)\" is successfully created$")
