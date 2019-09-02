@@ -32,7 +32,7 @@ public class JiraStepDefs {
 	protected LoginPageObject loginPage;
 	protected JiraIssue jiraIssue;
 	private String acutesttrainingUrl =
-			"https://acutesttraining.atlassian.net/projects/CDFJ/issues";
+			"https://acutesttraining.atlassian.net/login";
 
 	private static Logger logger = LogManager.getLogger();
 
