@@ -24,6 +24,7 @@ public class JiraIssue {
 
     private By createGlobalItem = By.xpath("//*[contains(@id,'createGlobalItem')]/parent::div");
     String identifyIssue = LocalDateTime.now().toString();
+    String concatSummary = identifyIssue;
     private By issueStatus = By.xpath("//*[contains(text(),'Backlog')]");
     private By issueStatus1 = By.xpath("//*[contains(text(),'CDAFSBXB Stage 1')]");
     private By issueStatus2 = By.xpath("//*[contains(text(),'CDAFSBXB Stage 2')]");
@@ -53,8 +54,7 @@ public class JiraIssue {
         webDriver.findElement(createGlobalItem).click();
 
         element = wait.until(ExpectedConditions.elementToBeClickable(summaryField));
-        String concatSummary = summary +" " + identifyIssue;
-        webDriver.findElement(summaryField).sendKeys(concatSummary );
+        webDriver.findElement(summaryField).sendKeys(summary + concatSummary );
         webDriver.findElement(descriptionField).sendKeys(description);
         element = wait.until(ExpectedConditions.elementToBeClickable(projectField));
         webDriver.findElement(projectField).click();
@@ -69,7 +69,7 @@ public class JiraIssue {
 
         WebDriverWait wait = new WebDriverWait(webDriver, 15);
         try {
-            Thread.sleep(3500);
+            Thread.sleep(2500);
         } catch(InterruptedException e) {
             System.out.println("got interrupted!");
         }
@@ -79,14 +79,18 @@ public class JiraIssue {
         webDriver.findElement(issueStatus).click();
         element = wait.until(ExpectedConditions.elementToBeClickable(issueStage1));
         webDriver.findElement(issueStage1).click();
-
-        element = wait.until(ExpectedConditions.visibilityOfElementLocated(descriptionField));
+        try {
+            Thread.sleep(1500);
+        } catch(InterruptedException e) {
+            System.out.println("got interrupted!");
+        }
+        element = wait.until(ExpectedConditions.elementToBeClickable(descriptionField));
         webDriver.findElement(descriptionField).sendKeys(description2);
         element = wait.until(ExpectedConditions.elementToBeClickable(commentField));
         webDriver.findElement(commentField).sendKeys("Stage 1 complete");
         webDriver.findElement(confirmStage).click();
         try {
-            Thread.sleep(3500);
+            Thread.sleep(1500);
         } catch(InterruptedException e) {
             System.out.println("got interrupted!");
         }
@@ -111,7 +115,7 @@ public class JiraIssue {
 
         /* Stage 3 Transition*/
         try {
-            Thread.sleep(3500);
+            Thread.sleep(1500);
         } catch(InterruptedException e) {
             System.out.println("got interrupted!");
         }
@@ -131,7 +135,7 @@ public class JiraIssue {
 
         /* Stage 4 Transition*/
         try {
-            Thread.sleep(3500);
+            Thread.sleep(1500);
         } catch(InterruptedException e) {
             System.out.println("got interrupted!");
         }
@@ -159,7 +163,7 @@ public class JiraIssue {
 
     public void verifyIssueCreation(String summary)
     {
-        String issueVerifier = String.format(".//*[contains(text(), '%s')]",summary + " " + identifyIssue);
+        String issueVerifier = String.format("//*[contains(text(),'%s')]",summary + concatSummary);
         List<WebElement> identify = webDriver.findElements(By.xpath(issueVerifier));
         assert(!identify.isEmpty());
     }
