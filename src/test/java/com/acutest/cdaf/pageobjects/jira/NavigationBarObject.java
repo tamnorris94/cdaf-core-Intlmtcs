@@ -2,6 +2,7 @@ package com.acutest.cdaf.pageobjects.jira;
 
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.*;
@@ -24,15 +25,14 @@ public class NavigationBarObject
 
         WebDriverWait wait = new WebDriverWait(webDriver, 15);
         //webDriver.switchTo().parentFrame();
-        try {
-            Thread.sleep(13500);
-        } catch(InterruptedException e) {
-            System.out.println("got interrupted!");
-        }
+            //webDriver.findElement(createButton).click();
+
+
+
+
         //WebElement element = wait.until(ExpectedConditions.elementToBeClickable(createButton));
         //webDriver.findElement((createButton)).click();
         //webDriver.findElement((By.id("createGlobaltem"))).click();
-        //element = wait.until(ExpectedConditions.elementToBeClickable(By.id("create-issue-submit")));
     }
 
     public void navigate(){webDriver.findElement(globalButton).click();}
