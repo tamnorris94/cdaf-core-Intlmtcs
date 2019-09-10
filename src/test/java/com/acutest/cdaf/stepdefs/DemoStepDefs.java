@@ -64,9 +64,14 @@ public class DemoStepDefs {
         Assert.assertEquals("The bullet point doesn't have the correct text", expectedText, newBullet);
     }
 
-    @When("I navigate to the About page")
-    public void iNavigateToTheAboutPage() {
-        driver.get(URL + "/About");
+//     @When("I navigate to the About page")
+//     public void iNavigateToTheAboutPage() {
+//         driver.get(URL + "/About");
+//     }
+    
+    @When("I navigate to the {string} page")
+    public void iNavigateToTheAboutPage(String page) {
+        driver.get(URL + "/" + page);
     }
 
     @When("the {string} page is selected")
