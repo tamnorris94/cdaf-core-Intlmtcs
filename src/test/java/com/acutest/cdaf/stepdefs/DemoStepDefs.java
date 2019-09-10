@@ -36,6 +36,16 @@ public class DemoStepDefs {
                 title, "cdafWebAppTestTarget_2");
     }
 
+    @Given("the customer is on the test target app")
+    public void theUserIsOnTheTestTargetApp() {
+        String xPath = "//*[@class='navbar navbar-inverse navbar-fixed-top']//*[@class='navbar-header']";
+        driver.get(URL);
+        webTestPage = new CdafWebTest(driver);
+        String title = webTestPage.getTitle(xPath);
+        Assert.assertEquals("The title does not match the expected value",
+                title, "cdafWebAppTestTarget_2");
+    }
+
     @When("^I select the first bullet point of application uses$")
     public void iSelectTheFirstBulletPoitOfApplicationUses() {
         bulletPoint = webTestPage.getBulletPoint(bulletxPath, "textContent", "Target for Acutest CDAF");
@@ -59,10 +69,21 @@ public class DemoStepDefs {
         driver.get(URL + "/About");
     }
 
+    @When("the {string} page is selected")
+    public void thePagePageIsSelected(String page) {
+        driver.get(URL + page);
+    }
+
     @Then("the title is {string}")
     public void theTitleIsTitle(String title) {
-        String xPath = "//h2";
-        WebElement element = driver.findElement(By.xpath(xPath));
+        String xPath = "//h1";
+        String xPath2 = "//h2";
+        WebElement element = null;
+        try {
+            element = driver.findElement(By.xpath(xPath));
+        } catch (NoSuchElementException e){
+            element = driver.findElement(By.xpath(xPath2));
+        }
         String text = element.getText();
         Assert.assertEquals("The page title is not correct", title, text);
     }
@@ -93,9 +114,30 @@ public class DemoStepDefs {
         //wait.until(ExpectedConditions.presenceOfElementLocated(By.className("css-eaycls")));
     }
 
+//    @Then("the page contains the phrase {phrase}")
+//    public void thePageContainsThePhrasePhrase(String phrase) {
+//        String locator = String.format(".//*[contains(text(), '%s')]", phrase);
+//        WebElement element = driver.findElement(By.xpath(locator));
+//        String actual = element.getText();
+//        Assert.assertEquals("The page doesn't contain the given phrase", phrase, actual);
+//    }
+
     @Then("the page contains the phrase {string}")
     public void thePageContainsThePhrasePhrase(String phrase) {
-        
+        String locator = String.format(".//*[contains(text(), '%s')]", phrase);
+        WebElement element = null;
+        try {
+            element = driver.findElement(By.xpath(locator));
+        } catch (NoSuchElementException e){
+
+        }
+
+        Assert.assertNotNull("The page doesn't contain the given phrase: " + phrase, element);
+    }
+
+    @Then("the jira page contains the phrase {string}")
+    public void theJiraPageContainsThePhrasePhrase(String phrase) {
+
         WebDriverWait wait = new WebDriverWait(driver,20);
         wait.until(ExpectedConditions.presenceOfElementLocated(By.className("css-eaycls")));
         String project = loginPage.checkSandboxProject();
@@ -111,10 +153,20 @@ public class DemoStepDefs {
         wait.until(ExpectedConditions.presenceOfElementLocated(By.id("action-panel")));
     }
 
+    @When("the hyperlink {string} is selected")
+    public void theHyperlinkLinkIsSelected(String link) {
+        //".//*[contains(text(), '%s')]", phrase)
+        String xPath = String.format("//li/a[contains(text(), '%s')]", link);
+        webTestPage.clickBulletPoint(xPath);
+        WebDriverWait wait = new WebDriverWait(driver, 20);
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.id("action-panel")));
+    }
+
     @Then("the title of the new page is {string}")
     public void theTitleOfTheNewPageIsTitle(String title) {
         String xPath = "//*[@id='overview-of-aspnet-core-security']";
         String actualTitle = webTestPage.getTitle(xPath);
         Assert.assertEquals("The given text does not match the expected title", title, actualTitle);
     }
+
 }
