@@ -34,7 +34,7 @@ public class JiraStepDefs {
 	private String acutesttrainingUrl =
 			"https://acutesttraining.atlassian.net/login";
 
-	private static Logger logger = LogManager.getLogger();
+	private static Logger logger = LogManager.getLogger(JiraStepDefs.class);
 
 	/**
 	 * Navigates to acutest's publica Jira page which doesn't require authentication
@@ -101,6 +101,7 @@ public class JiraStepDefs {
 		jiraIssue.enterStoryDetails(descr, summary, projectName);
 
 	}
+//Applies only to CDAFSBXB
 
 	@When("^user provides description \"([^\"]*)\", automation status\"([^\"]*)\", risk likelihood\"([^\"]*)\", risk impact \"([^\"]*)\", execution status\"([^\"]*)\" comment \"([^\"]*)\"$")
 	public void user_provides_attributes(String description2, String autoStatus, String riskLi, String riskIm, String execStatus, String comment) throws Throwable

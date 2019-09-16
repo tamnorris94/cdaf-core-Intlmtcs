@@ -38,7 +38,9 @@ public class JiraIssue {
     private By issueStage4 = By.xpath("//*[contains(@id,'react-select-5-option-3')]");
     private By testExecutionStatus = By.id("customfield_10817");
     private By confirmStage = By.id("issue-workflow-transition-submit");
-    private static Logger log = LogManager.getLogger();
+    private static Logger log = LogManager.getLogger(JiraIssue.class);
+
+//*Class specifically built for CDAFSBXB project
 
 
     public JiraIssue(WebDriver webDriver) {this.webDriver = webDriver;};
