@@ -7159,3 +7159,604 @@ Session ID: ab08be7a-a8b4-4c63-a0d7-e59eac17c36c
 [DEBUG] 20190827T123725.226+0100 [main] Hooks - @After scenario As an automation framework developer
 [DEBUG] 20190827T123725.226+0100 [main] Hooks - @web
 [DEBUG] 20190827T123725.227+0100 [main] Hooks - @dev
+[DEBUG] 20190916T124844.679+0100 [main] Hooks - @Before scenario As an automation framework developer
+[DEBUG] 20190916T124844.681+0100 [main] Hooks - @web
+[DEBUG] 20190916T124844.682+0100 [main] Hooks - @dev
+[ERROR] 20190916T124844.709+0100 [main] TestConfiguration - {webdriver={driver=firefox}, Xray={clientId=27CA37CB7795492D9BB38CC852F95B42, featureFileLocation=target/test-classes/XrayFiles/}, testrun={featurefileLocation=target/test-classes/features/cdaf/jirapi, cucumberOptionGlue=com.acutest.cdafjirajira.stepdefs}, jira={protocol=https, customfieldId={risk Priority=10809, likelihoodOfFailure=10501, executionStatus=10817, impactOfFailure=10500}, host=acutesttraining.atlassian.net, makeUpdates=true, defaultUser=mike.jennings@acutest.co.uk}}
+[INFO ] 20190916T124844.713+0100 [main] TestConfiguration - setting system property: webdriver.driver with value firefox
+[INFO ] 20190916T124844.714+0100 [main] TestConfiguration - setting system property: Xray.clientId with value 27CA37CB7795492D9BB38CC852F95B42
+[INFO ] 20190916T124844.714+0100 [main] TestConfiguration - setting system property: Xray.featureFileLocation with value target/test-classes/XrayFiles/
+[INFO ] 20190916T124844.714+0100 [main] TestConfiguration - setting system property: testrun.featurefileLocation with value target/test-classes/features/cdaf/jirapi
+[INFO ] 20190916T124844.715+0100 [main] TestConfiguration - setting system property: testrun.cucumberOptionGlue with value com.acutest.cdafjirajira.stepdefs
+[INFO ] 20190916T124844.715+0100 [main] TestConfiguration - setting system property: jira.protocol with value https
+[INFO ] 20190916T124844.715+0100 [main] TestConfiguration - setting system property: jira.customfieldId.risk Priority with value 10809
+[INFO ] 20190916T124844.715+0100 [main] TestConfiguration - setting system property: jira.customfieldId.likelihoodOfFailure with value 10501
+[INFO ] 20190916T124844.715+0100 [main] TestConfiguration - setting system property: jira.customfieldId.executionStatus with value 10817
+[INFO ] 20190916T124844.716+0100 [main] TestConfiguration - setting system property: jira.customfieldId.impactOfFailure with value 10500
+[INFO ] 20190916T124844.716+0100 [main] TestConfiguration - setting system property: jira.host with value acutesttraining.atlassian.net
+[INFO ] 20190916T124844.716+0100 [main] TestConfiguration - setting system property: jira.makeUpdates with value true
+[INFO ] 20190916T124844.717+0100 [main] TestConfiguration - setting system property: jira.defaultUser with value mike.jennings@acutest.co.uk
+[DEBUG] 20190916T124901.56+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190916T124902.228+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T124903.536+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190916T124903.869+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T124917.562+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T124920.770+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190916T124921.290+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190916T124921.649+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T124922.202+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190916T124922.963+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T124924.593+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T124927.661+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T124941.407+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T124942.544+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T124946.30+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190916T124946.147+0100 [main] Hooks - @After scenario As an automation framework developer
+[DEBUG] 20190916T124946.148+0100 [main] Hooks - @web
+[DEBUG] 20190916T124946.149+0100 [main] Hooks - @dev
+[DEBUG] 20190916T153050.153+0100 [main] Hooks - @Before scenario As an automation framework developer
+[DEBUG] 20190916T153050.155+0100 [main] Hooks - @web
+[DEBUG] 20190916T153050.155+0100 [main] Hooks - @dev
+[ERROR] 20190916T153050.182+0100 [main] TestConfiguration - {webdriver={driver=firefox}, Xray={clientId=27CA37CB7795492D9BB38CC852F95B42, featureFileLocation=target/test-classes/XrayFiles/}, testrun={featurefileLocation=target/test-classes/features/cdaf/jirapi, cucumberOptionGlue=com.acutest.cdafjirajira.stepdefs}, jira={protocol=https, customfieldId={risk Priority=10809, likelihoodOfFailure=10501, executionStatus=10817, impactOfFailure=10500}, host=acutesttraining.atlassian.net, makeUpdates=true, defaultUser=mike.jennings@acutest.co.uk}}
+[INFO ] 20190916T153050.183+0100 [main] TestConfiguration - setting system property: webdriver.driver with value firefox
+[INFO ] 20190916T153050.183+0100 [main] TestConfiguration - setting system property: Xray.clientId with value 27CA37CB7795492D9BB38CC852F95B42
+[INFO ] 20190916T153050.184+0100 [main] TestConfiguration - setting system property: Xray.featureFileLocation with value target/test-classes/XrayFiles/
+[INFO ] 20190916T153050.184+0100 [main] TestConfiguration - setting system property: testrun.featurefileLocation with value target/test-classes/features/cdaf/jirapi
+[INFO ] 20190916T153050.184+0100 [main] TestConfiguration - setting system property: testrun.cucumberOptionGlue with value com.acutest.cdafjirajira.stepdefs
+[INFO ] 20190916T153050.184+0100 [main] TestConfiguration - setting system property: jira.protocol with value https
+[INFO ] 20190916T153050.185+0100 [main] TestConfiguration - setting system property: jira.customfieldId.risk Priority with value 10809
+[INFO ] 20190916T153050.185+0100 [main] TestConfiguration - setting system property: jira.customfieldId.likelihoodOfFailure with value 10501
+[INFO ] 20190916T153050.185+0100 [main] TestConfiguration - setting system property: jira.customfieldId.executionStatus with value 10817
+[INFO ] 20190916T153050.185+0100 [main] TestConfiguration - setting system property: jira.customfieldId.impactOfFailure with value 10500
+[INFO ] 20190916T153050.185+0100 [main] TestConfiguration - setting system property: jira.host with value acutesttraining.atlassian.net
+[INFO ] 20190916T153050.185+0100 [main] TestConfiguration - setting system property: jira.makeUpdates with value true
+[INFO ] 20190916T153050.186+0100 [main] TestConfiguration - setting system property: jira.defaultUser with value mike.jennings@acutest.co.uk
+[DEBUG] 20190916T153107.602+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190916T153109.772+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T153111.412+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190916T153111.842+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T153124.392+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T153126.668+0100 [main] Hooks - @After scenario As an automation framework developer
+[DEBUG] 20190916T153126.669+0100 [main] Hooks - @web
+[DEBUG] 20190916T153126.669+0100 [main] Hooks - @dev
+[DEBUG] 20190916T153300.636+0100 [main] Hooks - @Before scenario As an automation framework developer
+[DEBUG] 20190916T153300.638+0100 [main] Hooks - @web
+[DEBUG] 20190916T153300.638+0100 [main] Hooks - @dev
+[ERROR] 20190916T153300.788+0100 [main] TestConfiguration - {webdriver={driver=firefox}, Xray={clientId=27CA37CB7795492D9BB38CC852F95B42, featureFileLocation=target/test-classes/XrayFiles/}, testrun={featurefileLocation=target/test-classes/features/cdaf/jirapi, cucumberOptionGlue=com.acutest.cdafjirajira.stepdefs}, jira={protocol=https, customfieldId={risk Priority=10809, likelihoodOfFailure=10501, executionStatus=10817, impactOfFailure=10500}, host=acutesttraining.atlassian.net, makeUpdates=true, defaultUser=mike.jennings@acutest.co.uk}}
+[INFO ] 20190916T153300.790+0100 [main] TestConfiguration - setting system property: webdriver.driver with value firefox
+[INFO ] 20190916T153300.790+0100 [main] TestConfiguration - setting system property: Xray.clientId with value 27CA37CB7795492D9BB38CC852F95B42
+[INFO ] 20190916T153300.790+0100 [main] TestConfiguration - setting system property: Xray.featureFileLocation with value target/test-classes/XrayFiles/
+[INFO ] 20190916T153300.790+0100 [main] TestConfiguration - setting system property: testrun.featurefileLocation with value target/test-classes/features/cdaf/jirapi
+[INFO ] 20190916T153300.790+0100 [main] TestConfiguration - setting system property: testrun.cucumberOptionGlue with value com.acutest.cdafjirajira.stepdefs
+[INFO ] 20190916T153300.791+0100 [main] TestConfiguration - setting system property: jira.protocol with value https
+[INFO ] 20190916T153300.791+0100 [main] TestConfiguration - setting system property: jira.customfieldId.risk Priority with value 10809
+[INFO ] 20190916T153300.791+0100 [main] TestConfiguration - setting system property: jira.customfieldId.likelihoodOfFailure with value 10501
+[INFO ] 20190916T153300.791+0100 [main] TestConfiguration - setting system property: jira.customfieldId.executionStatus with value 10817
+[INFO ] 20190916T153300.791+0100 [main] TestConfiguration - setting system property: jira.customfieldId.impactOfFailure with value 10500
+[INFO ] 20190916T153300.792+0100 [main] TestConfiguration - setting system property: jira.host with value acutesttraining.atlassian.net
+[INFO ] 20190916T153300.792+0100 [main] TestConfiguration - setting system property: jira.makeUpdates with value true
+[INFO ] 20190916T153300.792+0100 [main] TestConfiguration - setting system property: jira.defaultUser with value mike.jennings@acutest.co.uk
+[DEBUG] 20190916T153316.46+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190916T153317.324+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T153318.832+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190916T153319.222+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T153335.186+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T153335.883+0100 [main] Hooks - @After scenario As an automation framework developer
+[DEBUG] 20190916T153335.883+0100 [main] Hooks - @web
+[DEBUG] 20190916T153335.883+0100 [main] Hooks - @dev
+[DEBUG] 20190916T153407.549+0100 [main] Hooks - @Before scenario As an automation framework developer
+[DEBUG] 20190916T153407.551+0100 [main] Hooks - @web
+[DEBUG] 20190916T153407.551+0100 [main] Hooks - @dev
+[ERROR] 20190916T153407.656+0100 [main] TestConfiguration - {webdriver={driver=firefox}, Xray={clientId=27CA37CB7795492D9BB38CC852F95B42, featureFileLocation=target/test-classes/XrayFiles/}, testrun={featurefileLocation=target/test-classes/features/cdaf/jirapi, cucumberOptionGlue=com.acutest.cdafjirajira.stepdefs}, jira={protocol=https, customfieldId={risk Priority=10809, likelihoodOfFailure=10501, executionStatus=10817, impactOfFailure=10500}, host=acutesttraining.atlassian.net, makeUpdates=true, defaultUser=mike.jennings@acutest.co.uk}}
+[INFO ] 20190916T153407.658+0100 [main] TestConfiguration - setting system property: webdriver.driver with value firefox
+[INFO ] 20190916T153407.658+0100 [main] TestConfiguration - setting system property: Xray.clientId with value 27CA37CB7795492D9BB38CC852F95B42
+[INFO ] 20190916T153407.658+0100 [main] TestConfiguration - setting system property: Xray.featureFileLocation with value target/test-classes/XrayFiles/
+[INFO ] 20190916T153407.658+0100 [main] TestConfiguration - setting system property: testrun.featurefileLocation with value target/test-classes/features/cdaf/jirapi
+[INFO ] 20190916T153407.659+0100 [main] TestConfiguration - setting system property: testrun.cucumberOptionGlue with value com.acutest.cdafjirajira.stepdefs
+[INFO ] 20190916T153407.659+0100 [main] TestConfiguration - setting system property: jira.protocol with value https
+[INFO ] 20190916T153407.659+0100 [main] TestConfiguration - setting system property: jira.customfieldId.risk Priority with value 10809
+[INFO ] 20190916T153407.659+0100 [main] TestConfiguration - setting system property: jira.customfieldId.likelihoodOfFailure with value 10501
+[INFO ] 20190916T153407.659+0100 [main] TestConfiguration - setting system property: jira.customfieldId.executionStatus with value 10817
+[INFO ] 20190916T153407.659+0100 [main] TestConfiguration - setting system property: jira.customfieldId.impactOfFailure with value 10500
+[INFO ] 20190916T153407.659+0100 [main] TestConfiguration - setting system property: jira.host with value acutesttraining.atlassian.net
+[INFO ] 20190916T153407.660+0100 [main] TestConfiguration - setting system property: jira.makeUpdates with value true
+[INFO ] 20190916T153407.660+0100 [main] TestConfiguration - setting system property: jira.defaultUser with value mike.jennings@acutest.co.uk
+[DEBUG] 20190916T153423.913+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190916T153425.544+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T153426.935+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190916T153427.553+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T153444.146+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T153447.493+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190916T153448.08+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190916T153448.493+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T153449.156+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190916T153450.10+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T153451.427+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T153454.391+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T153510.467+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T153511.880+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T153515.711+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190916T153515.841+0100 [main] Hooks - @After scenario As an automation framework developer
+[DEBUG] 20190916T153515.841+0100 [main] Hooks - @web
+[DEBUG] 20190916T153515.842+0100 [main] Hooks - @dev
+[DEBUG] 20190916T153733.661+0100 [main] Hooks - @Before scenario As an automation framework developer
+[DEBUG] 20190916T153733.664+0100 [main] Hooks - @web
+[DEBUG] 20190916T153733.664+0100 [main] Hooks - @dev
+[ERROR] 20190916T153733.775+0100 [main] TestConfiguration - {webdriver={driver=firefox}, Xray={clientId=27CA37CB7795492D9BB38CC852F95B42, featureFileLocation=target/test-classes/XrayFiles/}, testrun={featurefileLocation=target/test-classes/features/cdaf/jirapi, cucumberOptionGlue=com.acutest.cdafjirajira.stepdefs}, jira={protocol=https, customfieldId={risk Priority=10809, likelihoodOfFailure=10501, executionStatus=10817, impactOfFailure=10500}, host=acutesttraining.atlassian.net, makeUpdates=true, defaultUser=mike.jennings@acutest.co.uk}}
+[INFO ] 20190916T153733.777+0100 [main] TestConfiguration - setting system property: webdriver.driver with value firefox
+[INFO ] 20190916T153733.778+0100 [main] TestConfiguration - setting system property: Xray.clientId with value 27CA37CB7795492D9BB38CC852F95B42
+[INFO ] 20190916T153733.778+0100 [main] TestConfiguration - setting system property: Xray.featureFileLocation with value target/test-classes/XrayFiles/
+[INFO ] 20190916T153733.778+0100 [main] TestConfiguration - setting system property: testrun.featurefileLocation with value target/test-classes/features/cdaf/jirapi
+[INFO ] 20190916T153733.779+0100 [main] TestConfiguration - setting system property: testrun.cucumberOptionGlue with value com.acutest.cdafjirajira.stepdefs
+[INFO ] 20190916T153733.779+0100 [main] TestConfiguration - setting system property: jira.protocol with value https
+[INFO ] 20190916T153733.779+0100 [main] TestConfiguration - setting system property: jira.customfieldId.risk Priority with value 10809
+[INFO ] 20190916T153733.779+0100 [main] TestConfiguration - setting system property: jira.customfieldId.likelihoodOfFailure with value 10501
+[INFO ] 20190916T153733.780+0100 [main] TestConfiguration - setting system property: jira.customfieldId.executionStatus with value 10817
+[INFO ] 20190916T153733.780+0100 [main] TestConfiguration - setting system property: jira.customfieldId.impactOfFailure with value 10500
+[INFO ] 20190916T153733.780+0100 [main] TestConfiguration - setting system property: jira.host with value acutesttraining.atlassian.net
+[INFO ] 20190916T153733.780+0100 [main] TestConfiguration - setting system property: jira.makeUpdates with value true
+[INFO ] 20190916T153733.781+0100 [main] TestConfiguration - setting system property: jira.defaultUser with value mike.jennings@acutest.co.uk
+[DEBUG] 20190916T153751.917+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190916T153753.18+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T153754.05+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190916T153754.309+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T153808.808+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T153812.27+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190916T153812.492+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190916T153812.924+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T153813.525+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190916T153814.157+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T153815.686+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T153818.721+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T153835.231+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T153836.431+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T153842.80+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190916T153842.209+0100 [main] Hooks - @After scenario As an automation framework developer
+[DEBUG] 20190916T153842.213+0100 [main] Hooks - @web
+[DEBUG] 20190916T153842.213+0100 [main] Hooks - @dev
+[DEBUG] 20190916T154014.607+0100 [main] Hooks - @Before scenario As an automation framework developer
+[DEBUG] 20190916T154014.611+0100 [main] Hooks - @web
+[DEBUG] 20190916T154014.611+0100 [main] Hooks - @dev
+[ERROR] 20190916T154014.747+0100 [main] TestConfiguration - {webdriver={driver=firefox}, Xray={clientId=27CA37CB7795492D9BB38CC852F95B42, featureFileLocation=target/test-classes/XrayFiles/}, testrun={featurefileLocation=target/test-classes/features/cdaf/jirapi, cucumberOptionGlue=com.acutest.cdafjirajira.stepdefs}, jira={protocol=https, customfieldId={risk Priority=10809, likelihoodOfFailure=10501, executionStatus=10817, impactOfFailure=10500}, host=acutesttraining.atlassian.net, makeUpdates=true, defaultUser=mike.jennings@acutest.co.uk}}
+[INFO ] 20190916T154014.748+0100 [main] TestConfiguration - setting system property: webdriver.driver with value firefox
+[INFO ] 20190916T154014.748+0100 [main] TestConfiguration - setting system property: Xray.clientId with value 27CA37CB7795492D9BB38CC852F95B42
+[INFO ] 20190916T154014.748+0100 [main] TestConfiguration - setting system property: Xray.featureFileLocation with value target/test-classes/XrayFiles/
+[INFO ] 20190916T154014.748+0100 [main] TestConfiguration - setting system property: testrun.featurefileLocation with value target/test-classes/features/cdaf/jirapi
+[INFO ] 20190916T154014.748+0100 [main] TestConfiguration - setting system property: testrun.cucumberOptionGlue with value com.acutest.cdafjirajira.stepdefs
+[INFO ] 20190916T154014.748+0100 [main] TestConfiguration - setting system property: jira.protocol with value https
+[INFO ] 20190916T154014.749+0100 [main] TestConfiguration - setting system property: jira.customfieldId.risk Priority with value 10809
+[INFO ] 20190916T154014.749+0100 [main] TestConfiguration - setting system property: jira.customfieldId.likelihoodOfFailure with value 10501
+[INFO ] 20190916T154014.749+0100 [main] TestConfiguration - setting system property: jira.customfieldId.executionStatus with value 10817
+[INFO ] 20190916T154014.749+0100 [main] TestConfiguration - setting system property: jira.customfieldId.impactOfFailure with value 10500
+[INFO ] 20190916T154014.749+0100 [main] TestConfiguration - setting system property: jira.host with value acutesttraining.atlassian.net
+[INFO ] 20190916T154014.749+0100 [main] TestConfiguration - setting system property: jira.makeUpdates with value true
+[INFO ] 20190916T154014.750+0100 [main] TestConfiguration - setting system property: jira.defaultUser with value mike.jennings@acutest.co.uk
+[DEBUG] 20190916T154026.984+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190916T154028.11+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T154029.569+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190916T154029.801+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T154046.252+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T154049.683+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190916T154050.208+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190916T154050.634+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T154051.318+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190916T154051.973+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T154053.304+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T154056.347+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T154113.71+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T154114.167+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T154118.265+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190916T154118.432+0100 [main] Hooks - @After scenario As an automation framework developer
+[DEBUG] 20190916T154118.432+0100 [main] Hooks - @web
+[DEBUG] 20190916T154118.433+0100 [main] Hooks - @dev
+[DEBUG] 20190916T154154.550+0100 [main] Hooks - @Before scenario As an automation framework developer
+[DEBUG] 20190916T154154.552+0100 [main] Hooks - @web
+[DEBUG] 20190916T154154.552+0100 [main] Hooks - @dev
+[ERROR] 20190916T154154.656+0100 [main] TestConfiguration - {webdriver={driver=firefox}, Xray={clientId=27CA37CB7795492D9BB38CC852F95B42, featureFileLocation=target/test-classes/XrayFiles/}, testrun={featurefileLocation=target/test-classes/features/cdaf/jirapi, cucumberOptionGlue=com.acutest.cdafjirajira.stepdefs}, jira={protocol=https, customfieldId={risk Priority=10809, likelihoodOfFailure=10501, executionStatus=10817, impactOfFailure=10500}, host=acutesttraining.atlassian.net, makeUpdates=true, defaultUser=mike.jennings@acutest.co.uk}}
+[INFO ] 20190916T154154.658+0100 [main] TestConfiguration - setting system property: webdriver.driver with value firefox
+[INFO ] 20190916T154154.658+0100 [main] TestConfiguration - setting system property: Xray.clientId with value 27CA37CB7795492D9BB38CC852F95B42
+[INFO ] 20190916T154154.658+0100 [main] TestConfiguration - setting system property: Xray.featureFileLocation with value target/test-classes/XrayFiles/
+[INFO ] 20190916T154154.659+0100 [main] TestConfiguration - setting system property: testrun.featurefileLocation with value target/test-classes/features/cdaf/jirapi
+[INFO ] 20190916T154154.659+0100 [main] TestConfiguration - setting system property: testrun.cucumberOptionGlue with value com.acutest.cdafjirajira.stepdefs
+[INFO ] 20190916T154154.659+0100 [main] TestConfiguration - setting system property: jira.protocol with value https
+[INFO ] 20190916T154154.659+0100 [main] TestConfiguration - setting system property: jira.customfieldId.risk Priority with value 10809
+[INFO ] 20190916T154154.659+0100 [main] TestConfiguration - setting system property: jira.customfieldId.likelihoodOfFailure with value 10501
+[INFO ] 20190916T154154.659+0100 [main] TestConfiguration - setting system property: jira.customfieldId.executionStatus with value 10817
+[INFO ] 20190916T154154.659+0100 [main] TestConfiguration - setting system property: jira.customfieldId.impactOfFailure with value 10500
+[INFO ] 20190916T154154.660+0100 [main] TestConfiguration - setting system property: jira.host with value acutesttraining.atlassian.net
+[INFO ] 20190916T154154.660+0100 [main] TestConfiguration - setting system property: jira.makeUpdates with value true
+[INFO ] 20190916T154154.660+0100 [main] TestConfiguration - setting system property: jira.defaultUser with value mike.jennings@acutest.co.uk
+[DEBUG] 20190916T154206.988+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190916T154207.901+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T154208.755+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190916T154209.157+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T154224.997+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T154228.146+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190916T154228.637+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190916T154229.22+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T154229.669+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190916T154230.302+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T154231.575+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T154234.585+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T154250.702+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T154252.124+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T154256.243+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190916T154256.352+0100 [main] Hooks - @After scenario As an automation framework developer
+[DEBUG] 20190916T154256.354+0100 [main] Hooks - @web
+[DEBUG] 20190916T154256.356+0100 [main] Hooks - @dev
+[DEBUG] 20190916T154453.229+0100 [main] Hooks - @Before scenario As an automation framework developer
+[DEBUG] 20190916T154453.231+0100 [main] Hooks - @web
+[DEBUG] 20190916T154453.231+0100 [main] Hooks - @dev
+[ERROR] 20190916T154453.377+0100 [main] TestConfiguration - {webdriver={driver=firefox}, Xray={clientId=27CA37CB7795492D9BB38CC852F95B42, featureFileLocation=target/test-classes/XrayFiles/}, testrun={featurefileLocation=target/test-classes/features/cdaf/jirapi, cucumberOptionGlue=com.acutest.cdafjirajira.stepdefs}, jira={protocol=https, customfieldId={risk Priority=10809, likelihoodOfFailure=10501, executionStatus=10817, impactOfFailure=10500}, host=acutesttraining.atlassian.net, makeUpdates=true, defaultUser=mike.jennings@acutest.co.uk}}
+[INFO ] 20190916T154453.379+0100 [main] TestConfiguration - setting system property: webdriver.driver with value firefox
+[INFO ] 20190916T154453.380+0100 [main] TestConfiguration - setting system property: Xray.clientId with value 27CA37CB7795492D9BB38CC852F95B42
+[INFO ] 20190916T154453.380+0100 [main] TestConfiguration - setting system property: Xray.featureFileLocation with value target/test-classes/XrayFiles/
+[INFO ] 20190916T154453.381+0100 [main] TestConfiguration - setting system property: testrun.featurefileLocation with value target/test-classes/features/cdaf/jirapi
+[INFO ] 20190916T154453.381+0100 [main] TestConfiguration - setting system property: testrun.cucumberOptionGlue with value com.acutest.cdafjirajira.stepdefs
+[INFO ] 20190916T154453.382+0100 [main] TestConfiguration - setting system property: jira.protocol with value https
+[INFO ] 20190916T154453.382+0100 [main] TestConfiguration - setting system property: jira.customfieldId.risk Priority with value 10809
+[INFO ] 20190916T154453.382+0100 [main] TestConfiguration - setting system property: jira.customfieldId.likelihoodOfFailure with value 10501
+[INFO ] 20190916T154453.383+0100 [main] TestConfiguration - setting system property: jira.customfieldId.executionStatus with value 10817
+[INFO ] 20190916T154453.387+0100 [main] TestConfiguration - setting system property: jira.customfieldId.impactOfFailure with value 10500
+[INFO ] 20190916T154453.389+0100 [main] TestConfiguration - setting system property: jira.host with value acutesttraining.atlassian.net
+[INFO ] 20190916T154453.390+0100 [main] TestConfiguration - setting system property: jira.makeUpdates with value true
+[INFO ] 20190916T154453.390+0100 [main] TestConfiguration - setting system property: jira.defaultUser with value mike.jennings@acutest.co.uk
+[DEBUG] 20190916T154508.447+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190916T154509.330+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T154510.341+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190916T154510.629+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T154524.993+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T154527.326+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190916T154527.852+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190916T154528.187+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T154528.706+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190916T154529.337+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T154530.405+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T154533.310+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T154545.673+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T154546.759+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T154550.672+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190916T154550.955+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190916T154551.152+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T154553.172+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T154554.351+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T154555.952+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T154556.267+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T154556.630+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T154556.953+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T154557.283+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190916T154557.673+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T154611.255+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T154626.952+0100 [main] Hooks - @After scenario As an automation framework developer
+[DEBUG] 20190916T154626.952+0100 [main] Hooks - @web
+[DEBUG] 20190916T154626.953+0100 [main] Hooks - @dev
+[DEBUG] 20190916T154642.444+0100 [main] Hooks - @Before scenario As an automation framework developer
+[DEBUG] 20190916T154642.446+0100 [main] Hooks - @web
+[DEBUG] 20190916T154642.446+0100 [main] Hooks - @dev
+[ERROR] 20190916T154642.457+0100 [main] TestConfiguration - {webdriver={driver=firefox}, Xray={clientId=27CA37CB7795492D9BB38CC852F95B42, featureFileLocation=target/test-classes/XrayFiles/}, testrun={featurefileLocation=target/test-classes/features/cdaf/jirapi, cucumberOptionGlue=com.acutest.cdafjirajira.stepdefs}, jira={protocol=https, customfieldId={risk Priority=10809, likelihoodOfFailure=10501, executionStatus=10817, impactOfFailure=10500}, host=acutesttraining.atlassian.net, makeUpdates=true, defaultUser=mike.jennings@acutest.co.uk}}
+[INFO ] 20190916T154642.460+0100 [main] TestConfiguration - setting system property: webdriver.driver with value firefox
+[INFO ] 20190916T154642.460+0100 [main] TestConfiguration - setting system property: Xray.clientId with value 27CA37CB7795492D9BB38CC852F95B42
+[INFO ] 20190916T154642.461+0100 [main] TestConfiguration - setting system property: Xray.featureFileLocation with value target/test-classes/XrayFiles/
+[INFO ] 20190916T154642.461+0100 [main] TestConfiguration - setting system property: testrun.featurefileLocation with value target/test-classes/features/cdaf/jirapi
+[INFO ] 20190916T154642.461+0100 [main] TestConfiguration - setting system property: testrun.cucumberOptionGlue with value com.acutest.cdafjirajira.stepdefs
+[INFO ] 20190916T154642.462+0100 [main] TestConfiguration - setting system property: jira.protocol with value https
+[INFO ] 20190916T154642.462+0100 [main] TestConfiguration - setting system property: jira.customfieldId.risk Priority with value 10809
+[INFO ] 20190916T154642.462+0100 [main] TestConfiguration - setting system property: jira.customfieldId.likelihoodOfFailure with value 10501
+[INFO ] 20190916T154642.462+0100 [main] TestConfiguration - setting system property: jira.customfieldId.executionStatus with value 10817
+[INFO ] 20190916T154642.463+0100 [main] TestConfiguration - setting system property: jira.customfieldId.impactOfFailure with value 10500
+[INFO ] 20190916T154642.463+0100 [main] TestConfiguration - setting system property: jira.host with value acutesttraining.atlassian.net
+[INFO ] 20190916T154642.463+0100 [main] TestConfiguration - setting system property: jira.makeUpdates with value true
+[INFO ] 20190916T154642.463+0100 [main] TestConfiguration - setting system property: jira.defaultUser with value mike.jennings@acutest.co.uk
+[DEBUG] 20190916T154655.26+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190916T154655.989+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T154657.537+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190916T154657.864+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T154711.882+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T154714.162+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190916T154714.555+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190916T154714.950+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T154715.464+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190916T154716.47+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T154717.89+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T154720.13+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T154731.754+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T154732.893+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T154736.717+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190916T154736.954+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190916T154737.153+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T154739.85+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T154740.223+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T154741.752+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T154742.74+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T154742.419+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T154742.749+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T154743.65+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190916T154743.385+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T154751.859+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T154807.690+0100 [main] Hooks - @After scenario As an automation framework developer
+[DEBUG] 20190916T154807.691+0100 [main] Hooks - @web
+[DEBUG] 20190916T154807.691+0100 [main] Hooks - @dev
+[DEBUG] 20190916T155018.972+0100 [main] Hooks - @Before scenario As an automation framework developer
+[DEBUG] 20190916T155018.975+0100 [main] Hooks - @web
+[DEBUG] 20190916T155018.975+0100 [main] Hooks - @dev
+[ERROR] 20190916T155019.88+0100 [main] TestConfiguration - {webdriver={driver=firefox}, Xray={clientId=27CA37CB7795492D9BB38CC852F95B42, featureFileLocation=target/test-classes/XrayFiles/}, testrun={featurefileLocation=target/test-classes/features/cdaf/jirapi, cucumberOptionGlue=com.acutest.cdafjirajira.stepdefs}, jira={protocol=https, customfieldId={risk Priority=10809, likelihoodOfFailure=10501, executionStatus=10817, impactOfFailure=10500}, host=acutesttraining.atlassian.net, makeUpdates=true, defaultUser=mike.jennings@acutest.co.uk}}
+[INFO ] 20190916T155019.90+0100 [main] TestConfiguration - setting system property: webdriver.driver with value firefox
+[INFO ] 20190916T155019.91+0100 [main] TestConfiguration - setting system property: Xray.clientId with value 27CA37CB7795492D9BB38CC852F95B42
+[INFO ] 20190916T155019.91+0100 [main] TestConfiguration - setting system property: Xray.featureFileLocation with value target/test-classes/XrayFiles/
+[INFO ] 20190916T155019.91+0100 [main] TestConfiguration - setting system property: testrun.featurefileLocation with value target/test-classes/features/cdaf/jirapi
+[INFO ] 20190916T155019.91+0100 [main] TestConfiguration - setting system property: testrun.cucumberOptionGlue with value com.acutest.cdafjirajira.stepdefs
+[INFO ] 20190916T155019.92+0100 [main] TestConfiguration - setting system property: jira.protocol with value https
+[INFO ] 20190916T155019.92+0100 [main] TestConfiguration - setting system property: jira.customfieldId.risk Priority with value 10809
+[INFO ] 20190916T155019.92+0100 [main] TestConfiguration - setting system property: jira.customfieldId.likelihoodOfFailure with value 10501
+[INFO ] 20190916T155019.92+0100 [main] TestConfiguration - setting system property: jira.customfieldId.executionStatus with value 10817
+[INFO ] 20190916T155019.92+0100 [main] TestConfiguration - setting system property: jira.customfieldId.impactOfFailure with value 10500
+[INFO ] 20190916T155019.93+0100 [main] TestConfiguration - setting system property: jira.host with value acutesttraining.atlassian.net
+[INFO ] 20190916T155019.93+0100 [main] TestConfiguration - setting system property: jira.makeUpdates with value true
+[INFO ] 20190916T155019.93+0100 [main] TestConfiguration - setting system property: jira.defaultUser with value mike.jennings@acutest.co.uk
+[DEBUG] 20190916T155031.361+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190916T155032.272+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T155033.472+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190916T155033.818+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T155048.310+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T155050.857+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190916T155051.199+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190916T155051.569+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T155052.61+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190916T155052.552+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T155053.600+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T155056.547+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T155107.403+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T155108.618+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T155112.299+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190916T155112.503+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190916T155112.695+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T155114.664+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T155115.469+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T155117.115+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T155117.443+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T155117.784+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T155118.143+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T155118.493+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190916T155118.774+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T155128.747+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T155144.282+0100 [main] Hooks - @After scenario As an automation framework developer
+[DEBUG] 20190916T155144.282+0100 [main] Hooks - @web
+[DEBUG] 20190916T155144.283+0100 [main] Hooks - @dev
+[DEBUG] 20190916T155823.476+0100 [main] Hooks - @Before scenario As an automation framework developer
+[DEBUG] 20190916T155823.479+0100 [main] Hooks - @web
+[DEBUG] 20190916T155823.480+0100 [main] Hooks - @dev
+[ERROR] 20190916T155823.623+0100 [main] TestConfiguration - {webdriver={driver=firefox}, Xray={clientId=27CA37CB7795492D9BB38CC852F95B42, featureFileLocation=target/test-classes/XrayFiles/}, testrun={featurefileLocation=target/test-classes/features/cdaf/jirapi, cucumberOptionGlue=com.acutest.cdafjirajira.stepdefs}, jira={protocol=https, customfieldId={risk Priority=10809, likelihoodOfFailure=10501, executionStatus=10817, impactOfFailure=10500}, host=acutesttraining.atlassian.net, makeUpdates=true, defaultUser=mike.jennings@acutest.co.uk}}
+[INFO ] 20190916T155823.626+0100 [main] TestConfiguration - setting system property: webdriver.driver with value firefox
+[INFO ] 20190916T155823.626+0100 [main] TestConfiguration - setting system property: Xray.clientId with value 27CA37CB7795492D9BB38CC852F95B42
+[INFO ] 20190916T155823.627+0100 [main] TestConfiguration - setting system property: Xray.featureFileLocation with value target/test-classes/XrayFiles/
+[INFO ] 20190916T155823.627+0100 [main] TestConfiguration - setting system property: testrun.featurefileLocation with value target/test-classes/features/cdaf/jirapi
+[INFO ] 20190916T155823.627+0100 [main] TestConfiguration - setting system property: testrun.cucumberOptionGlue with value com.acutest.cdafjirajira.stepdefs
+[INFO ] 20190916T155823.627+0100 [main] TestConfiguration - setting system property: jira.protocol with value https
+[INFO ] 20190916T155823.627+0100 [main] TestConfiguration - setting system property: jira.customfieldId.risk Priority with value 10809
+[INFO ] 20190916T155823.628+0100 [main] TestConfiguration - setting system property: jira.customfieldId.likelihoodOfFailure with value 10501
+[INFO ] 20190916T155823.628+0100 [main] TestConfiguration - setting system property: jira.customfieldId.executionStatus with value 10817
+[INFO ] 20190916T155823.628+0100 [main] TestConfiguration - setting system property: jira.customfieldId.impactOfFailure with value 10500
+[INFO ] 20190916T155823.628+0100 [main] TestConfiguration - setting system property: jira.host with value acutesttraining.atlassian.net
+[INFO ] 20190916T155823.628+0100 [main] TestConfiguration - setting system property: jira.makeUpdates with value true
+[INFO ] 20190916T155823.628+0100 [main] TestConfiguration - setting system property: jira.defaultUser with value mike.jennings@acutest.co.uk
+[DEBUG] 20190916T155837.744+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190916T155838.624+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T155839.988+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190916T155840.279+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T155854.246+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T155856.655+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190916T155857.133+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190916T155857.541+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T155858.109+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190916T155859.230+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T155900.458+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T155903.385+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T155916.952+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T155917.974+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T155921.803+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190916T155921.950+0100 [main] Hooks - @After scenario As an automation framework developer
+[DEBUG] 20190916T155921.951+0100 [main] Hooks - @web
+[DEBUG] 20190916T155921.951+0100 [main] Hooks - @dev
+[DEBUG] 20190916T160051.904+0100 [main] Hooks - @Before scenario As an automation framework developer
+[DEBUG] 20190916T160051.906+0100 [main] Hooks - @web
+[DEBUG] 20190916T160051.906+0100 [main] Hooks - @dev
+[ERROR] 20190916T160051.919+0100 [main] TestConfiguration - {webdriver={driver=firefox}, Xray={clientId=27CA37CB7795492D9BB38CC852F95B42, featureFileLocation=target/test-classes/XrayFiles/}, testrun={featurefileLocation=target/test-classes/features/cdaf/jirapi, cucumberOptionGlue=com.acutest.cdafjirajira.stepdefs}, jira={protocol=https, customfieldId={risk Priority=10809, likelihoodOfFailure=10501, executionStatus=10817, impactOfFailure=10500}, host=acutesttraining.atlassian.net, makeUpdates=true, defaultUser=mike.jennings@acutest.co.uk}}
+[INFO ] 20190916T160051.921+0100 [main] TestConfiguration - setting system property: webdriver.driver with value firefox
+[INFO ] 20190916T160051.922+0100 [main] TestConfiguration - setting system property: Xray.clientId with value 27CA37CB7795492D9BB38CC852F95B42
+[INFO ] 20190916T160051.922+0100 [main] TestConfiguration - setting system property: Xray.featureFileLocation with value target/test-classes/XrayFiles/
+[INFO ] 20190916T160051.922+0100 [main] TestConfiguration - setting system property: testrun.featurefileLocation with value target/test-classes/features/cdaf/jirapi
+[INFO ] 20190916T160051.922+0100 [main] TestConfiguration - setting system property: testrun.cucumberOptionGlue with value com.acutest.cdafjirajira.stepdefs
+[INFO ] 20190916T160051.922+0100 [main] TestConfiguration - setting system property: jira.protocol with value https
+[INFO ] 20190916T160051.923+0100 [main] TestConfiguration - setting system property: jira.customfieldId.risk Priority with value 10809
+[INFO ] 20190916T160051.923+0100 [main] TestConfiguration - setting system property: jira.customfieldId.likelihoodOfFailure with value 10501
+[INFO ] 20190916T160051.923+0100 [main] TestConfiguration - setting system property: jira.customfieldId.executionStatus with value 10817
+[INFO ] 20190916T160051.923+0100 [main] TestConfiguration - setting system property: jira.customfieldId.impactOfFailure with value 10500
+[INFO ] 20190916T160051.923+0100 [main] TestConfiguration - setting system property: jira.host with value acutesttraining.atlassian.net
+[INFO ] 20190916T160051.924+0100 [main] TestConfiguration - setting system property: jira.makeUpdates with value true
+[INFO ] 20190916T160051.924+0100 [main] TestConfiguration - setting system property: jira.defaultUser with value mike.jennings@acutest.co.uk
+[DEBUG] 20190916T160104.998+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190916T160105.899+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T160106.890+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190916T160107.261+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T160121.251+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T160123.644+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190916T160124.75+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190916T160124.491+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T160125.27+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190916T160125.912+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T160126.969+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T160129.864+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T160141.856+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T160142.976+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T160147.819+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190916T160147.919+0100 [main] Hooks - @After scenario As an automation framework developer
+[DEBUG] 20190916T160147.919+0100 [main] Hooks - @web
+[DEBUG] 20190916T160147.919+0100 [main] Hooks - @dev
+[DEBUG] 20190916T160404.216+0100 [main] Hooks - @Before scenario As an automation framework developer
+[DEBUG] 20190916T160404.218+0100 [main] Hooks - @web
+[DEBUG] 20190916T160404.218+0100 [main] Hooks - @dev
+[ERROR] 20190916T160404.228+0100 [main] TestConfiguration - {webdriver={driver=firefox}, Xray={clientId=27CA37CB7795492D9BB38CC852F95B42, featureFileLocation=target/test-classes/XrayFiles/}, testrun={featurefileLocation=target/test-classes/features/cdaf/jirapi, cucumberOptionGlue=com.acutest.cdafjirajira.stepdefs}, jira={protocol=https, customfieldId={risk Priority=10809, likelihoodOfFailure=10501, executionStatus=10817, impactOfFailure=10500}, host=acutesttraining.atlassian.net, makeUpdates=true, defaultUser=mike.jennings@acutest.co.uk}}
+[INFO ] 20190916T160404.229+0100 [main] TestConfiguration - setting system property: webdriver.driver with value firefox
+[INFO ] 20190916T160404.230+0100 [main] TestConfiguration - setting system property: Xray.clientId with value 27CA37CB7795492D9BB38CC852F95B42
+[INFO ] 20190916T160404.230+0100 [main] TestConfiguration - setting system property: Xray.featureFileLocation with value target/test-classes/XrayFiles/
+[INFO ] 20190916T160404.230+0100 [main] TestConfiguration - setting system property: testrun.featurefileLocation with value target/test-classes/features/cdaf/jirapi
+[INFO ] 20190916T160404.230+0100 [main] TestConfiguration - setting system property: testrun.cucumberOptionGlue with value com.acutest.cdafjirajira.stepdefs
+[INFO ] 20190916T160404.230+0100 [main] TestConfiguration - setting system property: jira.protocol with value https
+[INFO ] 20190916T160404.230+0100 [main] TestConfiguration - setting system property: jira.customfieldId.risk Priority with value 10809
+[INFO ] 20190916T160404.230+0100 [main] TestConfiguration - setting system property: jira.customfieldId.likelihoodOfFailure with value 10501
+[INFO ] 20190916T160404.231+0100 [main] TestConfiguration - setting system property: jira.customfieldId.executionStatus with value 10817
+[INFO ] 20190916T160404.231+0100 [main] TestConfiguration - setting system property: jira.customfieldId.impactOfFailure with value 10500
+[INFO ] 20190916T160404.231+0100 [main] TestConfiguration - setting system property: jira.host with value acutesttraining.atlassian.net
+[INFO ] 20190916T160404.231+0100 [main] TestConfiguration - setting system property: jira.makeUpdates with value true
+[INFO ] 20190916T160404.232+0100 [main] TestConfiguration - setting system property: jira.defaultUser with value mike.jennings@acutest.co.uk
+[DEBUG] 20190916T160416.997+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190916T160418.53+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T160418.925+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190916T160419.210+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T160433.319+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T160435.702+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190916T160436.148+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190916T160436.268+0100 [main] Hooks - @After scenario As an automation framework developer
+[DEBUG] 20190916T160436.269+0100 [main] Hooks - @web
+[DEBUG] 20190916T160436.271+0100 [main] Hooks - @dev
+[DEBUG] 20190916T160525.882+0100 [main] Hooks - @Before scenario As an automation framework developer
+[DEBUG] 20190916T160525.884+0100 [main] Hooks - @web
+[DEBUG] 20190916T160525.884+0100 [main] Hooks - @dev
+[ERROR] 20190916T160525.999+0100 [main] TestConfiguration - {webdriver={driver=firefox}, Xray={clientId=27CA37CB7795492D9BB38CC852F95B42, featureFileLocation=target/test-classes/XrayFiles/}, testrun={featurefileLocation=target/test-classes/features/cdaf/jirapi, cucumberOptionGlue=com.acutest.cdafjirajira.stepdefs}, jira={protocol=https, customfieldId={risk Priority=10809, likelihoodOfFailure=10501, executionStatus=10817, impactOfFailure=10500}, host=acutesttraining.atlassian.net, makeUpdates=true, defaultUser=mike.jennings@acutest.co.uk}}
+[INFO ] 20190916T160526.00+0100 [main] TestConfiguration - setting system property: webdriver.driver with value firefox
+[INFO ] 20190916T160526.00+0100 [main] TestConfiguration - setting system property: Xray.clientId with value 27CA37CB7795492D9BB38CC852F95B42
+[INFO ] 20190916T160526.00+0100 [main] TestConfiguration - setting system property: Xray.featureFileLocation with value target/test-classes/XrayFiles/
+[INFO ] 20190916T160526.01+0100 [main] TestConfiguration - setting system property: testrun.featurefileLocation with value target/test-classes/features/cdaf/jirapi
+[INFO ] 20190916T160526.01+0100 [main] TestConfiguration - setting system property: testrun.cucumberOptionGlue with value com.acutest.cdafjirajira.stepdefs
+[INFO ] 20190916T160526.01+0100 [main] TestConfiguration - setting system property: jira.protocol with value https
+[INFO ] 20190916T160526.01+0100 [main] TestConfiguration - setting system property: jira.customfieldId.risk Priority with value 10809
+[INFO ] 20190916T160526.01+0100 [main] TestConfiguration - setting system property: jira.customfieldId.likelihoodOfFailure with value 10501
+[INFO ] 20190916T160526.02+0100 [main] TestConfiguration - setting system property: jira.customfieldId.executionStatus with value 10817
+[INFO ] 20190916T160526.02+0100 [main] TestConfiguration - setting system property: jira.customfieldId.impactOfFailure with value 10500
+[INFO ] 20190916T160526.02+0100 [main] TestConfiguration - setting system property: jira.host with value acutesttraining.atlassian.net
+[INFO ] 20190916T160526.02+0100 [main] TestConfiguration - setting system property: jira.makeUpdates with value true
+[INFO ] 20190916T160526.03+0100 [main] TestConfiguration - setting system property: jira.defaultUser with value mike.jennings@acutest.co.uk
+[DEBUG] 20190916T160538.173+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190916T160539.143+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T160539.994+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190916T160540.292+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T160554.352+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T160556.608+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190916T160557.28+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190916T160557.142+0100 [main] Hooks - @After scenario As an automation framework developer
+[DEBUG] 20190916T160557.142+0100 [main] Hooks - @web
+[DEBUG] 20190916T160557.143+0100 [main] Hooks - @dev
+[DEBUG] 20190916T160634.183+0100 [main] Hooks - @Before scenario As an automation framework developer
+[DEBUG] 20190916T160634.185+0100 [main] Hooks - @web
+[DEBUG] 20190916T160634.185+0100 [main] Hooks - @dev
+[ERROR] 20190916T160634.205+0100 [main] TestConfiguration - {webdriver={driver=firefox}, Xray={clientId=27CA37CB7795492D9BB38CC852F95B42, featureFileLocation=target/test-classes/XrayFiles/}, testrun={featurefileLocation=target/test-classes/features/cdaf/jirapi, cucumberOptionGlue=com.acutest.cdafjirajira.stepdefs}, jira={protocol=https, customfieldId={risk Priority=10809, likelihoodOfFailure=10501, executionStatus=10817, impactOfFailure=10500}, host=acutesttraining.atlassian.net, makeUpdates=true, defaultUser=mike.jennings@acutest.co.uk}}
+[INFO ] 20190916T160634.205+0100 [main] TestConfiguration - setting system property: webdriver.driver with value firefox
+[INFO ] 20190916T160634.206+0100 [main] TestConfiguration - setting system property: Xray.clientId with value 27CA37CB7795492D9BB38CC852F95B42
+[INFO ] 20190916T160634.206+0100 [main] TestConfiguration - setting system property: Xray.featureFileLocation with value target/test-classes/XrayFiles/
+[INFO ] 20190916T160634.206+0100 [main] TestConfiguration - setting system property: testrun.featurefileLocation with value target/test-classes/features/cdaf/jirapi
+[INFO ] 20190916T160634.206+0100 [main] TestConfiguration - setting system property: testrun.cucumberOptionGlue with value com.acutest.cdafjirajira.stepdefs
+[INFO ] 20190916T160634.206+0100 [main] TestConfiguration - setting system property: jira.protocol with value https
+[INFO ] 20190916T160634.207+0100 [main] TestConfiguration - setting system property: jira.customfieldId.risk Priority with value 10809
+[INFO ] 20190916T160634.207+0100 [main] TestConfiguration - setting system property: jira.customfieldId.likelihoodOfFailure with value 10501
+[INFO ] 20190916T160634.207+0100 [main] TestConfiguration - setting system property: jira.customfieldId.executionStatus with value 10817
+[INFO ] 20190916T160634.207+0100 [main] TestConfiguration - setting system property: jira.customfieldId.impactOfFailure with value 10500
+[INFO ] 20190916T160634.207+0100 [main] TestConfiguration - setting system property: jira.host with value acutesttraining.atlassian.net
+[INFO ] 20190916T160634.207+0100 [main] TestConfiguration - setting system property: jira.makeUpdates with value true
+[INFO ] 20190916T160634.208+0100 [main] TestConfiguration - setting system property: jira.defaultUser with value mike.jennings@acutest.co.uk
+[DEBUG] 20190916T160648.346+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190916T160649.259+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T160650.236+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190916T160650.504+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T160704.479+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T160706.919+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190916T160707.389+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190916T160707.790+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T160708.306+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190916T160709.424+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T160710.592+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T160713.537+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T160725.363+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T160726.538+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T160731.343+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190916T160731.556+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190916T160731.765+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T160734.633+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T160735.804+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T160737.317+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T160737.666+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T160738.16+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T160738.337+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T160738.793+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190916T160739.117+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T160741.50+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T160741.995+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T160743.319+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T160743.665+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T160744.104+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190916T160744.367+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T160747.03+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T160748.115+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T160749.616+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T160749.944+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T160750.335+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190916T160750.554+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T160754.368+0100 [main] Hooks - @After scenario As an automation framework developer
+[DEBUG] 20190916T160754.369+0100 [main] Hooks - @web
+[DEBUG] 20190916T160754.369+0100 [main] Hooks - @dev
+[DEBUG] 20190916T163455.445+0100 [main] Hooks - @Before scenario As an automation framework developer
+[DEBUG] 20190916T163455.448+0100 [main] Hooks - @web
+[DEBUG] 20190916T163455.448+0100 [main] Hooks - @dev
+[ERROR] 20190916T163455.608+0100 [main] TestConfiguration - {webdriver={driver=firefox}, Xray={clientId=27CA37CB7795492D9BB38CC852F95B42, featureFileLocation=target/test-classes/XrayFiles/}, testrun={featurefileLocation=target/test-classes/features/cdaf/jirapi, cucumberOptionGlue=com.acutest.cdafjirajira.stepdefs}, jira={protocol=https, customfieldId={risk Priority=10809, likelihoodOfFailure=10501, executionStatus=10817, impactOfFailure=10500}, host=acutesttraining.atlassian.net, makeUpdates=true, defaultUser=mike.jennings@acutest.co.uk}}
+[INFO ] 20190916T163455.610+0100 [main] TestConfiguration - setting system property: webdriver.driver with value firefox
+[INFO ] 20190916T163455.611+0100 [main] TestConfiguration - setting system property: Xray.clientId with value 27CA37CB7795492D9BB38CC852F95B42
+[INFO ] 20190916T163455.611+0100 [main] TestConfiguration - setting system property: Xray.featureFileLocation with value target/test-classes/XrayFiles/
+[INFO ] 20190916T163455.611+0100 [main] TestConfiguration - setting system property: testrun.featurefileLocation with value target/test-classes/features/cdaf/jirapi
+[INFO ] 20190916T163455.611+0100 [main] TestConfiguration - setting system property: testrun.cucumberOptionGlue with value com.acutest.cdafjirajira.stepdefs
+[INFO ] 20190916T163455.611+0100 [main] TestConfiguration - setting system property: jira.protocol with value https
+[INFO ] 20190916T163455.611+0100 [main] TestConfiguration - setting system property: jira.customfieldId.risk Priority with value 10809
+[INFO ] 20190916T163455.612+0100 [main] TestConfiguration - setting system property: jira.customfieldId.likelihoodOfFailure with value 10501
+[INFO ] 20190916T163455.612+0100 [main] TestConfiguration - setting system property: jira.customfieldId.executionStatus with value 10817
+[INFO ] 20190916T163455.612+0100 [main] TestConfiguration - setting system property: jira.customfieldId.impactOfFailure with value 10500
+[INFO ] 20190916T163455.612+0100 [main] TestConfiguration - setting system property: jira.host with value acutesttraining.atlassian.net
+[INFO ] 20190916T163455.612+0100 [main] TestConfiguration - setting system property: jira.makeUpdates with value true
+[INFO ] 20190916T163455.612+0100 [main] TestConfiguration - setting system property: jira.defaultUser with value mike.jennings@acutest.co.uk
+[DEBUG] 20190916T163510.424+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190916T163511.610+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T163512.797+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190916T163513.223+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T163527.569+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T163529.706+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190916T163530.124+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190916T163530.510+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T163531.54+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190916T163531.568+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T163532.637+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T163535.574+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T163547.642+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T163548.706+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T163553.637+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190916T163553.854+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190916T163554.80+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T163555.995+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T163556.767+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T163557.953+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T163558.274+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T163558.699+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T163559.30+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T163559.340+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190916T163559.603+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T163601.522+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T163602.499+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T163603.974+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T163604.329+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T163604.640+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190916T163604.895+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T163606.774+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T163607.772+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T163609.247+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T163609.542+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T163609.853+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20190916T163610.73+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20190916T163613.887+0100 [main] Hooks - @After scenario As an automation framework developer
+[DEBUG] 20190916T163613.888+0100 [main] Hooks - @web
+[DEBUG] 20190916T163613.888+0100 [main] Hooks - @dev

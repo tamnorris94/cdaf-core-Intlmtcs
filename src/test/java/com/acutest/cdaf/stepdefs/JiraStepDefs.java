@@ -105,7 +105,7 @@ public class JiraStepDefs {
 	@When("^user creates a new issue with description \"([^\"]*)\", summary \"([^\"]*)\", Project Name \"([^\"]*)\"$")
 	public void user_creates_a_new_issue(String descr, String summary, String projectName) throws Throwable {
 		NavigationBarObject navigationBar = new NavigationBarObject(webDriver);
-		navigationBar.create();
+		//navigationBar.create();
 
 		JiraIssue jiraIssue = new JiraIssue(webDriver);
 		jiraIssue.enterStoryDetails(descr, summary, projectName);
@@ -118,7 +118,10 @@ public class JiraStepDefs {
 		//NavigationBarObject navigationBar = new NavigationBarObject(webDriver);
 		//navigationBar.search();
 		JiraIssue jiraIssue = new JiraIssue(webDriver);
-		jiraIssue.addTestAttributes(description2, autoStatus, riskLi, riskIm, execStatus, comment);
+		jiraIssue.addStage1Attributes(description2,comment);
+		jiraIssue.addStage2Attributes(riskLi,riskIm);
+		jiraIssue.addStage3Attributes(autoStatus);
+		jiraIssue.addStage4Attributes(execStatus);
 	}
 	/**
 	 * Returns the title of a jira page and compares against expected title.
@@ -138,23 +141,17 @@ public class JiraStepDefs {
 	 */
 	@Then("^the page contains the word \"([^\"]*)\"$")
 	public void i_the_page_should_contain_the_word(String word)throws Throwable {
-		// Write code here that turns the phrase above into concrete actions
         String locator = String.format(".//*[contains(text(), '%s')]", word);
 		webDriver.findElement(By.xpath(locator));
 		List<WebElement> elem = webDriver.findElements(By.xpath(locator));
-		assert (!elem.isEmpty());
+		Assert.assertTrue("Unable to find the expected word",!elem.isEmpty());
 	}
 
-	@Then("^the issue with the given summary \"([^\"]*)\" is successfully created$")
+	@Then("^the issue with the given summary \"([^\"]*)\" is created$")
 	public void issue_with_attributes_is_created(String summary) throws Throwable
 	{
 		JiraIssue jiraIssue = new JiraIssue(webDriver);
 		jiraIssue.verifyIssueCreation(summary);
 	}
-
-	@Then("^I should get a new Jira issue id$")
-	public void i_should_get_a_new_Jira_issue_id() throws Throwable {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new PendingException();
-	}
+	
 }
