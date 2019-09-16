@@ -71,7 +71,7 @@ public class DriverFactory {
             case "firefox":
                 driverPath = new File(path + "geckodriver.exe");
                 driverExec = (String) System.getProperty("driverExec", String.valueOf(driverPath));
-                isHeadless = Boolean.valueOf(System.getProperty("headless", "false"));
+                isHeadless = Boolean.valueOf(System.setProperty("headless", "false"));
                 System.setProperty("webdriver.gecko.driver", driverExec);
                 driver = new FirefoxDriver();
                 Runtime.getRuntime().addShutdownHook(closeDriverThread);
