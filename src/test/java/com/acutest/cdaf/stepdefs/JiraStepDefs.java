@@ -36,13 +36,6 @@ public class JiraStepDefs {
 
 	private static Logger logger = LogManager.getLogger();
 
-	//public JiraStepDefs(SharedDriver webDriver) {
-	//    logger.debug("Initialising JiraStepDefs");
-	//	this.webDriver = webDriver;
-	//	loginPage = new LoginPageObject(webDriver);
-	//	navigationBar = new NavigationBarObject(webDriver);
-	//}
-
 	/**
 	 * Navigates to acutest's publica Jira page which doesn't require authentication
 	 * @throws Throwable
@@ -56,7 +49,6 @@ public class JiraStepDefs {
 		 */
 
 		webDriver = DriverFactory.initialize();
-		//Jira Public Issue Page;
 	}
 
 	/**
@@ -105,8 +97,6 @@ public class JiraStepDefs {
 	@When("^user creates a new issue with description \"([^\"]*)\", summary \"([^\"]*)\", Project Name \"([^\"]*)\"$")
 	public void user_creates_a_new_issue(String descr, String summary, String projectName) throws Throwable {
 		NavigationBarObject navigationBar = new NavigationBarObject(webDriver);
-		//navigationBar.create();
-
 		JiraIssue jiraIssue = new JiraIssue(webDriver);
 		jiraIssue.enterStoryDetails(descr, summary, projectName);
 
@@ -115,8 +105,6 @@ public class JiraStepDefs {
 	@When("^user provides description \"([^\"]*)\", automation status\"([^\"]*)\", risk likelihood\"([^\"]*)\", risk impact \"([^\"]*)\", execution status\"([^\"]*)\" comment \"([^\"]*)\"$")
 	public void user_provides_attributes(String description2, String autoStatus, String riskLi, String riskIm, String execStatus, String comment) throws Throwable
 	{
-		//NavigationBarObject navigationBar = new NavigationBarObject(webDriver);
-		//navigationBar.search();
 		JiraIssue jiraIssue = new JiraIssue(webDriver);
 		jiraIssue.addStage1Attributes(description2,comment);
 		jiraIssue.addStage2Attributes(riskLi,riskIm);
@@ -153,5 +141,5 @@ public class JiraStepDefs {
 		JiraIssue jiraIssue = new JiraIssue(webDriver);
 		jiraIssue.verifyIssueCreation(summary);
 	}
-	
+
 }
