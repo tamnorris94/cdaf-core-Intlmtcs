@@ -1,4 +1,4 @@
-package com.acutest.cdaf.common.DTO;
+package com.acutest.cdaf.DTO;
 
 /**
  * Result folder for this scenario or example.

@@ -1,0 +1,12 @@
+[DEBUG] 20190702T102330.232+0100 [main] Hooks - @Before scenario Check title of issue PUBLICA-1
+[DEBUG] 20190702T102330.234+0100 [main] Hooks - @web
+[DEBUG] 20190702T102330.235+0100 [main] Hooks - @dev
+[DEBUG] 20190702T102348.253+0100 [main] Hooks - @After scenario Check title of issue PUBLICA-1
+[DEBUG] 20190702T102348.253+0100 [main] Hooks - @web
+[DEBUG] 20190702T102348.253+0100 [main] Hooks - @dev
+[DEBUG] 20190702T103028.595+0100 [main] Hooks - @Before scenario Check title of issue PUBLICA-1
+[DEBUG] 20190702T103028.597+0100 [main] Hooks - @web
+[DEBUG] 20190702T103028.597+0100 [main] Hooks - @dev
+[DEBUG] 20190702T103045.631+0100 [main] Hooks - @After scenario Check title of issue PUBLICA-1
+[DEBUG] 20190702T103045.632+0100 [main] Hooks - @web
+[DEBUG] 20190702T103045.635+0100 [main] Hooks - @dev

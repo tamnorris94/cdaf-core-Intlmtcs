@@ -1,3 +1,0 @@
-|ID|Field|Rule|
-|1| Report Status| Rep_Stat=="New"|
-|25| Transmission of order indicator| Tranmission_Order_ID=="TRUE|FALSE"
