@@ -63,11 +63,6 @@ public class DemoStepDefs {
         String expectedText = base + word;
         Assert.assertEquals("The bullet point doesn't have the correct text", expectedText, newBullet);
     }
-
-//     @When("I navigate to the About page")
-//     public void iNavigateToTheAboutPage() {
-//         driver.get(URL + "/About");
-//     }
     
     @When("I navigate to the {string} page")
     public void iNavigateToTheAboutPage(String page) {
@@ -118,14 +113,6 @@ public class DemoStepDefs {
         //WebDriverWait wait = new WebDriverWait(driver,50);
         //wait.until(ExpectedConditions.presenceOfElementLocated(By.className("css-eaycls")));
     }
-
-//    @Then("the page contains the phrase {phrase}")
-//    public void thePageContainsThePhrasePhrase(String phrase) {
-//        String locator = String.format(".//*[contains(text(), '%s')]", phrase);
-//        WebElement element = driver.findElement(By.xpath(locator));
-//        String actual = element.getText();
-//        Assert.assertEquals("The page doesn't contain the given phrase", phrase, actual);
-//    }
 
     @Then("the page contains the phrase {string}")
     public void thePageContainsThePhrasePhrase(String phrase) {

@@ -9,6 +9,8 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebDriverException;
+import java.io.FileInputStream;
+import java.io.InputStream;
 import java.net.MalformedURLException;
 import java.util.*;
 import java.util.concurrent.TimeUnit;
@@ -19,6 +21,7 @@ import org.apache.logging.log4j.Logger;
 
 public class Hooks {
     private static Logger log = LogManager.getLogger(Hooks.class);
+
     private WebDriver driver;
     private static boolean dunit = false;
 
@@ -31,6 +34,7 @@ public class Hooks {
      */
 
     @Before(order = 10)
+
     public void beforeAll(Scenario scenario )throws Exception {
         log.trace("Executing beforeAll, about to check 'dunit' value");
         if (!dunit) {
@@ -55,6 +59,7 @@ public class Hooks {
      */
     @Before (order = 20)
     public void beforeEachScenario(Scenario scenario) throws Exception {
+
         log.debug("@Before scenario " + scenario.getName());
 
         if (isUsingWebdriver(scenario)) {
@@ -112,6 +117,7 @@ public class Hooks {
             if (scenarioTag.equalsIgnoreCase("@api")) {
                     // by convention API testing will use @API
                     isWeb = false;
+
             }
         }
         return isWeb;

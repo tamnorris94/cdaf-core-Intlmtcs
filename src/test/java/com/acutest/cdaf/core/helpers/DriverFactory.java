@@ -75,6 +75,7 @@ public class DriverFactory {
                     optns.addArguments("--start-maximized")
                     .addArguments("window-size=1200x600");
                 }
+
                 System.setProperty("webdriver.gecko.driver", driverExec);
                 driver = new FirefoxDriver();
                 Runtime.getRuntime().addShutdownHook(closeDriverThread);
