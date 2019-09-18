@@ -9,7 +9,6 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebDriverException;
-
 import java.io.FileInputStream;
 import java.io.InputStream;
 import java.net.MalformedURLException;
@@ -21,7 +20,8 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 public class Hooks {
-    private static Logger log = LogManager.getLogger();
+    private static Logger log = LogManager.getLogger(Hooks.class);
+
     private WebDriver driver;
     private static boolean dunit = false;
 
@@ -33,7 +33,8 @@ public class Hooks {
      * Method contains necessary setups and initializations needed in place before any tests can run
      */
 
-    @Before
+    @Before(order = 10)
+
     public void beforeAll(Scenario scenario )throws Exception {
         log.trace("Executing beforeAll, about to check 'dunit' value");
         if (!dunit) {
@@ -56,8 +57,8 @@ public class Hooks {
     /**
      * Method contains setups and initializations that need to be in place before each scenarion run
      */
-    @Before
-    public void beforeEachScenario(Scenario scenario) throws MalformedURLException {
+    @Before (order = 20)
+    public void beforeEachScenario(Scenario scenario) throws Exception {
 
         log.debug("@Before scenario " + scenario.getName());
 
@@ -113,9 +114,10 @@ public class Hooks {
         List<String> scenarioTagList = (List<String>) scenario.getSourceTagNames();
         for (String scenarioTag : scenarioTagList) {
             log.debug(scenarioTag);
-            if (scenarioTag.equalsIgnoreCase("@web")) {
-                // by convention API testing will use @API
-                isWeb = false;
+            if (scenarioTag.equalsIgnoreCase("@api")) {
+                    // by convention API testing will use @API
+                    isWeb = false;
+
             }
         }
         return isWeb;

@@ -131,6 +131,114 @@
         </profile>
     </profiles>
 
+    <profiles>
+        <profile>
+            <id>xray-integration-test</id>
+            <properties>
+                <build.profile.id>xray.integration-test</build.profile.id>
+                <skip.integration.tests>false</skip.integration.tests>
+                <skip.unit.tests>true</skip.unit.tests>
+            </properties>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-compiler-plugin</artifactId>
+                        <version>${maven-compiler-plugin.version}</version>
+                        <configuration>
+                            <encoding>UTF-8</encoding>
+                            <source>${java.version}</source>
+                            <target>${java.version}</target>
+                        </configuration>
+                    </plugin>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-surefire-plugin</artifactId>
+                        <version>${maven-surefire-plugin.version}</version>
+                        <configuration>
+                            <skipTests>true</skipTests>
+                        </configuration>
+                    </plugin>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-failsafe-plugin</artifactId>
+                        <version>${maven.failsafe.plugin.version}</version>
+                        <executions>
+                            <execution>
+                                <id>acceptance-test</id>
+                                <goals>
+                                    <goal>integration-test</goal>
+                                    <goal>verify</goal>
+                                </goals>
+                                <configuration>
+                                    <includes>
+                                        <include>**/*XR.class</include>
+                                    </includes>
+                                    <testFailureIgnore>true</testFailureIgnore>
+                                </configuration>
+                            </execution>
+                        </executions>
+                    </plugin>
+                    <plugin>
+                        <groupId>net.masterthought</groupId>
+                        <artifactId>maven-cucumber-reporting</artifactId>
+                        <version>${maven-cucumber-reporting.version}</version>
+                        <executions>
+                            <execution>
+                                <id>execution</id>
+                                <phase>post-integration-test</phase>
+                                <goals>
+                                    <goal>generate</goal>
+                                </goals>
+                                <configuration>
+                                    <projectName>BATcucumberReport</projectName>
+                                    <outputDirectory>${project.build.directory}</outputDirectory>
+                                    <inputDirectory>${project.build.directory}</inputDirectory>
+                                    <jsonFiles>
+                                        <param>**/cucumber-report.json</param>
+                                    </jsonFiles>
+                                    <!-- optional, set true to fail build on test failures -->
+                                    <checkBuildResult>false</checkBuildResult>
+                                </configuration>
+                            </execution>
+                        </executions>
+                    </plugin>
+                    <plugin>
+                        <groupId>org.codehaus.mojo</groupId>
+                        <artifactId>exec-maven-plugin</artifactId>
+                        <version>${exec.maven.plugin.version}</version>
+                        <executions>
+                            <execution>
+                                <id>get-features</id>
+                                <phase>pre-integration-test</phase>
+                                <goals>
+                                    <goal>java</goal>
+                                </goals>
+                                <configuration>
+                                    <mainClass>com.acutest.cdaf.xray.XrayExport</mainClass>
+                                    <cleanupDaemonThreads>false</cleanupDaemonThreads>
+                                </configuration>
+                            </execution>
+                            <execution>
+                                <id>post-features</id>
+                                <phase>post-integration-test</phase>
+                                <goals>
+                                    <goal>java</goal>
+                                </goals>
+                                <configuration>
+                                    <mainClass>com.acutest.cdaf.xray.XrayImport</mainClass>
+                                    <arguments>
+                                        <argument>target/cucumber-report</argument>
+                                    </arguments>
+                                </configuration>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
+
     <build>
         <plugins>
             <plugin>
@@ -353,9 +461,10 @@
           <type>pom</type>
         </dependency>
         <dependency>
-            <groupId>com.acutest.cdaf</groupId>
-            <artifactId>jira-api</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
+          <groupId>com.acutest.cdaf</groupId>
+          <artifactId>jira-api</artifactId>
+          <version>1.0.0-SNAPSHOT</version>
+
         </dependency>
     </dependencies>
 </project>

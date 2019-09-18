@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
 import java.io.File;
 import java.util.HashMap;
@@ -18,7 +19,7 @@ public class DriverFactory {
 
 
     protected static WebDriver driver;
-    private static Logger log = LogManager.getLogger();
+    private static Logger log = LogManager.getLogger(DriverFactory.class);
 
     private static long implicitWaitTimeInSeconds;
     private static final Thread closeDriverThread = new Thread() {
@@ -32,11 +33,7 @@ public class DriverFactory {
 
     String localDir = System.getProperty("user.dir");
 
-    private static DriverFactory driverFactoryInstance;
     private DriverFactory() {
-
-
-        //initialize();
 
     }
 
@@ -46,8 +43,7 @@ public class DriverFactory {
      * @return
      */
     public static WebDriver initialize() {
-        if(driverFactoryInstance == null) {
-            driverFactoryInstance = new DriverFactory();
+        if(driver == null) {
             createNewDriverInstance();
         }
          return driver;
@@ -60,8 +56,7 @@ public class DriverFactory {
      *
      */
     private static void createNewDriverInstance() {
-        String downloadFilepath = "C:\\Users\\Public\\Jenkins-Automation-Framework\\csvFiles\\adminReport\\";
-        String path = "C:\\cdaf_tools\\SeleniumWebDriver\\";
+        String path = System.getProperty("webdriver.path");
         File driverPath;
         // system variables
         String browser = System.getProperty("webdriver.driver", "firefox");
@@ -71,7 +66,16 @@ public class DriverFactory {
             case "firefox":
                 driverPath = new File(path + "geckodriver.exe");
                 driverExec = (String) System.getProperty("driverExec", String.valueOf(driverPath));
-                isHeadless = Boolean.valueOf(System.setProperty("headless", "false"));
+                isHeadless = Boolean.valueOf(System.getProperty("webdriver.headless", "false"));
+                FirefoxOptions optns = new FirefoxOptions();
+                if (isHeadless) {
+                    optns.setHeadless(true).addArguments("--headless");
+                }
+                else {
+                    optns.addArguments("--start-maximized")
+                    .addArguments("window-size=1200x600");
+                }
+
                 System.setProperty("webdriver.gecko.driver", driverExec);
                 driver = new FirefoxDriver();
                 Runtime.getRuntime().addShutdownHook(closeDriverThread);
@@ -79,11 +83,10 @@ public class DriverFactory {
             case "chrome":
                 driverPath = new File(path + "chromedriver.exe");
                 driverExec = (String) System.getProperty("driverExec", String.valueOf(driverPath));
-                isHeadless = Boolean.valueOf(System.getProperty("headless", "false"));
+                isHeadless = Boolean.valueOf(System.getProperty("webdriver.headless", "false"));
                 System.setProperty("webdriver.chrome.driver", driverExec);
                 //     log.info("Setting ChromeOptions for fix 20180629");
                 Map<String, Object> prefs = new HashMap<String, Object>();
-                prefs.put("download.default_directory", downloadFilepath);
                 ChromeOptions options = new ChromeOptions()
                         .addArguments("--start-maximized")
                         .addArguments("--disable-gpu")
@@ -123,7 +126,7 @@ public class DriverFactory {
      * returns the instance of the webdriver
      * @return
      */
-    public WebDriver getDriver() {
+    public static WebDriver getDriver() {
         return driver;
     }
 

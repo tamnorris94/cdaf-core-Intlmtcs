@@ -12,7 +12,8 @@ jira:
     impactOfFailure: 10500
     likelihoodOfFailure: 10501
     risk Priority: 10809
-#
+#   customfield:
+
 # Test run parameters
 testrun:
   featurefileLocation: target/test-classes/features/cdaf/jirapi
@@ -25,3 +26,6 @@ Xray:
 
 webdriver:
   driver: firefox
+  headless: false
+  path: C:\cdaf_tools\SeleniumWebDriver\
+

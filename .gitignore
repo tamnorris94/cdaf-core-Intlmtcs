@@ -4,8 +4,7 @@
 .idea/
 *.iml
 *.iws
-logfileXX.log
-
+*.log
 # Eclipse
 .classpath
 .project

@@ -23,12 +23,12 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 
 
 /**
- * Executes the steps defined in feature files
+ * Executes the steps defined in feature files specific to acutesttraining CDAFSBXB / C projects
  */
 public class JiraStepDefs {
 
-	protected NavigationBarObject navigationBar;
-	protected WebDriver webDriver = DriverFactory.initialize();
+	private NavigationBarObject navigationBar;
+	protected WebDriver webDriver = DriverFactory.getDriver();
 	protected LoginPageObject loginPage;
 	protected JiraIssue jiraIssue;
 	private String acutesttrainingUrl =
@@ -77,8 +77,6 @@ public class JiraStepDefs {
 	}
 	/**
 	 * Navigates to specific page in browser
-	 *
-
 	 * @param webPage
 	 * @throws Throwable
 	 */
@@ -133,7 +131,8 @@ public class JiraStepDefs {
         String locator = String.format(".//*[contains(text(), '%s')]", word);
 		webDriver.findElement(By.xpath(locator));
 		List<WebElement> elem = webDriver.findElements(By.xpath(locator));
-		Assert.assertTrue("Unable to find the expected word",!elem.isEmpty());
+		Assert.assertTrue("Not able to find any element containing this given word", !elem.isEmpty());
+
 	}
 
 	@Then("^the issue with the given summary \"([^\"]*)\" is created$")
