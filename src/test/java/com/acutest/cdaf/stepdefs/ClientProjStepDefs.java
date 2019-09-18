@@ -22,7 +22,7 @@ import java.util.List;
 public class ClientProjStepDefs {
 
 	private NavigationBarObject navigationBar;
-	protected WebDriver webDriver = DriverFactory.initialize();
+	protected WebDriver webDriver = DriverFactory.getDriver();
 	protected LoginPageObject loginPage;
 
 	private static Logger logger = LogManager.getLogger();

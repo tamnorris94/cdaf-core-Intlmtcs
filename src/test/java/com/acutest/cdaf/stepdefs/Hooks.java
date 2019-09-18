@@ -9,9 +9,6 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebDriverException;
-
-import java.io.FileInputStream;
-import java.io.InputStream;
 import java.net.MalformedURLException;
 import java.util.*;
 import java.util.concurrent.TimeUnit;
@@ -21,7 +18,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 public class Hooks {
-    private static Logger log = LogManager.getLogger();
+    private static Logger log = LogManager.getLogger(Hooks.class);
     private WebDriver driver;
     private static boolean dunit = false;
 
@@ -47,7 +44,7 @@ public class Hooks {
                 }
             });
             // Add items here to run before all scenarios.
-            TestConfiguration.loadAPropertiesFile("./src/test/resources/testConfiguration.yaml");
+            //TestConfiguration.loadAPropertiesFile("./src/test/resources/testConfiguration.yaml");
             dunit = true;
 
         }
@@ -57,8 +54,8 @@ public class Hooks {
      * Method contains setups and initializations that need to be in place before each scenarion run
      */
     @Before
-    public void beforeEachScenario(Scenario scenario) throws MalformedURLException {
-
+    public void beforeEachScenario(Scenario scenario) throws Exception {
+        TestConfiguration.loadAPropertiesFile("./src/test/resources/testConfiguration.yaml");
         log.debug("@Before scenario " + scenario.getName());
 
         if (isUsingWebdriver(scenario)) {
@@ -113,9 +110,9 @@ public class Hooks {
         List<String> scenarioTagList = (List<String>) scenario.getSourceTagNames();
         for (String scenarioTag : scenarioTagList) {
             log.debug(scenarioTag);
-            if (scenarioTag.equalsIgnoreCase("@web")) {
-                // by convention API testing will use @API
-                isWeb = false;
+            if (scenarioTag.equalsIgnoreCase("@api")) {
+                    // by convention API testing will use @API
+                    isWeb = false;
             }
         }
         return isWeb;

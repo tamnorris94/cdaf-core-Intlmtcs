@@ -25,17 +25,17 @@ import org.junit.Assert;
 
 
 /**
- * Executes the steps defined in feature files
+ * Executes the steps defined in feature files specific to acutesttraining CDAFSBXB / C projects
  */
 public class JiraStepDefs {
 
 	private NavigationBarObject navigationBar;
-	protected WebDriver webDriver = DriverFactory.initialize();
+	protected WebDriver webDriver = DriverFactory.getDriver();
 	protected LoginPageObject loginPage;
 	private String acutesttrainingUrl =
 			"https://acutesttraining.atlassian.net/projects/CDFJ/issues";
 
-	private static Logger logger = LogManager.getLogger();
+	private static Logger logger = LogManager.getLogger(JiraStepDefs.class);
 
 	//public JiraStepDefs(SharedDriver webDriver) {
 	//    logger.debug("Initialising JiraStepDefs");
@@ -118,7 +118,7 @@ public class JiraStepDefs {
         String locator = String.format(".//*[contains(text(), '%s')]", word);
 		webDriver.findElement(By.xpath(locator));
 		List<WebElement> elem = webDriver.findElements(By.xpath(locator));
-		assert(!elem.isEmpty());
+		Assert.assertTrue("Not able to find any element containing this given word", !elem.isEmpty());
 	}
 
 	@Then("^I should get a new Jira issue id$")

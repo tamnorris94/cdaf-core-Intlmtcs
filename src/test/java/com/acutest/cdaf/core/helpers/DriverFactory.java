@@ -18,7 +18,7 @@ public class DriverFactory {
 
 
     protected static WebDriver driver;
-    private static Logger log = LogManager.getLogger();
+    private static Logger log = LogManager.getLogger(DriverFactory.class);
 
     private static long implicitWaitTimeInSeconds;
     private static final Thread closeDriverThread = new Thread() {
@@ -32,11 +32,7 @@ public class DriverFactory {
 
     String localDir = System.getProperty("user.dir");
 
-    private static DriverFactory driverFactoryInstance;
     private DriverFactory() {
-
-
-        //initialize();
 
     }
 
@@ -46,8 +42,7 @@ public class DriverFactory {
      * @return
      */
     public static WebDriver initialize() {
-        if(driverFactoryInstance == null) {
-            driverFactoryInstance = new DriverFactory();
+        if(driver == null) {
             createNewDriverInstance();
         }
          return driver;
@@ -60,8 +55,7 @@ public class DriverFactory {
      *
      */
     private static void createNewDriverInstance() {
-        String downloadFilepath = "C:\\Users\\Public\\Jenkins-Automation-Framework\\csvFiles\\adminReport\\";
-        String path = "C:\\cdaf_tools\\SeleniumWebDriver\\";
+        String path = System.getProperty("webdriver.path");
         File driverPath;
         // system variables
         String browser = System.getProperty("webdriver.driver", "firefox");
@@ -83,7 +77,6 @@ public class DriverFactory {
                 System.setProperty("webdriver.chrome.driver", driverExec);
                 //     log.info("Setting ChromeOptions for fix 20180629");
                 Map<String, Object> prefs = new HashMap<String, Object>();
-                prefs.put("download.default_directory", downloadFilepath);
                 ChromeOptions options = new ChromeOptions()
                         .addArguments("--start-maximized")
                         .addArguments("--disable-gpu")
@@ -123,7 +116,7 @@ public class DriverFactory {
      * returns the instance of the webdriver
      * @return
      */
-    public WebDriver getDriver() {
+    public static WebDriver getDriver() {
         return driver;
     }
 

@@ -19,7 +19,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class DemoStepDefs {
 
     private static Logger logger = LogManager.getLogger(DemoStepDefs.class);
-    private WebDriver driver = DriverFactory.initialize();
+    private WebDriver driver = DriverFactory.getDriver();
     private CdafWebTest webTestPage;
     private String bulletPoint;
     private String URL = "https://cdafwebapptesttarget2-dev-as.azurewebsites.net/";
