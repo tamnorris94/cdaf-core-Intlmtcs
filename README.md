@@ -15,15 +15,15 @@ Possible to update framework to accept other browers in the future.
 
 Default setting is firefox.
 
-You can change the browser in the following ways:
+You can change the browser in the following way:
 
 1) navigate to src>test>java>resources>testConfiguration.yaml and update `driver: firefox` to `driver: chrome`
-
-2) command line using maven - in the terminal run `mvn clean verify`
 
 If having problems changing the browser open the logger and check the class `TestConfiguration` is loading the contents of `testConfiguration.yaml` into `System properties`
 
 Jira Password is set as an environment variable: JIRA_PASSWORD
 
 Current version of chromedriver is 74.
+
+When running tests that do not need a browser add `@api` tag to the test to not open a browser
 
