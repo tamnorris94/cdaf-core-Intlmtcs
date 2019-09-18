@@ -11,5 +11,5 @@ import org.junit.runner.RunWith;
 		glue = "com/acutest/cdaf/stepdefs/",
 		tags = {"@dev"},
 		plugin = {"pretty", "html:target/cucumber-report/autocorrect"})
-public class JiraAxT {
+public class JiraAT {
 }

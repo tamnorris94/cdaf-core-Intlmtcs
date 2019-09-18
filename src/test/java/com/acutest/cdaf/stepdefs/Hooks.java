@@ -30,7 +30,7 @@ public class Hooks {
      * Method contains necessary setups and initializations needed in place before any tests can run
      */
 
-    @Before
+    @Before(order = 10)
     public void beforeAll(Scenario scenario )throws Exception {
         log.trace("Executing beforeAll, about to check 'dunit' value");
         if (!dunit) {
@@ -44,7 +44,7 @@ public class Hooks {
                 }
             });
             // Add items here to run before all scenarios.
-            //TestConfiguration.loadAPropertiesFile("./src/test/resources/testConfiguration.yaml");
+            TestConfiguration.loadAPropertiesFile("./src/test/resources/testConfiguration.yaml");
             dunit = true;
 
         }
@@ -53,9 +53,8 @@ public class Hooks {
     /**
      * Method contains setups and initializations that need to be in place before each scenarion run
      */
-    @Before
+    @Before (order = 20)
     public void beforeEachScenario(Scenario scenario) throws Exception {
-        TestConfiguration.loadAPropertiesFile("./src/test/resources/testConfiguration.yaml");
         log.debug("@Before scenario " + scenario.getName());
 
         if (isUsingWebdriver(scenario)) {
