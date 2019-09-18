@@ -17,20 +17,11 @@ Default setting is firefox.
 
 You can change the browser in the following ways:
 
-1) navigate to src>test>java>resources>environment.properties and update browser=firefox to browser=chrome
+1) navigate to src>test>java>resources>testConfiguration.yaml and update `driver: firefox` to `driver: chrome`
 
-2) command line using maven - in the terminal run "mvn clean verify -Dbrowser=chrome" (without speach marks).
+2) command line using maven - in the terminal run `mvn clean verify`
 
-If having problems changing the browser navigate to src>test>java>Hooks. In the "beforeAll" method find line:
-FileInputStream propFile = new FileInputStream("./src/test/resources/environment.properties");
-Check file path is correct from your starting directory to environment.properties file.
-
-Find your starting directory by navigating to src>test>java>com.acutest.cdaf>core.helpers>DriverFactory
-put a break point on line:
-
-String localDir = System.getProperty("user.dir");
-
-run test in debug.
+If having problems changing the browser open the logger and check the class `TestConfiguration` is loading the contents of `testConfiguration.yaml` into `System properties`
 
 Jira Password is set as an environment variable: JIRA_PASSWORD
 
