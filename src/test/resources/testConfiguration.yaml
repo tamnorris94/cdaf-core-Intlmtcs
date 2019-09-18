@@ -26,5 +26,5 @@ Xray:
 
 webdriver:
   driver: firefox
-  headless: true
+  headless: false
   path: C:\cdaf_tools\SeleniumWebDriver\
