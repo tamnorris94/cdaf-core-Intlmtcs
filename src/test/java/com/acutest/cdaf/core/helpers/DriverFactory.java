@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
 import java.io.File;
 import java.util.HashMap;
@@ -65,7 +66,15 @@ public class DriverFactory {
             case "firefox":
                 driverPath = new File(path + "geckodriver.exe");
                 driverExec = (String) System.getProperty("driverExec", String.valueOf(driverPath));
-                isHeadless = Boolean.valueOf(System.setProperty("headless", "false"));
+                isHeadless = Boolean.valueOf(System.getProperty("webdriver.headless", "false"));
+                FirefoxOptions optns = new FirefoxOptions();
+                if (isHeadless) {
+                    optns.setHeadless(true).addArguments("--headless");
+                }
+                else {
+                    optns.addArguments("--start-maximized")
+                    .addArguments("window-size=1200x600");
+                }
                 System.setProperty("webdriver.gecko.driver", driverExec);
                 driver = new FirefoxDriver();
                 Runtime.getRuntime().addShutdownHook(closeDriverThread);
@@ -73,7 +82,7 @@ public class DriverFactory {
             case "chrome":
                 driverPath = new File(path + "chromedriver.exe");
                 driverExec = (String) System.getProperty("driverExec", String.valueOf(driverPath));
-                isHeadless = Boolean.valueOf(System.setProperty("headless", "false"));
+                isHeadless = Boolean.valueOf(System.getProperty("webdriver.headless", "false"));
                 System.setProperty("webdriver.chrome.driver", driverExec);
                 //     log.info("Setting ChromeOptions for fix 20180629");
                 Map<String, Object> prefs = new HashMap<String, Object>();

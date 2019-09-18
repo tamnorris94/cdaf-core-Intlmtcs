@@ -6,13 +6,13 @@ jira:
   protocol: https
   host: acutesttraining.atlassian.net
   defaultUser: mike.jennings@acutest.co.uk
-  makeUpdates: false # switch to indicate not to update Jira with outcome. Used for non-Xray jira test integration.
+  makeUpdates: true # switch to indicate not to update Jira with outcome.
   customfieldId:
     executionStatus: 10817
     impactOfFailure: 10500
     likelihoodOfFailure: 10501
     risk Priority: 10809
-#    customfield:
+#   customfield:
 #
 # Test run parameters
 testrun:
@@ -26,4 +26,5 @@ Xray:
 
 webdriver:
   driver: firefox
+  headless: true
   path: C:\cdaf_tools\SeleniumWebDriver\
