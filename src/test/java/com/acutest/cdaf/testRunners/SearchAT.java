@@ -8,7 +8,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
 		monochrome = true,
 		features = "target/test-classes/cucumber/features/", 
-		tags = {"@search"},
+		tags = {"@none"},
 		plugin = {"pretty", "html:target/cucumber-report/autocorrect"})
 public class SearchAT {
 }

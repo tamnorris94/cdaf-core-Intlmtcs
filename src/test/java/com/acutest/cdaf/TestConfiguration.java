@@ -1,8 +1,12 @@
-package com.acutest.cdaf.common;
+package com.acutest.cdaf;
 
 import java.io.*;
 import java.util.*;
 import com.esotericsoftware.yamlbeans.YamlReader;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 /**
  * Created by Mike Jennings 11/11/2017, based on implementation by Peter Gale.
  *
@@ -14,6 +18,14 @@ import com.esotericsoftware.yamlbeans.YamlReader;
 public class TestConfiguration {
     public static Properties properties = new Properties();
 
+    /**
+     * returns the value of a key value pair in System.properties
+     * @param propertyName
+     * @return
+     */
+
+    private static Logger log = LogManager.getLogger();
+
     public static String getProperty(String propertyName) {
         String propertyValue = properties.getProperty(propertyName);
         if (propertyValue == null || propertyValue.equals("")) {
@@ -22,6 +34,12 @@ public class TestConfiguration {
         return propertyValue;
     }
 
+    /**
+     * Loads data in testConfiguration.yaml file
+     *
+     * @param sourcePropertiesFilePath
+     * @throws Exception
+     */
     public static void loadAPropertiesFile(String sourcePropertiesFilePath) throws Exception {
         if (!(sourcePropertiesFilePath == null)) {
             File file = new File(sourcePropertiesFilePath);
@@ -40,6 +58,11 @@ public class TestConfiguration {
         }
     }
 
+    /**
+     * Iterates over a map and adds key value pairs to system properties
+     * @param map
+     * @param baseKey
+     */
     private static void iterateOverAMap(Map map, String baseKey) {
         Iterator entries = map.entrySet().iterator();
         while (entries.hasNext()) {
@@ -50,7 +73,7 @@ public class TestConfiguration {
             }
             if (entry.getValue() instanceof String) {
                 String value = (String) entry.getValue();
-                properties.setProperty(key, value);
+                System.setProperty(key, value);
             } else {
                 iterateOverAMap((Map) entry.getValue(), key);
             }

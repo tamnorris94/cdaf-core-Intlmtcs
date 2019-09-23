@@ -12,27 +12,173 @@
     <properties>
         <applicationUrl>http://www.google.com</applicationUrl>
         <surefire.fork.count>5</surefire.fork.count>
-        <cucumber.version>1.2.5</cucumber.version>
-        <selenium.version>2.53.1</selenium.version>
+        <cucumber.version>4.3.1</cucumber.version>
+        <selenium.version>3.6.0</selenium.version>
         <junit.version>4.11</junit.version>
+        <log4j.version>2.11.2</log4j.version>
+        <exec.maven.plugin.version>1.6.0</exec.maven.plugin.version>
+        <maven-cucumber-reporting.version>4.3.0</maven-cucumber-reporting.version>
+        <maven-surefire-plugin.version>2.22.0</maven-surefire-plugin.version>
+        <maven.failsafe.plugin.version>3.0.0-M2</maven.failsafe.plugin.version>
+        <maven-compiler-plugin.version>3.6.1</maven-compiler-plugin.version>
+        <java.version>1.8</java.version>
     </properties>
+
+    <profiles>
+        <profile>
+            <id>xray-integration-test</id>
+            <properties>
+                <build.profile.id>xray.integration-test</build.profile.id>
+                <skip.integration.tests>false</skip.integration.tests>
+                <skip.unit.tests>true</skip.unit.tests>
+            </properties>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-compiler-plugin</artifactId>
+                        <version>${maven-compiler-plugin.version}</version>
+                        <configuration>
+                            <encoding>UTF-8</encoding>
+                            <source>${java.version}</source>
+                            <target>${java.version}</target>
+                        </configuration>
+                    </plugin>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-surefire-plugin</artifactId>
+                        <version>${maven-surefire-plugin.version}</version>
+                        <configuration>
+                            <skipTests>true</skipTests>
+                        </configuration>
+                    </plugin>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-failsafe-plugin</artifactId>
+                        <version>${maven.failsafe.plugin.version}</version>
+                        <executions>
+                            <execution>
+                                <id>acceptance-test</id>
+                                <goals>
+                                    <goal>integration-test</goal>
+                                    <goal>verify</goal>
+                                </goals>
+                                <configuration>
+                                    <includes>
+                                        <include>**/*XR.class</include>
+                                    </includes>
+                                    <testFailureIgnore>true</testFailureIgnore>
+                                </configuration>
+                            </execution>
+                        </executions>
+                    </plugin>
+                    <plugin>
+                        <groupId>net.masterthought</groupId>
+                        <artifactId>maven-cucumber-reporting</artifactId>
+                        <version>${maven-cucumber-reporting.version}</version>
+                        <executions>
+                            <execution>
+                                <id>execution</id>
+                                <phase>post-integration-test</phase>
+                                <goals>
+                                    <goal>generate</goal>
+                                </goals>
+                                <configuration>
+                                    <projectName>BATcucumberReport</projectName>
+                                    <outputDirectory>${project.build.directory}</outputDirectory>
+                                    <inputDirectory>${project.build.directory}</inputDirectory>
+                                    <jsonFiles>
+                                        <param>**/cucumber-report.json</param>
+                                    </jsonFiles>
+                                    <!-- optional, set true to fail build on test failures -->
+                                    <checkBuildResult>false</checkBuildResult>
+                                </configuration>
+                            </execution>
+                        </executions>
+                    </plugin>
+                    <plugin>
+                        <groupId>org.codehaus.mojo</groupId>
+                        <artifactId>exec-maven-plugin</artifactId>
+                        <version>${exec.maven.plugin.version}</version>
+                        <executions>
+                            <execution>
+                                <id>get-features</id>
+                                <phase>pre-integration-test</phase>
+                                <goals>
+                                    <goal>java</goal>
+                                </goals>
+                                <configuration>
+                                    <mainClass>com.acutest.cdaf.xray.XrayExport</mainClass>
+                                    <cleanupDaemonThreads>false</cleanupDaemonThreads>
+                                </configuration>
+                            </execution>
+                            <execution>
+                                <id>post-features</id>
+                                <phase>post-integration-test</phase>
+                                <goals>
+                                    <goal>java</goal>
+                                </goals>
+                                <configuration>
+                                    <mainClass>com.acutest.cdaf.xray.XrayImport</mainClass>
+                                    <arguments>
+                                        <argument>target/cucumber-report</argument>
+                                    </arguments>
+                                </configuration>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
 
     <build>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>2.5.1</version>
+                <version>3.6.1</version>
                 <configuration>
                     <encoding>UTF-8</encoding>
-                    <source>1.8</source>
-                    <target>1.8</target>
+                    <release>11</release>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>versions-maven-plugin</artifactId>
+                <version>2.7</version>
+                <configuration>
+                    <generateBackupPoms>false</generateBackupPoms>
                 </configuration>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-enforcer-plugin</artifactId>
+                <version>3.0.0-M2</version>
+                <executions>
+                    <execution>
+                        <id>enforce-maven</id>
+                        <goals>
+                            <goal>enforce</goal>
+                        </goals>
+                        <configuration>
+                            <rules>
+                                <requireMavenVersion>
+                                    <version>3.0.5</version>
+                                </requireMavenVersion>
+                            </rules>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
-                <version>2.14</version>
+                <version>2.22.0</version>
+                <configuration>
+                    <skipTests>false</skipTests>
+                    <argLine>--illegal-access=permit</argLine>
+                </configuration>
                 <executions>
                     <execution>
                         <id>acceptance-test</id>
@@ -78,6 +224,7 @@
             <plugin>
                 <groupId>org.jvnet.com4j</groupId>
                 <artifactId>maven-com4j-plugin</artifactId>
+                <version>2.0</version>
                 <executions>
                     <execution>
                         <id>gen-java-bridge</id>
@@ -92,28 +239,45 @@
                 </executions>
             </plugin>
         </plugins>
+        <resources>
+            <resource>
+                <directory>src/test/resources</directory>
+                <filtering>true</filtering>
+            </resource>
+<!--            <resource>-->
+<!--                <directory>src/test/resources</directory>-->
+<!--                <filtering>true</filtering>-->
+<!--            </resource>-->
+        </resources>
     </build>
 
     <dependencies>
         <dependency>
-            <groupId>info.cukes</groupId>
-            <artifactId>cucumber-jvm-deps</artifactId>
-            <scope>test</scope>
-            <version>1.0.3</version>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>2.4</version>
         </dependency>
         <dependency>
-            <groupId>info.cukes</groupId>
-            <artifactId>cucumber-picocontainer</artifactId>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-java</artifactId>
             <version>${cucumber.version}</version>
-            <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>info.cukes</groupId>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-core</artifactId>
+            <version>${cucumber.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.cucumber</groupId>
             <artifactId>cucumber-junit</artifactId>
             <version>${cucumber.version}</version>
-            <scope>test</scope>
         </dependency>
         <dependency>
+            <groupId>info.cukes</groupId>
+            <artifactId>gherkin</artifactId>
+            <version>2.12.2</version>
+        </dependency>
+      <dependency>
             <groupId>org.picocontainer</groupId>
             <artifactId>picocontainer</artifactId>
             <version>2.14.2</version>
@@ -145,13 +309,13 @@
         <dependency>
             <groupId>com.esotericsoftware.yamlbeans</groupId>
             <artifactId>yamlbeans</artifactId>
-            <version>1.06</version>
+            <version>1.12</version>
         </dependency>
-        <dependency>
-            <groupId>org.yaml</groupId>
-            <artifactId>snakeyaml</artifactId>
-            <version>1.7</version>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>log4j</groupId>-->
+<!--            <artifactId>log4j</artifactId>-->
+<!--            <version>1.2.17</version>-->
+<!--        </dependency>-->
         <dependency>
             <groupId>org.apache.logging.log4j</groupId>
             <artifactId>log4j-api</artifactId>
@@ -165,29 +329,28 @@
         <dependency>
             <groupId>com.fasterxml.jackson.dataformat</groupId>
             <artifactId>jackson-dataformat-yaml</artifactId>
-            <version>2.7.3</version>
+            <version>2.9.7</version>
         </dependency>
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-databind</artifactId>
-            <version>2.5.4</version>
+            <version>2.9.7</version>
         </dependency>
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-api</artifactId>
             <version>1.7.5</version>
-            <scope>test</scope>
+        </dependency>
+          <dependency>
+          <groupId>org.jvnet.com4j</groupId>
+          <artifactId>com4j-parent</artifactId>
+          <version>2.1</version>
+          <type>pom</type>
         </dependency>
         <dependency>
-        <groupId>org.jvnet.com4j</groupId>
-        <artifactId>com4j-parent</artifactId>
-        <version>2.1</version>
-        <type>pom</type>
-    </dependency>
-        <dependency>
-            <groupId>org.jvnet.com4j</groupId>
-            <artifactId>com4j</artifactId>
-            <version>2.1</version>
+          <groupId>com.acutest.cdaf</groupId>
+          <artifactId>jira-api</artifactId>
+          <version>1.0.0-SNAPSHOT</version>
         </dependency>
     </dependencies>
 </project>

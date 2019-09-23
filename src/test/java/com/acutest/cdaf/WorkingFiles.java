@@ -1,4 +1,4 @@
-package com.acutest.cdaf.common;
+package com.acutest.cdaf;
 
 import org.slf4j.Logger;
 
