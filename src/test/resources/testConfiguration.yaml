@@ -13,7 +13,7 @@ jira:
     impactOfFailure: 10500
     likelihoodOfFailure: 10501
     risk Priority: 10809
-    customfield: customfield_10835
+    stagedTestData: customfield_10835
 #
 # Test run parameters
 testrun:
