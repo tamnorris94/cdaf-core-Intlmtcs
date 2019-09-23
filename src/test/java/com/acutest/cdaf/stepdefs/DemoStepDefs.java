@@ -16,6 +16,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.util.List;
+
 public class DemoStepDefs {
 
     private static Logger logger = LogManager.getLogger(DemoStepDefs.class);
@@ -25,6 +27,7 @@ public class DemoStepDefs {
     private String URL = "https://cdafwebapptesttarget2-dev-as.azurewebsites.net/";
     private LoginPageObject loginPage;
     String bulletxPath = "//*[@class='row']//*[@class='col-md-3']//li";
+    List<WebElement> bulletList;
 
     @Given("I am on Acutest's test target web page")
     public void iAmOnAcutestSTestTargetWebPage() {
@@ -161,4 +164,26 @@ public class DemoStepDefs {
         Assert.assertEquals("The given text does not match the expected title", title, actualTitle);
     }
 
+//    @When("the <Key collaborators> section is selected")
+//    public void theKeyCollaboratorsSectionIsSelected(String section) {
+//        String xPath = String.format("//h2[text()= '%s' ]/following-sibling::ul//li", section);
+//        bulletList = driver.findElements(By.xpath(xPath));
+//    }
+
+
+    @Then("a bullet point contains the name {string}")
+    public void aBulletPointContainsTheNameName(String name) {
+
+        WebElement foundName = bulletList.stream().filter(e -> e.getAttribute("innerText")
+                .equals(name))
+                .findFirst()
+                .orElse(null);
+        Assert.assertNotNull("No bullet point contains the name: " + name, foundName);
+    }
+
+    @When("the {string} section is selected")
+    public void theKeyCollaboratorsSectionIsSelected(String section) {
+        String xPath = String.format("//h2[text()= '%s' ]/following-sibling::ul//li", section);
+        bulletList = driver.findElements(By.xpath(xPath));
+    }
 }
