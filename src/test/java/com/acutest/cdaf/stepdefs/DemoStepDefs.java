@@ -1,8 +1,10 @@
 package com.acutest.cdaf.stepdefs;
 
 import com.acutest.cdaf.core.helpers.DriverFactory;
+import com.acutest.cdaf.jiraapi.IssueInstance;
 import com.acutest.cdaf.pageobjects.cdafWebTest.CdafWebTest;
 import com.acutest.cdaf.pageobjects.jira.LoginPageObject;
+import com.acutest.cdaf.xray.XrayGraphQL;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -24,7 +26,8 @@ public class DemoStepDefs {
     private WebDriver driver = DriverFactory.getDriver();
     private CdafWebTest webTestPage;
     private String bulletPoint;
-    private String URL = "https://cdafwebapptesttarget2-dev-as.azurewebsites.net/";
+   // private String URL = "https://cdafwebapptesttarget2-dev-as.azurewebsites.net/";
+    String URL = "https://localhost:44336";
     private LoginPageObject loginPage;
     String bulletxPath = "//*[@class='row']//*[@class='col-md-3']//li";
     List<WebElement> bulletList;
@@ -164,16 +167,8 @@ public class DemoStepDefs {
         Assert.assertEquals("The given text does not match the expected title", title, actualTitle);
     }
 
-//    @When("the <Key collaborators> section is selected")
-//    public void theKeyCollaboratorsSectionIsSelected(String section) {
-//        String xPath = String.format("//h2[text()= '%s' ]/following-sibling::ul//li", section);
-//        bulletList = driver.findElements(By.xpath(xPath));
-//    }
-
-
     @Then("a bullet point contains the name {string}")
     public void aBulletPointContainsTheNameName(String name) {
-
         WebElement foundName = bulletList.stream().filter(e -> e.getAttribute("innerText")
                 .equals(name))
                 .findFirst()
@@ -186,4 +181,38 @@ public class DemoStepDefs {
         String xPath = String.format("//h2[text()= '%s' ]/following-sibling::ul//li", section);
         bulletList = driver.findElements(By.xpath(xPath));
     }
+
+    @Given("the user is on localhost port")
+    public void theUserIsOnLocalhostPort() {
+
+        driver.get(URL);
+    }
+
+    @When("the service section with title {string} is selected")
+    public void theServiceSectionWithTitleTitleIsSelected(String title) {
+        String xPathTitle = String.format("//div[@class='container body-content']//h2[text()='%s']/following-sibling::p", title);
+        try{
+            bulletPoint = driver.findElement(By.xpath(xPathTitle)).getText();
+        } catch (NoSuchElementException e){
+
+        }
+        Assert.assertNotNull("Can not find element with title: " + title, bulletPoint);
+    }
+
+    @Then("the text contains {string}")
+    public void theTextContainsText(String text) {
+        boolean match = bulletPoint.contains(text);
+        Assert.assertTrue("The section does not contain the given text: " + text, match);
+    }
+
+//    IssueInstance instance = new IssueInstance("CDAFSBXC-1269");
+//        instance.loadIssue();
+//    String id = instance.getIssueId();
+//    XrayGraphQL ql = new XrayGraphQL(id);
+//        ql.setGetTotalNumberOfExecutionsFromTestPlanjsonString();
+//    String totalResponse = ql.makeRequest(ql.getGetTotalNumberOfExecutionsFromTestPlanjsonString());
+//        ql.findTotalExecutions(totalResponse);
+//        ql.setGetLastExecutionJsonString();
+//    String lastExecRes = ql.makeRequest(ql.getGetLastExecutionJsonString());
+//    String lastExecution = ql.findLastExecutionKey(lastExecRes);
 }
