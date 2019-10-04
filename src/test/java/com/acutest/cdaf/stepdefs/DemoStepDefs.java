@@ -26,8 +26,8 @@ public class DemoStepDefs {
     private WebDriver driver = DriverFactory.getDriver();
     private CdafWebTest webTestPage;
     private String bulletPoint;
-   // private String URL = "https://cdafwebapptesttarget2-dev-as.azurewebsites.net/";
-    String URL = "https://localhost:44336";
+    private String URL = "https://cdafwebapptesttarget2-dev-as.azurewebsites.net/";
+    //String URL = "https://localhost:44336";
     private LoginPageObject loginPage;
     String bulletxPath = "//*[@class='row']//*[@class='col-md-3']//li";
     List<WebElement> bulletList;
