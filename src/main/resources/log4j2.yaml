@@ -5,18 +5,18 @@ Configuration:
     Property:
       name: log-path
       value: "logs"
- 
+
   Appenders:
- 
+
     Console:
       name: Console_Appender
       target: SYSTEM_OUT
       PatternLayout:
         pattern: "[%-5level] %d{yyyyMMdd'T'HHmmssZ} [%t] %c{1} - %msg%n"
- 
+
     File:
       name: File_Appender
-      fileName: ${log-path}/logfileXX.log
+      fileName: ${log-path}/logfile.log
       PatternLayout:
         pattern: "[%-5level] %d{yyyyMMdd'T'HHmmss.SSZ} [%t] %c{1} - %msg%n"
 
@@ -32,9 +32,9 @@ Configuration:
 #            size: 1 KB
 #        DefaultRollOverStrategy:
 #          max: 30
-          
+
   Loggers:
- 
+
       Root:
         level: trace
         AppenderRef:
