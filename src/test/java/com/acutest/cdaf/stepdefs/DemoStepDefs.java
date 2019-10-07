@@ -1,10 +1,8 @@
 package com.acutest.cdaf.stepdefs;
 
 import com.acutest.cdaf.core.helpers.DriverFactory;
-import com.acutest.cdaf.jiraapi.IssueInstance;
 import com.acutest.cdaf.pageobjects.cdafWebTest.CdafWebTest;
 import com.acutest.cdaf.pageobjects.jira.LoginPageObject;
-import com.acutest.cdaf.xray.XrayGraphQL;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -26,8 +24,7 @@ public class DemoStepDefs {
     private WebDriver driver = DriverFactory.getDriver();
     private CdafWebTest webTestPage;
     private String bulletPoint;
-   // private String URL = "https://cdafwebapptesttarget2-dev-as.azurewebsites.net/";
-    String URL = "https://localhost:44336";
+    private String URL = "https://cdafwebapptesttarget2-dev-as.azurewebsites.net/";
     private LoginPageObject loginPage;
     String bulletxPath = "//*[@class='row']//*[@class='col-md-3']//li";
     List<WebElement> bulletList;
@@ -46,10 +43,10 @@ public class DemoStepDefs {
     public void theUserIsOnTheTestTargetApp() {
         String xPath = "//*[@class='navbar navbar-inverse navbar-fixed-top']//*[@class='navbar-header']";
         driver.get(URL);
-        webTestPage = new CdafWebTest(driver);
-        String title = webTestPage.getTitle(xPath);
-        Assert.assertEquals("The title does not match the expected value",
-                title, "cdafWebAppTestTarget_2");
+//        webTestPage = new CdafWebTest(driver);
+//        String title = webTestPage.getTitle(xPath);
+        //Assert.assertEquals("The title does not match the expected value",
+          //      title, "cdafWebAppTestTarget_2");
     }
 
     @When("^I select the first bullet point of application uses$")
@@ -77,7 +74,16 @@ public class DemoStepDefs {
 
     @When("the {string} page is selected")
     public void thePagePageIsSelected(String page) {
-        driver.get(URL + page);
+        String xPath = String.format("//nav//a[text()='%s']", page);
+        WebElement element = null;
+        try{
+            element = driver.findElement(By.xpath(xPath));
+        }catch (NoSuchElementException e){
+
+        }
+        Assert.assertNotNull("No page found with the given name: " + page, element);
+        element.click();
+        //driver.get(URL + page);
     }
 
     @Then("the title is {string}")
