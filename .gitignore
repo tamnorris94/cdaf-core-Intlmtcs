@@ -11,6 +11,6 @@
 .settings/
 
 # Maven
-log/
+logs/
 target/
 

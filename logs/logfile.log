@@ -10,3 +10,216 @@
 [DEBUG] 20190702T103045.631+0100 [main] Hooks - @After scenario Check title of issue PUBLICA-1
 [DEBUG] 20190702T103045.632+0100 [main] Hooks - @web
 [DEBUG] 20190702T103045.635+0100 [main] Hooks - @dev
+[TRACE] 20191007T115608.388+0100 [main] JiraCukeHooks - Executing beforeScenario
+[TRACE] 20191007T115608.390+0100 [main] JiraCukeHooks - Entered getTagIssueKeys
+[TRACE] 20191007T115608.392+0100 [main] JiraCukeHooks - Checking scenario exists? : true
+[TRACE] 20191007T115608.398+0100 [main] JiraCukeHooks - Jira issue keys found in scenario tags: 
+[TRACE] 20191007T115608.400+0100 [main] JiraCukeHooks - Executing beforeAll, about to check 'dunit' value
+[TRACE] 20191007T115608.400+0100 [main] JiraCukeHooks - Initialising before first scenario.
+[ERROR] 20191007T115608.483+0100 [main] TestConfiguration - {webdriver={headless=false, path=C:\cdaf_tools\SeleniumWebDriver\, driver=firefox}, Xray={clientId=27CA37CB7795492D9BB38CC852F95B42, featureFileLocation=target/test-classes/XrayFiles/}, testrun={featurefileLocation=target/test-classes/features/cdaf/jirapi, cucumberOptionGlue=com.acutest.cdafjirajira.stepdefs}, jira={protocol=https, customfieldId={risk Priority=10809, likelihoodOfFailure=10501, executionStatus=10817, impactOfFailure=10500}, host=acutesttraining.atlassian.net, makeUpdates=true, defaultUser=mike.jennings@acutest.co.uk}}
+[INFO ] 20191007T115608.484+0100 [main] TestConfiguration - setting system property: webdriver.headless with value false
+[INFO ] 20191007T115608.484+0100 [main] TestConfiguration - setting system property: webdriver.path with value C:\cdaf_tools\SeleniumWebDriver\
+[INFO ] 20191007T115608.484+0100 [main] TestConfiguration - setting system property: webdriver.driver with value firefox
+[INFO ] 20191007T115608.485+0100 [main] TestConfiguration - setting system property: Xray.clientId with value 27CA37CB7795492D9BB38CC852F95B42
+[INFO ] 20191007T115608.485+0100 [main] TestConfiguration - setting system property: Xray.featureFileLocation with value target/test-classes/XrayFiles/
+[INFO ] 20191007T115608.485+0100 [main] TestConfiguration - setting system property: testrun.featurefileLocation with value target/test-classes/features/cdaf/jirapi
+[INFO ] 20191007T115608.485+0100 [main] TestConfiguration - setting system property: testrun.cucumberOptionGlue with value com.acutest.cdafjirajira.stepdefs
+[INFO ] 20191007T115608.486+0100 [main] TestConfiguration - setting system property: jira.protocol with value https
+[INFO ] 20191007T115608.486+0100 [main] TestConfiguration - setting system property: jira.customfieldId.risk Priority with value 10809
+[INFO ] 20191007T115608.486+0100 [main] TestConfiguration - setting system property: jira.customfieldId.likelihoodOfFailure with value 10501
+[INFO ] 20191007T115608.487+0100 [main] TestConfiguration - setting system property: jira.customfieldId.executionStatus with value 10817
+[INFO ] 20191007T115608.487+0100 [main] TestConfiguration - setting system property: jira.customfieldId.impactOfFailure with value 10500
+[INFO ] 20191007T115608.487+0100 [main] TestConfiguration - setting system property: jira.host with value acutesttraining.atlassian.net
+[INFO ] 20191007T115608.487+0100 [main] TestConfiguration - setting system property: jira.makeUpdates with value true
+[INFO ] 20191007T115608.487+0100 [main] TestConfiguration - setting system property: jira.defaultUser with value mike.jennings@acutest.co.uk
+[TRACE] 20191007T115608.490+0100 [main] JiraCukeHooks - Executing afterScenarioOrExample
+[TRACE] 20191007T115608.490+0100 [main] JiraCukeHooks - Scenario name: As an automation framework developer
+[TRACE] 20191007T115608.491+0100 [main] JiraCukeHooks - Scenario id   : file:src/test/resources/cucumber/features/cdaf-13%20Jira/JiraIssueManagement.feature:18
+[TRACE] 20191007T115608.491+0100 [main] JiraCukeHooks - Aferscenario, scenario tags   : [@web, @dev]
+[TRACE] 20191007T115608.491+0100 [main] JiraCukeHooks - Scenario status   : UNDEFINED
+[TRACE] 20191007T115608.499+0100 [main] JiraCukeHooks - Executing beforeScenario
+[TRACE] 20191007T115608.499+0100 [main] JiraCukeHooks - Entered getTagIssueKeys
+[TRACE] 20191007T115608.499+0100 [main] JiraCukeHooks - Checking scenario exists? : true
+[TRACE] 20191007T115608.499+0100 [main] JiraCukeHooks - Jira issue keys found in scenario tags: 
+[TRACE] 20191007T115608.500+0100 [main] JiraCukeHooks - Executing beforeAll, about to check 'dunit' value
+[TRACE] 20191007T115608.500+0100 [main] JiraCukeHooks - Executing afterScenarioOrExample
+[TRACE] 20191007T115608.500+0100 [main] JiraCukeHooks - Scenario name: Check title of issue PUBLICA-1
+[TRACE] 20191007T115608.500+0100 [main] JiraCukeHooks - Scenario id   : file:src/test/resources/cucumber/features/cdaf-13%20Jira/ReadPublicJiraIssue.feature:4
+[TRACE] 20191007T115608.500+0100 [main] JiraCukeHooks - Aferscenario, scenario tags   : [@dev]
+[TRACE] 20191007T115608.500+0100 [main] JiraCukeHooks - Scenario status   : UNDEFINED
+[TRACE] 20191007T115609.473+0100 [Thread-0] JiraCukeHooks - Executing shutdownHook.
+[TRACE] 20191007T115609.474+0100 [Thread-0] JiraCukeHooks - Executing afterAll
+[TRACE] 20191007T115615.596+0100 [main] JiraCukeHooks - Executing beforeAll, about to check 'dunit' value
+[TRACE] 20191007T115615.601+0100 [main] JiraCukeHooks - Initialising before first scenario.
+[ERROR] 20191007T115615.728+0100 [main] TestConfiguration - {webdriver={headless=false, path=C:\cdaf_tools\SeleniumWebDriver\, driver=firefox}, Xray={clientId=27CA37CB7795492D9BB38CC852F95B42, featureFileLocation=target/test-classes/XrayFiles/}, testrun={featurefileLocation=target/test-classes/features/cdaf/jirapi, cucumberOptionGlue=com.acutest.cdafjirajira.stepdefs}, jira={protocol=https, customfieldId={risk Priority=10809, likelihoodOfFailure=10501, executionStatus=10817, impactOfFailure=10500}, host=acutesttraining.atlassian.net, makeUpdates=true, defaultUser=mike.jennings@acutest.co.uk}}
+[INFO ] 20191007T115615.732+0100 [main] TestConfiguration - setting system property: webdriver.headless with value false
+[INFO ] 20191007T115615.732+0100 [main] TestConfiguration - setting system property: webdriver.path with value C:\cdaf_tools\SeleniumWebDriver\
+[INFO ] 20191007T115615.732+0100 [main] TestConfiguration - setting system property: webdriver.driver with value firefox
+[INFO ] 20191007T115615.732+0100 [main] TestConfiguration - setting system property: Xray.clientId with value 27CA37CB7795492D9BB38CC852F95B42
+[INFO ] 20191007T115615.733+0100 [main] TestConfiguration - setting system property: Xray.featureFileLocation with value target/test-classes/XrayFiles/
+[INFO ] 20191007T115615.733+0100 [main] TestConfiguration - setting system property: testrun.featurefileLocation with value target/test-classes/features/cdaf/jirapi
+[INFO ] 20191007T115615.733+0100 [main] TestConfiguration - setting system property: testrun.cucumberOptionGlue with value com.acutest.cdafjirajira.stepdefs
+[INFO ] 20191007T115615.733+0100 [main] TestConfiguration - setting system property: jira.protocol with value https
+[INFO ] 20191007T115615.733+0100 [main] TestConfiguration - setting system property: jira.customfieldId.risk Priority with value 10809
+[INFO ] 20191007T115615.734+0100 [main] TestConfiguration - setting system property: jira.customfieldId.likelihoodOfFailure with value 10501
+[INFO ] 20191007T115615.734+0100 [main] TestConfiguration - setting system property: jira.customfieldId.executionStatus with value 10817
+[INFO ] 20191007T115615.735+0100 [main] TestConfiguration - setting system property: jira.customfieldId.impactOfFailure with value 10500
+[INFO ] 20191007T115615.735+0100 [main] TestConfiguration - setting system property: jira.host with value acutesttraining.atlassian.net
+[INFO ] 20191007T115615.735+0100 [main] TestConfiguration - setting system property: jira.makeUpdates with value true
+[INFO ] 20191007T115615.735+0100 [main] TestConfiguration - setting system property: jira.defaultUser with value mike.jennings@acutest.co.uk
+[TRACE] 20191007T115615.738+0100 [main] JiraCukeHooks - Executing beforeScenario
+[TRACE] 20191007T115615.738+0100 [main] JiraCukeHooks - Entered getTagIssueKeys
+[TRACE] 20191007T115615.738+0100 [main] JiraCukeHooks - Checking scenario exists? : true
+[TRACE] 20191007T115615.744+0100 [main] JiraCukeHooks - Jira issue keys found in scenario tags: 
+[TRACE] 20191007T115615.747+0100 [main] JiraCukeHooks - Executing afterScenarioOrExample
+[TRACE] 20191007T115615.747+0100 [main] JiraCukeHooks - Scenario name: As an automation framework developer
+[TRACE] 20191007T115615.747+0100 [main] JiraCukeHooks - Scenario id   : file:src/test/resources/cucumber/features/cdaf-13%20Jira/JiraIssueManagement.feature:18
+[TRACE] 20191007T115615.747+0100 [main] JiraCukeHooks - Aferscenario, scenario tags   : [@web, @dev]
+[TRACE] 20191007T115615.747+0100 [main] JiraCukeHooks - Scenario status   : UNDEFINED
+[TRACE] 20191007T115615.757+0100 [main] JiraCukeHooks - Executing beforeAll, about to check 'dunit' value
+[TRACE] 20191007T115615.758+0100 [main] JiraCukeHooks - Executing beforeScenario
+[TRACE] 20191007T115615.759+0100 [main] JiraCukeHooks - Entered getTagIssueKeys
+[TRACE] 20191007T115615.760+0100 [main] JiraCukeHooks - Checking scenario exists? : true
+[TRACE] 20191007T115615.760+0100 [main] JiraCukeHooks - Jira issue keys found in scenario tags: 
+[TRACE] 20191007T115615.761+0100 [main] JiraCukeHooks - Executing afterScenarioOrExample
+[TRACE] 20191007T115615.761+0100 [main] JiraCukeHooks - Scenario name: Check title of issue PUBLICA-1
+[TRACE] 20191007T115615.761+0100 [main] JiraCukeHooks - Scenario id   : file:src/test/resources/cucumber/features/cdaf-13%20Jira/ReadPublicJiraIssue.feature:4
+[TRACE] 20191007T115615.761+0100 [main] JiraCukeHooks - Aferscenario, scenario tags   : [@dev]
+[TRACE] 20191007T115615.761+0100 [main] JiraCukeHooks - Scenario status   : UNDEFINED
+[TRACE] 20191007T115616.321+0100 [main] Hooks - Executing beforeAll, about to check 'dunit' value
+[TRACE] 20191007T115616.322+0100 [main] Hooks - Initialising before first scenario.
+[DEBUG] 20191007T115616.402+0100 [main] Hooks - @Before scenario As an automation framework developer
+[DEBUG] 20191007T115616.402+0100 [main] Hooks - @web
+[DEBUG] 20191007T115616.402+0100 [main] Hooks - @dev
+[TRACE] 20191007T115616.504+0100 [Thread-0] JiraCukeHooks - Executing shutdownHook.
+[TRACE] 20191007T115616.504+0100 [Thread-0] JiraCukeHooks - Executing afterAll
+[DEBUG] 20191007T115628.947+0100 [main] WebEventListener - beforeChangeValueOf applying style
+[DEBUG] 20191007T115629.157+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20191007T115639.645+0100 [main] Hooks - @After scenario As an automation framework developer
+[DEBUG] 20191007T115639.645+0100 [main] Hooks - @web
+[DEBUG] 20191007T115639.645+0100 [main] Hooks - @dev
+[TRACE] 20191007T115639.814+0100 [main] Hooks - Executing beforeAll, about to check 'dunit' value
+[DEBUG] 20191007T115639.814+0100 [main] Hooks - @Before scenario Check title of issue PUBLICA-1
+[DEBUG] 20191007T115639.814+0100 [main] Hooks - @dev
+[DEBUG] 20191007T115647.679+0100 [main] Hooks - @After scenario Check title of issue PUBLICA-1
+[DEBUG] 20191007T115647.679+0100 [main] Hooks - @dev
+[TRACE] 20191007T115649.278+0100 [Thread-0] Hooks - Executing shutdownHook.
+[TRACE] 20191007T115649.279+0100 [Thread-0] Hooks - Executing afterAll
+[ERROR] 20191007T115935.796+0100 [com.acutest.cdaf.xray.XrayExport.main()] TestConfiguration - {webdriver={headless=false, path=C:\cdaf_tools\SeleniumWebDriver\, driver=firefox}, Xray={clientId=27CA37CB7795492D9BB38CC852F95B42, featureFileLocation=target/test-classes/XrayFiles/}, testrun={featurefileLocation=target/test-classes/features/cdaf/jirapi, cucumberOptionGlue=com.acutest.cdafjirajira.stepdefs}, jira={protocol=https, customfieldId={risk Priority=10809, likelihoodOfFailure=10501, executionStatus=10817, impactOfFailure=10500}, host=acutesttraining.atlassian.net, makeUpdates=true, defaultUser=mike.jennings@acutest.co.uk}}
+[INFO ] 20191007T115935.802+0100 [com.acutest.cdaf.xray.XrayExport.main()] TestConfiguration - setting system property: webdriver.headless with value false
+[INFO ] 20191007T115935.803+0100 [com.acutest.cdaf.xray.XrayExport.main()] TestConfiguration - setting system property: webdriver.path with value C:\cdaf_tools\SeleniumWebDriver\
+[INFO ] 20191007T115935.803+0100 [com.acutest.cdaf.xray.XrayExport.main()] TestConfiguration - setting system property: webdriver.driver with value firefox
+[INFO ] 20191007T115935.803+0100 [com.acutest.cdaf.xray.XrayExport.main()] TestConfiguration - setting system property: Xray.clientId with value 27CA37CB7795492D9BB38CC852F95B42
+[INFO ] 20191007T115935.804+0100 [com.acutest.cdaf.xray.XrayExport.main()] TestConfiguration - setting system property: Xray.featureFileLocation with value target/test-classes/XrayFiles/
+[INFO ] 20191007T115935.804+0100 [com.acutest.cdaf.xray.XrayExport.main()] TestConfiguration - setting system property: testrun.featurefileLocation with value target/test-classes/features/cdaf/jirapi
+[INFO ] 20191007T115935.805+0100 [com.acutest.cdaf.xray.XrayExport.main()] TestConfiguration - setting system property: testrun.cucumberOptionGlue with value com.acutest.cdafjirajira.stepdefs
+[INFO ] 20191007T115935.806+0100 [com.acutest.cdaf.xray.XrayExport.main()] TestConfiguration - setting system property: jira.protocol with value https
+[INFO ] 20191007T115935.807+0100 [com.acutest.cdaf.xray.XrayExport.main()] TestConfiguration - setting system property: jira.customfieldId.risk Priority with value 10809
+[INFO ] 20191007T115935.807+0100 [com.acutest.cdaf.xray.XrayExport.main()] TestConfiguration - setting system property: jira.customfieldId.likelihoodOfFailure with value 10501
+[INFO ] 20191007T115935.825+0100 [com.acutest.cdaf.xray.XrayExport.main()] TestConfiguration - setting system property: jira.customfieldId.executionStatus with value 10817
+[INFO ] 20191007T115935.826+0100 [com.acutest.cdaf.xray.XrayExport.main()] TestConfiguration - setting system property: jira.customfieldId.impactOfFailure with value 10500
+[INFO ] 20191007T115935.826+0100 [com.acutest.cdaf.xray.XrayExport.main()] TestConfiguration - setting system property: jira.host with value acutesttraining.atlassian.net
+[INFO ] 20191007T115935.826+0100 [com.acutest.cdaf.xray.XrayExport.main()] TestConfiguration - setting system property: jira.makeUpdates with value true
+[INFO ] 20191007T115935.826+0100 [com.acutest.cdaf.xray.XrayExport.main()] TestConfiguration - setting system property: jira.defaultUser with value mike.jennings@acutest.co.uk
+[DEBUG] 20191007T115935.827+0100 [com.acutest.cdaf.xray.XrayExport.main()] XrayExport - configuration file exists: true
+[TRACE] 20191007T115935.828+0100 [com.acutest.cdaf.xray.XrayExport.main()] XrayExport - Deleting feature files at target/test-classes/XrayFiles/
+[INFO ] 20191007T115935.832+0100 [com.acutest.cdaf.xray.XrayExport.main()] XrayUtils - looking for feature files
+[INFO ] 20191007T115935.837+0100 [com.acutest.cdaf.xray.XrayExport.main()] XrayUtils - Given args relate to jira filter: 11205
+[TRACE] 20191007T115935.848+0100 [com.acutest.cdaf.xray.XrayExport.main()] XrayApi - About to request xray authentication token
+[TRACE] 20191007T115935.852+0100 [com.acutest.cdaf.xray.XrayExport.main()] XrayApi - About to send request to: https://xray.cloud.xpand-it.com/api/v1/authenticate
+[INFO ] 20191007T115937.250+0100 [com.acutest.cdaf.xray.XrayExport.main()] XrayApi - Sent successfully "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0ZW5hbnQiOiJiYjgwYmZjMS04NjIyLTNlOGQtYjg2OS00Yzk4Njc5MWExZD
+[INFO ] 20191007T115937.253+0100 [com.acutest.cdaf.xray.XrayExport.main()] XrayApi - Authentication token successfully received
+[TRACE] 20191007T115937.254+0100 [com.acutest.cdaf.xray.XrayExport.main()] XrayApi - About to send request to: https://xray.cloud.xpand-it.com/api/v1/export/cucumber?filter=11205
+[INFO ] 20191007T115938.902+0100 [com.acutest.cdaf.xray.XrayExport.main()] XrayExport - Downloaded Jira issue key is: 11205
+[TRACE] 20191007T115942.205+0100 [main] Hooks - Executing beforeAll, about to check 'dunit' value
+[TRACE] 20191007T115942.207+0100 [main] Hooks - Initialising before first scenario.
+[DEBUG] 20191007T115942.271+0100 [main] Hooks - @Before scenario Test WebApp page to progress work item
+[DEBUG] 20191007T115942.271+0100 [main] Hooks - @REQ_CDAFSBXC-1943
+[DEBUG] 20191007T115942.271+0100 [main] Hooks - @TEST_CDAFSBXC-1953
+[DEBUG] 20191007T115942.271+0100 [main] Hooks - @XrayBuildTest
+[TRACE] 20191007T115948.07+0100 [main] JiraCukeHooks - Executing beforeAll, about to check 'dunit' value
+[TRACE] 20191007T115948.07+0100 [main] JiraCukeHooks - Initialising before first scenario.
+[ERROR] 20191007T115948.13+0100 [main] TestConfiguration - {webdriver={headless=false, path=C:\cdaf_tools\SeleniumWebDriver\, driver=firefox}, Xray={clientId=27CA37CB7795492D9BB38CC852F95B42, featureFileLocation=target/test-classes/XrayFiles/}, testrun={featurefileLocation=target/test-classes/features/cdaf/jirapi, cucumberOptionGlue=com.acutest.cdafjirajira.stepdefs}, jira={protocol=https, customfieldId={risk Priority=10809, likelihoodOfFailure=10501, executionStatus=10817, impactOfFailure=10500}, host=acutesttraining.atlassian.net, makeUpdates=true, defaultUser=mike.jennings@acutest.co.uk}}
+[INFO ] 20191007T115948.16+0100 [main] TestConfiguration - setting system property: webdriver.headless with value false
+[INFO ] 20191007T115948.16+0100 [main] TestConfiguration - setting system property: webdriver.path with value C:\cdaf_tools\SeleniumWebDriver\
+[INFO ] 20191007T115948.16+0100 [main] TestConfiguration - setting system property: webdriver.driver with value firefox
+[INFO ] 20191007T115948.16+0100 [main] TestConfiguration - setting system property: Xray.clientId with value 27CA37CB7795492D9BB38CC852F95B42
+[INFO ] 20191007T115948.17+0100 [main] TestConfiguration - setting system property: Xray.featureFileLocation with value target/test-classes/XrayFiles/
+[INFO ] 20191007T115948.17+0100 [main] TestConfiguration - setting system property: testrun.featurefileLocation with value target/test-classes/features/cdaf/jirapi
+[INFO ] 20191007T115948.17+0100 [main] TestConfiguration - setting system property: testrun.cucumberOptionGlue with value com.acutest.cdafjirajira.stepdefs
+[INFO ] 20191007T115948.17+0100 [main] TestConfiguration - setting system property: jira.protocol with value https
+[INFO ] 20191007T115948.17+0100 [main] TestConfiguration - setting system property: jira.customfieldId.risk Priority with value 10809
+[INFO ] 20191007T115948.18+0100 [main] TestConfiguration - setting system property: jira.customfieldId.likelihoodOfFailure with value 10501
+[INFO ] 20191007T115948.18+0100 [main] TestConfiguration - setting system property: jira.customfieldId.executionStatus with value 10817
+[INFO ] 20191007T115948.18+0100 [main] TestConfiguration - setting system property: jira.customfieldId.impactOfFailure with value 10500
+[INFO ] 20191007T115948.18+0100 [main] TestConfiguration - setting system property: jira.host with value acutesttraining.atlassian.net
+[INFO ] 20191007T115948.18+0100 [main] TestConfiguration - setting system property: jira.makeUpdates with value true
+[INFO ] 20191007T115948.18+0100 [main] TestConfiguration - setting system property: jira.defaultUser with value mike.jennings@acutest.co.uk
+[TRACE] 20191007T115948.18+0100 [main] JiraCukeHooks - Executing beforeScenario
+[TRACE] 20191007T115948.18+0100 [main] JiraCukeHooks - Entered getTagIssueKeys
+[TRACE] 20191007T115948.19+0100 [main] JiraCukeHooks - Checking scenario exists? : true
+[TRACE] 20191007T115948.25+0100 [main] JiraCukeHooks - Jira issue keys found in scenario tags: 
+[DEBUG] 20191007T115948.832+0100 [main] WebEventListener -   beforeClickOn applying style
+[DEBUG] 20191007T115949.104+0100 [main] Hooks - @After scenario Test WebApp page to progress work item
+[DEBUG] 20191007T115949.104+0100 [main] Hooks - @REQ_CDAFSBXC-1943
+[DEBUG] 20191007T115949.104+0100 [main] Hooks - @TEST_CDAFSBXC-1953
+[DEBUG] 20191007T115949.104+0100 [main] Hooks - @XrayBuildTest
+[TRACE] 20191007T115949.104+0100 [main] JiraCukeHooks - Executing afterScenarioOrExample
+[TRACE] 20191007T115949.104+0100 [main] JiraCukeHooks - Scenario name: Test WebApp page to progress work item
+[TRACE] 20191007T115949.105+0100 [main] JiraCukeHooks - Scenario id   : file:target/test-classes/XrayFiles/1_CDAFSBXC-1943.feature:19
+[TRACE] 20191007T115949.105+0100 [main] JiraCukeHooks - Aferscenario, scenario tags   : [@REQ_CDAFSBXC-1943, @TEST_CDAFSBXC-1953, @XrayBuildTest]
+[TRACE] 20191007T115949.105+0100 [main] JiraCukeHooks - Scenario status   : PASSED
+[TRACE] 20191007T115949.239+0100 [Thread-2] JiraCukeHooks - Executing shutdownHook.
+[TRACE] 20191007T115949.237+0100 [Thread-0] Hooks - Executing shutdownHook.
+[TRACE] 20191007T115949.240+0100 [Thread-2] JiraCukeHooks - Executing afterAll
+[TRACE] 20191007T115949.240+0100 [Thread-0] Hooks - Executing afterAll
+[ERROR] 20191007T115957.501+0100 [com.acutest.cdaf.xray.XrayImport.main()] TestConfiguration - {webdriver={headless=false, path=C:\cdaf_tools\SeleniumWebDriver\, driver=firefox}, Xray={clientId=27CA37CB7795492D9BB38CC852F95B42, featureFileLocation=target/test-classes/XrayFiles/}, testrun={featurefileLocation=target/test-classes/features/cdaf/jirapi, cucumberOptionGlue=com.acutest.cdafjirajira.stepdefs}, jira={protocol=https, customfieldId={risk Priority=10809, likelihoodOfFailure=10501, executionStatus=10817, impactOfFailure=10500}, host=acutesttraining.atlassian.net, makeUpdates=true, defaultUser=mike.jennings@acutest.co.uk}}
+[INFO ] 20191007T115957.506+0100 [com.acutest.cdaf.xray.XrayImport.main()] TestConfiguration - setting system property: webdriver.headless with value false
+[INFO ] 20191007T115957.507+0100 [com.acutest.cdaf.xray.XrayImport.main()] TestConfiguration - setting system property: webdriver.path with value C:\cdaf_tools\SeleniumWebDriver\
+[INFO ] 20191007T115957.507+0100 [com.acutest.cdaf.xray.XrayImport.main()] TestConfiguration - setting system property: webdriver.driver with value firefox
+[INFO ] 20191007T115957.507+0100 [com.acutest.cdaf.xray.XrayImport.main()] TestConfiguration - setting system property: Xray.clientId with value 27CA37CB7795492D9BB38CC852F95B42
+[INFO ] 20191007T115957.507+0100 [com.acutest.cdaf.xray.XrayImport.main()] TestConfiguration - setting system property: Xray.featureFileLocation with value target/test-classes/XrayFiles/
+[INFO ] 20191007T115957.508+0100 [com.acutest.cdaf.xray.XrayImport.main()] TestConfiguration - setting system property: testrun.featurefileLocation with value target/test-classes/features/cdaf/jirapi
+[INFO ] 20191007T115957.508+0100 [com.acutest.cdaf.xray.XrayImport.main()] TestConfiguration - setting system property: testrun.cucumberOptionGlue with value com.acutest.cdafjirajira.stepdefs
+[INFO ] 20191007T115957.508+0100 [com.acutest.cdaf.xray.XrayImport.main()] TestConfiguration - setting system property: jira.protocol with value https
+[INFO ] 20191007T115957.509+0100 [com.acutest.cdaf.xray.XrayImport.main()] TestConfiguration - setting system property: jira.customfieldId.risk Priority with value 10809
+[INFO ] 20191007T115957.511+0100 [com.acutest.cdaf.xray.XrayImport.main()] TestConfiguration - setting system property: jira.customfieldId.likelihoodOfFailure with value 10501
+[INFO ] 20191007T115957.511+0100 [com.acutest.cdaf.xray.XrayImport.main()] TestConfiguration - setting system property: jira.customfieldId.executionStatus with value 10817
+[INFO ] 20191007T115957.511+0100 [com.acutest.cdaf.xray.XrayImport.main()] TestConfiguration - setting system property: jira.customfieldId.impactOfFailure with value 10500
+[INFO ] 20191007T115957.512+0100 [com.acutest.cdaf.xray.XrayImport.main()] TestConfiguration - setting system property: jira.host with value acutesttraining.atlassian.net
+[INFO ] 20191007T115957.512+0100 [com.acutest.cdaf.xray.XrayImport.main()] TestConfiguration - setting system property: jira.makeUpdates with value true
+[INFO ] 20191007T115957.513+0100 [com.acutest.cdaf.xray.XrayImport.main()] TestConfiguration - setting system property: jira.defaultUser with value mike.jennings@acutest.co.uk
+[INFO ] 20191007T115957.516+0100 [com.acutest.cdaf.xray.XrayImport.main()] XrayUtils - Given args relate to jira filter: 11205
+[DEBUG] 20191007T115957.519+0100 [com.acutest.cdaf.xray.XrayImport.main()] JiraApi - About to create new URL object
+[DEBUG] 20191007T115957.520+0100 [com.acutest.cdaf.xray.XrayImport.main()] JiraApi - About to open uri https://acutesttraining.atlassian.net/rest/api/2/filter/11205
+[DEBUG] 20191007T115957.520+0100 [com.acutest.cdaf.xray.XrayImport.main()] JiraApi - Connection open
+[TRACE] 20191007T115957.537+0100 [com.acutest.cdaf.xray.XrayImport.main()] JiraApi - GETing to https://acutesttraining.atlassian.net/rest/api/2/filter/11205
+[TRACE] 20191007T115958.319+0100 [com.acutest.cdaf.xray.XrayImport.main()] JiraApi - Request response code: 200
+[TRACE] 20191007T115958.319+0100 [com.acutest.cdaf.xray.XrayImport.main()] JiraApi - Request response message: null
+[TRACE] 20191007T115958.319+0100 [com.acutest.cdaf.xray.XrayImport.main()] JiraApi - About to read connection in buffer
+[TRACE] 20191007T115958.328+0100 [com.acutest.cdaf.xray.XrayImport.main()] JiraApi - Response body initial chars: {"self":"https://acutesttraining.atlassian.net/rest/filter/11205","id":"11205","name":"Ad hoc test f
+[TRACE] 20191007T115958.334+0100 [com.acutest.cdaf.xray.XrayImport.main()] XrayImport - The filter holds jira issue: CDAFSBXC-1333
+[TRACE] 20191007T115958.334+0100 [com.acutest.cdaf.xray.XrayImport.main()] XrayImport - Feature file location found: target/test-classes/XrayFiles/
+[DEBUG] 20191007T115958.345+0100 [com.acutest.cdaf.xray.XrayImport.main()] XrayImport - Jira project key: CDAFSBXC
+[DEBUG] 20191007T115958.390+0100 [com.acutest.cdaf.xray.XrayImport.main()] XrayImport - Info file created
+[TRACE] 20191007T115958.396+0100 [com.acutest.cdaf.xray.XrayImport.main()] XrayApi - About to request xray authentication token
+[TRACE] 20191007T115958.396+0100 [com.acutest.cdaf.xray.XrayImport.main()] XrayApi - About to send request to: https://xray.cloud.xpand-it.com/api/v1/authenticate
+[INFO ] 20191007T115958.813+0100 [com.acutest.cdaf.xray.XrayImport.main()] XrayApi - Sent successfully "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0ZW5hbnQiOiJiYjgwYmZjMS04NjIyLTNlOGQtYjg2OS00Yzk4Njc5MWExZD
+[INFO ] 20191007T115958.815+0100 [com.acutest.cdaf.xray.XrayImport.main()] XrayApi - Authentication token successfully received
+[TRACE] 20191007T115958.815+0100 [com.acutest.cdaf.xray.XrayImport.main()] XrayApi - About to send request to: https://xray.cloud.xpand-it.com/api/v1/import/execution/cucumber/multipart
+[TRACE] 20191007T115958.821+0100 [com.acutest.cdaf.xray.XrayImport.main()] XrayApi - About to upload cucumber-report.json file to API output
+[TRACE] 20191007T115958.838+0100 [com.acutest.cdaf.xray.XrayImport.main()] XrayApi - About to upload issueFields.json file to API output
+[TRACE] 20191007T115958.840+0100 [com.acutest.cdaf.xray.XrayImport.main()] XrayApi - Request body: --1570445998391
+Content-Disposition: form-data; name="results"; filename="cucumber-report.json"
+Content-type: application/json; charset=UTF-8
+
+[B@21b4f5f6
+--1570445998391
+Content-Disposition: form-data; name="info"; filename="issueFields.json"
+Content-type: application/json; charset=UTF-8
+
+[B@5511db61
+--1570445998391--
+
+[INFO ] 20191007T120003.130+0100 [com.acutest.cdaf.xray.XrayImport.main()] XrayApi - Sent successfully {"id":"16314","key":"CDAFSBXC-2068","self":"https://acutesttraining.atlassian.net/rest/api/2/issue/1
+[DEBUG] 20191007T120003.135+0100 [com.acutest.cdaf.xray.XrayImport.main()] XrayImport - Staged tests file exists: false
