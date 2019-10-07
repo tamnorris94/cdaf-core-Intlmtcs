@@ -41,12 +41,9 @@ public class DemoStepDefs {
 
     @Given("the customer is on the test target app")
     public void theUserIsOnTheTestTargetApp() {
-        String xPath = "//*[@class='navbar navbar-inverse navbar-fixed-top']//*[@class='navbar-header']";
         driver.get(URL);
-//        webTestPage = new CdafWebTest(driver);
-//        String title = webTestPage.getTitle(xPath);
-        //Assert.assertEquals("The title does not match the expected value",
-          //      title, "cdafWebAppTestTarget_2");
+        String myUrl = driver.getCurrentUrl();
+        Assert.assertEquals("Not on the the correct page, current url is: " + myUrl, myUrl, URL);
     }
 
     @When("^I select the first bullet point of application uses$")
@@ -83,7 +80,6 @@ public class DemoStepDefs {
         }
         Assert.assertNotNull("No page found with the given name: " + page, element);
         element.click();
-        //driver.get(URL + page);
     }
 
     @Then("the title is {string}")
