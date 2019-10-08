@@ -1,5 +1,7 @@
 package com.acutest.cdaf.pageobjects.jira;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.dataformat.yaml.YAMLFactory;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.junit.Assert;
@@ -26,7 +28,9 @@ public class JiraIssue {
     private By riskLikelihood = By.id("customfield_10501");
 
     private By createGlobalItem = By.xpath("//*[contains(@id,'createGlobalItem')]/parent::div");
-    String identifyIssue = LocalDateTime.now().toString();
+
+    String timeNow = LocalDateTime.now().toString().replaceAll("[^\\d]", "" );
+    long identifyIssue = Long.valueOf(timeNow.substring(0,14));
     private By issueStatus = By.xpath("//*[contains(text(),'Backlog')]");
     private By issueStatus1 = By.xpath("//*[contains(text(),'CDAFSBXB Stage 1')]");
     private By issueStatus2 = By.xpath("//*[contains(text(),'CDAFSBXB Stage 2')]");
@@ -192,6 +196,14 @@ public class JiraIssue {
         String issueVerifier = String.format("//*[contains(text(),'%s')]",summary);
         List<WebElement> identify = webDriver.findElements(By.xpath(issueVerifier));
         Assert.assertTrue("Unable to locate the given summary",!identify.isEmpty());
+    }
+
+    public void storeCurrentIssueKey()
+    {
+        String issueKey = webDriver.getCurrentUrl().substring(45);
+        //ObjectMapper objectMapper = new ObjectMapper();
+        //String filePath = "com.acutest.cdaf";
+        log.trace("The extracted issueKey is %s",issueKey);
     }
 
 }
