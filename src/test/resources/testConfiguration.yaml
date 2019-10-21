@@ -12,6 +12,7 @@ jira:
     impactOfFailure: 10500
     likelihoodOfFailure: 10501
     risk Priority: 10809
+    automationStatus: 10825
 #   customfield:
 
 # Test run parameters
