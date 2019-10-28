@@ -207,6 +207,15 @@ public class DemoStepDefs {
         Assert.assertTrue("The section does not contain the given text: " + text, match);
     }
 
+    @When("the page with {string} page browsed")
+    public void thePageWithUrlPageBrowsed(String url) {
+        driver.get(url);
+    }
+
+    @Given("an anonymous web users")
+    public void anAnonymousWebUsers() {
+    }
+
 //    IssueInstance instance = new IssueInstance("CDAFSBXC-1269");
 //        instance.loadIssue();
 //    String id = instance.getIssueId();
