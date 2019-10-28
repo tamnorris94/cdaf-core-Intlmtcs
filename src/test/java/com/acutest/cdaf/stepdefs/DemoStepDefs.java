@@ -212,7 +212,7 @@ public class DemoStepDefs {
         driver.get(url);
     }
 
-    @Given("an anonymous web users")
+    @Given("an anonymous web user")
     public void anAnonymousWebUsers() {
     }
 
