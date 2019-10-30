@@ -209,7 +209,12 @@ public class DemoStepDefs {
 
     @When("the page with {string} page browsed")
     public void thePageWithUrlPageBrowsed(String url) {
-        driver.get(url);
+        String urlPrefix = "https://";
+        try{
+            driver.get(urlPrefix + url);
+        } catch (Exception e) {
+            driver.get("http://" + url);
+        }
     }
 
     @Given("an anonymous web users")
