@@ -217,7 +217,7 @@ public class DemoStepDefs {
         }
     }
 
-    @Given("an anonymous web users")
+    @Given("an anonymous web user")
     public void anAnonymousWebUsers() {
     }
 
